@@ -1,0 +1,285 @@
+'use strict';
+
+/**
+ * Daily generator script.
+ *
+ * Fetches M3U playlists published by iptv-org
+ * (https://github.com/iptv-org/iptv) and merges them into a single playlist,
+ * then writes both the M3U and an EPG (XMLTV) file into the repository so
+ * they can be committed by the CI job.
+ *
+ * Output files (written to the repo root):
+ *   - channels.m3u
+ *   - epg.xml
+ */
+
+const fs = require('fs');
+const path = require('path');
+
+const m3u = require('../index.js');
+
+// Expose pure helpers for testing. The module is also runnable directly.
+module.exports = { parseExtinf, escapeXml, buildEpg, buildPlaylistFromText };
+
+// ---------------------------------------------------------------------------
+// iptv-org playlist sources
+//
+// These are the public, per-category/per-country playlists published by
+// iptv-org at https://iptv-org.github.io/iptv/. They are merged (deduplicated
+// by URL) into a single guide.
+// ---------------------------------------------------------------------------
+const IPTV_BASE = 'https://iptv-org.github.io/iptv';
+const IPTV_RAW_BASE = 'https://raw.githubusercontent.com/iptv-org/iptv/master';
+const PLAYLIST_SOURCES = [
+  // News categories
+  { group: 'News', url: `${IPTV_BASE}/categories/news.m3u` },
+  { group: 'Sports', url: `${IPTV_BASE}/categories/sports.m3u` },
+  { group: 'Movies', url: `${IPTV_BASE}/categories/movies.m3u` },
+  { group: 'Entertainment', url: `${IPTV_BASE}/categories/entertainment.m3u` },
+  { group: 'Music', url: `${IPTV_BASE}/categories/music.m3u` },
+  { group: 'Documentary', url: `${IPTV_BASE}/categories/documentary.m3u` },
+  
+  // Country-specific sources (with enhanced India focus)
+  { group: 'News (US)', url: `${IPTV_BASE}/countries/us.m3u` },
+  { group: 'News (UK)', url: `${IPTV_BASE}/countries/uk.m3u` },
+  { group: 'News (IN)', url: `${IPTV_BASE}/countries/in.m3u` },
+  { group: 'News (AU)', url: `${IPTV_BASE}/countries/au.m3u` },
+  { group: 'News (CA)', url: `${IPTV_BASE}/countries/ca.m3u` },
+  
+  // Regional sources
+  { group: 'Worldwide', url: `${IPTV_BASE}/regions/ww.m3u` },
+  
+  // India-specific sources from raw content
+  { group: 'India Streams', url: `${IPTV_RAW_BASE}/streams/in.m3u` },
+  
+  // Specialized sources
+  { group: 'Samsung (IN)', url: `${IPTV_RAW_BASE}/streams/in_samsung.m3u` },
+  
+  // Sony Entertainment Television Asia HD (1080p) — sourced from iptvcat
+  // (https://iptvcat.com/india__7/s/sony). This stream uses tvg-country="IN"
+  // rather than a tvg-id, so it bypasses the default .in / 1080p filters.
+  { group: 'Sony Asia (IN)', url: 'https://list.iptvcat.com/my_list/s/1e9b670b3031f1d7bf3b4114ef770576.m3u8', skipFilters: true },
+];
+
+// ---------------------------------------------------------------------------
+// Fetch helpers
+// ---------------------------------------------------------------------------
+
+async function fetchText(url, retries = 2) {
+  for (let attempt = 0; attempt <= retries; attempt++) {
+    try {
+      const res = await fetch(url, {
+        headers: { 'User-Agent': 'm3u-ci/daily-guide (+https://github.com/nodebug/m3u)' }
+      });
+      if (!res.ok) {
+        throw new Error(`HTTP ${res.status} for ${url}`);
+      }
+      return await res.text();
+    } catch (err) {
+      if (attempt === retries) {
+        console.warn(`Warning: could not fetch ${url}: ${err.message}`);
+        return '';
+      }
+      // small back-off before retry
+      await new Promise((r) => setTimeout(r, 500 * (attempt + 1)));
+    }
+  }
+  return '';
+}
+
+/**
+ * Parse an EXTINF line into its attribute map.
+ * e.g. #EXTINF:-1 tvg-id="X" tvg-logo="Y" group-title="Z",Title
+ */
+function parseExtinf(line) {
+  const attrs = {};
+  // The EXTINF title is everything after the *first* comma:
+  //   #EXTINF:<duration> <attrs>,<title>
+  const commaIdx = line.indexOf(',');
+  const name = commaIdx >= 0 ? line.slice(commaIdx + 1).trim() : '';
+  const attrPart = commaIdx >= 0 ? line.slice(0, commaIdx) : line;
+
+  const attrRegex = /([a-zA-Z0-9_-]+)="([^"]*)"/g;
+  let m;
+  while ((m = attrRegex.exec(attrPart)) !== null) {
+    attrs[m[1]] = m[2];
+  }
+  return { attrs, name };
+}
+
+/**
+ * Parse the body of an M3U playlist into normalized channel records.
+ * Pure function (no I/O) so it can be unit-tested.
+ *
+ * @param {string} text - Raw playlist text
+ * @param {Object} defaults - Default group name to apply
+ * @returns {Object[]} Channel records
+ */
+function buildPlaylistFromText(text, defaults = {}) {
+  if (!text) return [];
+
+  const lines = text.split(/\r?\n/);
+  const channels = [];
+  let current = null;
+
+  for (const raw of lines) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#EXTM3U')) continue;
+
+    if (line.startsWith('#EXTINF:')) {
+      const { attrs, name } = parseExtinf(line);
+      current = {
+        id: attrs['tvg-id'] || '',
+        name: name || attrs['tvg-name'] || '',
+        logo: attrs['tvg-logo'] || '',
+        group: attrs['group-title'] || defaults.group || 'Undefined',
+        url: ''
+      };
+      continue;
+    }
+
+    if (line.startsWith('#EXT') || line.startsWith('#')) {
+      // skip other tags (incl. #EXTVLCOPT options)
+      continue;
+    }
+
+    if (current) {
+      current.url = line;
+      channels.push(current);
+      current = null;
+    }
+  }
+
+  return channels;
+}
+
+/**
+ * Fetch one iptv-org playlist and return normalized channel records.
+ */
+async function fetchPlaylist(source) {
+  const text = await fetchText(source.url);
+  return buildPlaylistFromText(text, source);
+}
+
+// ---------------------------------------------------------------------------
+// Build merged M3U playlist
+// ---------------------------------------------------------------------------
+
+async function buildPlaylist() {
+  const all = [];
+  const seenUrls = new Set();
+
+  for (const source of PLAYLIST_SOURCES) {
+    const channels = await fetchPlaylist(source);
+    for (const ch of channels) {
+      if (!ch.url) continue;
+      if (seenUrls.has(ch.url)) continue; // dedupe by URL
+      
+      // Apply filters based on source type
+      if (source.skipFilters) {
+        // Sources flagged with skipFilters bypass the default 1080p / .in filters
+      } else if (source.group === 'Samsung (IN)') {
+        // For Samsung India source: include all channels (no filters)
+      } else {
+        // For all other sources: apply both filters
+        // Only include channels that have "1080p" in the name (case-insensitive)
+        if (!ch.name.toLowerCase().includes('1080p')) continue;
+        // Only include channels from India (tvg-id contains ".in" as a country code)
+        if (!ch.id || !ch.id.match(/(^|\.|@)in($|\.|@)/)) continue;
+      }
+      
+      seenUrls.add(ch.url);
+      all.push(ch);
+    }
+  }
+
+  return all;
+}
+
+// ---------------------------------------------------------------------------
+// EPG (XMLTV format)
+// ---------------------------------------------------------------------------
+
+function escapeXml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+function hoursLater(now, hour) {
+  const d = new Date(now);
+  d.setHours(d.getHours() + hour);
+  return d.toISOString().replace(/\.\d{3}Z$/, 'Z');
+}
+
+function buildEpg(channels, now) {
+  const channelNodes = channels
+    .map((ch) => `  <channel id="${escapeXml(ch.id || ch.name)}">
+    <display-name lang="en">${escapeXml(ch.name)}</display-name>
+    ${ch.logo ? `<icon src="${escapeXml(ch.logo)}" />` : ''}
+  </channel>`)
+    .join('\n');
+
+  const programmeNodes = channels
+    .map((ch) => {
+      const start = hoursLater(now, 1);
+      const stop = hoursLater(now, 3);
+      return `  <programme channel="${escapeXml(ch.id || ch.name)}" start="${start}" stop="${stop}">
+    <title lang="en">${escapeXml(ch.name)}</title>
+    <desc lang="en">Auto-generated guide entry for ${escapeXml(ch.name)}.</desc>
+    <category>Entertainment</category>
+  </programme>`;
+    })
+    .join('\n');
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="m3u-ci" generator-info-url="https://github.com/nodebug/m3u">
+${channelNodes}
+${programmeNodes}
+</tv>
+`;
+}
+
+// ---------------------------------------------------------------------------
+// Main
+// ---------------------------------------------------------------------------
+
+async function main() {
+  const now = new Date();
+  const stamp = now.toISOString().slice(0, 10); // YYYY-MM-DD
+
+  const channels = await buildPlaylist();
+  console.log(`Fetched ${channels.length} unique channels from iptv-org`);
+
+  // --- M3U ---
+  const playlist = {
+    title: `Generated TV Guide (${stamp})`,
+    tracks: channels.map((ch) => ({
+      title: ch.name,
+      path: ch.url,
+      duration: -1,
+      tvgId: ch.id,
+      tvgName: ch.name,
+      tvgGroup: ch.group,
+    })),
+  };
+
+  const m3uPath = path.join(__dirname, '..', 'channels.m3u');
+  m3u.generate(m3uPath, playlist);
+
+  // --- EPG ---
+  const epgXml = buildEpg(channels, now);
+  const epgPath = path.join(__dirname, '..', 'epg.xml');
+  fs.writeFileSync(epgPath, epgXml, 'utf-8');
+
+  console.log(`Generated ${m3uPath}`);
+  console.log(`Generated ${epgPath}`);
+}
+
+main().catch((err) => {
+  console.error('Generation failed:', err);
+  process.exit(1);
+});
