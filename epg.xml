@@ -1,1080 +1,1533 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="iptvcat-india-fetch" generator-info-url="https://iptvcat.com/india__7">
-  <channel id="tvinternational.in">
-    <display-name lang="en">&amp;TV International (1080p)</display-name>
+<tv generator-info-name="m3u-ci" generator-info-url="https://github.com/nodebug/m3u">
+  <channel id="AajTak.in@HD">
+    <display-name lang="en">Aaj Tak HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_AAJ_TAK/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="flix.in">
-    <display-name lang="en">&amp;flix (1080p)</display-name>
+  <channel id="ABPAnanda.in@SD">
+    <display-name lang="en">ABP Ananda (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s142518_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="pictures.in">
-    <display-name lang="en">&amp;pictures (1080p)</display-name>
+  <channel id="ABPAsmita.in@SD">
+    <display-name lang="en">ABP Asmita (1080p)</display-name>
+    <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/ABP_Asmita_logo.svg/500px-ABP_Asmita_logo.svg.png" />
   </channel>
-  <channel id="privehd.in">
-    <display-name lang="en">&amp;prive HD (1080p)</display-name>
+  <channel id="ABPGanga.in@SD">
+    <display-name lang="en">ABP Ganga (1080p)</display-name>
+    <icon src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/ABP_Ganga.svg/500px-ABP_Ganga.svg.png" />
   </channel>
-  <channel id="xplorhd.in">
-    <display-name lang="en">&amp;xplor HD (1080p)</display-name>
+  <channel id="ABPNews.in@SD">
+    <display-name lang="en">ABP News (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s158138_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="10tv.in">
-    <display-name lang="en">10 TV (720p)</display-name>
+  <channel id="AKDCalcuttaNews.in@SD">
+    <display-name lang="en">AKD Calcutta News (1080p)</display-name>
+    <icon src="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Calcutta%20News.png" />
   </channel>
-  <channel id="5aabtv.in">
-    <display-name lang="en">5AAB TV</display-name>
+  <channel id="AmarUjala.in@SD">
+    <display-name lang="en">AmarUjala (1080p)</display-name>
+    <icon src="https://i.imgur.com/ndQ8LZp.png" />
   </channel>
-  <channel id="6tvtelugu.in">
-    <display-name lang="en">6 TV Telugu (720p)</display-name>
+  <channel id="AsianetSuvarnaNews.in@SD">
+    <display-name lang="en">Asianet Suvarna News (1080p) [Not 24/7]</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s142682_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="99tv.in">
-    <display-name lang="en">99TV (720p)</display-name>
+  <channel id="Bharat24.in@SD">
+    <display-name lang="en">like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,Bharat24 (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s142710_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="9xjalwa.in">
-    <display-name lang="en">9X Jalwa</display-name>
-  </channel>
-  <channel id="9xjhakaas.in">
-    <display-name lang="en">9X Jhakaas</display-name>
-  </channel>
-  <channel id="9xtashan.in">
-    <display-name lang="en">9X Tashan</display-name>
-  </channel>
-  <channel id="9xm.in">
-    <display-name lang="en">9XM</display-name>
-  </channel>
-  <channel id="abnandhrajyoti.in">
-    <display-name lang="en">ABN Andhra Jyoti (720p)</display-name>
-  </channel>
-  <channel id="ajnetnewsnot247.in">
-    <display-name lang="en">AJ Net News [Not 24/7]</display-name>
-  </channel>
-  <channel id="annnews.in">
-    <display-name lang="en">ANN News (720p)</display-name>
-  </channel>
-  <channel id="aajtak.in">
-    <display-name lang="en">Aaj Tak</display-name>
-  </channel>
-  <channel id="aakaashaath.in">
-    <display-name lang="en">Aakaash Aath (720p)</display-name>
-  </channel>
-  <channel id="aaryaatv.in">
-    <display-name lang="en">Aaryaa TV (1080p)</display-name>
-  </channel>
-  <channel id="aastha.in">
-    <display-name lang="en">Aastha (720p)</display-name>
-  </channel>
-  <channel id="aasthaprime1.in">
-    <display-name lang="en">Aastha Prime 1 (720p)</display-name>
-  </channel>
-  <channel id="abzydhakad.in">
-    <display-name lang="en">Abzy Dhakad</display-name>
-  </channel>
-  <channel id="abzymovies.in">
-    <display-name lang="en">Abzy Movies</display-name>
-  </channel>
-  <channel id="alankartv.in">
-    <display-name lang="en">Alankar TV (720p)</display-name>
-  </channel>
-  <channel id="anandabarta.in">
-    <display-name lang="en">Ananda Barta (720p)</display-name>
-  </channel>
-  <channel id="anandhamtv.in">
-    <display-name lang="en">Anandham TV (1080p)</display-name>
-  </channel>
-  <channel id="animaxgeoblocked.in">
-    <display-name lang="en">Animax [Geo-blocked]</display-name>
-  </channel>
-  <channel id="anjannot247.in">
-    <display-name lang="en">Anjan (1080p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="asianethd.in">
-    <display-name lang="en">Asianet HD (1080p)</display-name>
-  </channel>
-  <channel id="awaazindiatv.in">
-    <display-name lang="en">Awaaz India TV (720p)</display-name>
-  </channel>
-  <channel id="ayushtv.in">
-    <display-name lang="en">Ayush TV</display-name>
-  </channel>
-  <channel id="b4ubhojpuri.in">
-    <display-name lang="en">B4U Bhojpuri (1080p)</display-name>
-  </channel>
-  <channel id="b4ukadak.in">
-    <display-name lang="en">B4U Kadak</display-name>
-  </channel>
-  <channel id="b4ukadaknot247.in">
-    <display-name lang="en">B4U Kadak (1080p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="b4umovies.in">
-    <display-name lang="en">B4U Movies</display-name>
-  </channel>
-  <channel id="b4umoviesindia.in">
-    <display-name lang="en">B4U Movies India (1080p)</display-name>
-  </channel>
-  <channel id="b4umusic.in">
-    <display-name lang="en">B4U Music (1080p)</display-name>
-  </channel>
-  <channel id="bbcnewsasiapacific.in">
-    <display-name lang="en">BBC News Asia Pacific (720p)</display-name>
-  </channel>
-  <channel id="bigtv.in">
-    <display-name lang="en">BIG TV (720p)</display-name>
-  </channel>
-  <channel id="balleballe.in">
-    <display-name lang="en">Balle Balle (720p)</display-name>
-  </channel>
-  <channel id="bhakthitv.in">
-    <display-name lang="en">Bhakthi TV (720p)</display-name>
-  </channel>
-  <channel id="bharat24.in">
-    <display-name lang="en">Bharat24 (1080p)</display-name>
-  </channel>
-  <channel id="blessingtvtamil.in">
-    <display-name lang="en">Blessing TV Tamil (720p)</display-name>
-  </channel>
-  <channel id="ctvnakdplus.in">
-    <display-name lang="en">CTVN AKD Plus (1080p)</display-name>
-  </channel>
-  <channel id="cvrenglish.in">
-    <display-name lang="en">CVR English (720p)</display-name>
-  </channel>
-  <channel id="cartoonnetworkhd.in">
-    <display-name lang="en">Cartoon Network HD+ (1080p)</display-name>
-  </channel>
-  <channel id="channelwin.in">
-    <display-name lang="en">Channel WIN (720p)</display-name>
-  </channel>
-  <channel id="channely.in">
-    <display-name lang="en">Channel Y</display-name>
-  </channel>
-  <channel id="chardiklagurbaanitv.in">
-    <display-name lang="en">Chardikla Gurbaani TV (1080p)</display-name>
-  </channel>
-  <channel id="chardiklatimetv.in">
+  <channel id="ChardiklaTimeTV.in@SD">
     <display-name lang="en">Chardikla Time TV (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CHARDIKLA_TIME_TV/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="chardiklatimetvnorthamerica.in">
+  <channel id="ChardiklaTimeTVNorthAmerica.in@SD">
     <display-name lang="en">Chardikla Time TV North America (1080p)</display-name>
+    <icon src="https://i.imgur.com/IUeMFey.jpg" />
   </channel>
-  <channel id="colors.in">
-    <display-name lang="en">Colors (1080p)</display-name>
+  <channel id="CTVNAKDPlus.in@SD">
+    <display-name lang="en">CTVN AKD Plus (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s142754_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="colorsbangla.in">
-    <display-name lang="en">Colors Bangla (1080p)</display-name>
+  <channel id="DDNews.in@HD">
+    <display-name lang="en">DD News HD (1080p)</display-name>
+    <icon src="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20News%20HD.png" />
   </channel>
-  <channel id="colorscineplex.in">
-    <display-name lang="en">Colors Cineplex (1080p)</display-name>
+  <channel id="ETVNews.in@HD">
+    <display-name lang="en">ETV News (1080p)</display-name>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4900001AQ_20250811T033458SQUARE.png" />
   </channel>
-  <channel id="colorsgujarati.in">
-    <display-name lang="en">Colors Gujarati (1080p)</display-name>
-  </channel>
-  <channel id="colorsinfinity.in">
-    <display-name lang="en">Colors Infinity (1080p)</display-name>
-  </channel>
-  <channel id="colorskannada.in">
-    <display-name lang="en">Colors Kannada (1080p)</display-name>
-  </channel>
-  <channel id="colorskannadacinema.in">
-    <display-name lang="en">Colors Kannada Cinema (1080p)</display-name>
-  </channel>
-  <channel id="colorsmarathi.in">
-    <display-name lang="en">Colors Marathi (1080p)</display-name>
-  </channel>
-  <channel id="colorsrishteyasia.in">
-    <display-name lang="en">Colors Rishtey Asia (1080p)</display-name>
-  </channel>
-  <channel id="colorsrishteyasianot247.in">
-    <display-name lang="en">Colors Rishtey Asia (1080p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="colorssuper.in">
-    <display-name lang="en">Colors Super (1080p)</display-name>
-  </channel>
-  <channel id="colorstamil.in">
-    <display-name lang="en">Colors Tamil (1080p)</display-name>
-  </channel>
-  <channel id="colorstamilhd.in">
-    <display-name lang="en">Colors Tamil HD (1080p)</display-name>
-  </channel>
-  <channel id="ddarunprabha.in">
-    <display-name lang="en">DD Arun Prabha</display-name>
-  </channel>
-  <channel id="ddassam.in">
-    <display-name lang="en">DD Assam</display-name>
-  </channel>
-  <channel id="ddbangla.in">
-    <display-name lang="en">DD Bangla</display-name>
-  </channel>
-  <channel id="ddbharati.in">
-    <display-name lang="en">DD Bharati (720p)</display-name>
-  </channel>
-  <channel id="ddbihar.in">
-    <display-name lang="en">DD Bihar (720p)</display-name>
-  </channel>
-  <channel id="ddchandana.in">
-    <display-name lang="en">DD Chandana</display-name>
-  </channel>
-  <channel id="ddchhattisgarh.in">
-    <display-name lang="en">DD Chhattisgarh (720p)</display-name>
-  </channel>
-  <channel id="ddgirnar.in">
-    <display-name lang="en">DD Girnar</display-name>
-  </channel>
-  <channel id="ddjharkhand.in">
-    <display-name lang="en">DD Jharkhand</display-name>
-  </channel>
-  <channel id="ddkashir.in">
-    <display-name lang="en">DD Kashir (720p)</display-name>
-  </channel>
-  <channel id="ddkisan.in">
-    <display-name lang="en">DD Kisan (720p)</display-name>
-  </channel>
-  <channel id="ddmadhyapradesh.in">
-    <display-name lang="en">DD Madhya Pradesh (720p)</display-name>
-  </channel>
-  <channel id="ddmalayalam.in">
-    <display-name lang="en">DD Malayalam</display-name>
-  </channel>
-  <channel id="ddmeghalaya.in">
-    <display-name lang="en">DD Meghalaya</display-name>
-  </channel>
-  <channel id="ddmizoram.in">
-    <display-name lang="en">DD Mizoram</display-name>
-  </channel>
-  <channel id="ddnagaland.in">
-    <display-name lang="en">DD Nagaland</display-name>
-  </channel>
-  <channel id="ddnews.in">
-    <display-name lang="en">DD News (1080p)</display-name>
-  </channel>
-  <channel id="ddodia.in">
-    <display-name lang="en">DD Odia</display-name>
-  </channel>
-  <channel id="ddpodhigai.in">
-    <display-name lang="en">DD Podhigai</display-name>
-  </channel>
-  <channel id="ddpunjabi.in">
-    <display-name lang="en">DD Punjabi</display-name>
-  </channel>
-  <channel id="ddrajasthan.in">
-    <display-name lang="en">DD Rajasthan (720p)</display-name>
-  </channel>
-  <channel id="ddsports.in">
-    <display-name lang="en">DD Sports (720p)</display-name>
-  </channel>
-  <channel id="ddtripura.in">
-    <display-name lang="en">DD Tripura</display-name>
-  </channel>
-  <channel id="ddurdu.in">
-    <display-name lang="en">DD Urdu (720p)</display-name>
-  </channel>
-  <channel id="dduttarpradesh.in">
-    <display-name lang="en">DD Uttar Pradesh (720p)</display-name>
-  </channel>
-  <channel id="dduttarakhand.in">
-    <display-name lang="en">DD Uttarakhand (720p)</display-name>
-  </channel>
-  <channel id="dabangg.in">
-    <display-name lang="en">Dabangg (720p)</display-name>
-  </channel>
-  <channel id="darshanatv.in">
-    <display-name lang="en">Darshana TV (720p)</display-name>
-  </channel>
-  <channel id="desichannel.in">
-    <display-name lang="en">Desi Channel (720p)</display-name>
-  </channel>
-  <channel id="dharshantv.in">
-    <display-name lang="en">Dharshan TV (720p)</display-name>
-  </channel>
-  <channel id="dhoommusic.in">
-    <display-name lang="en">Dhoom Music (720p)</display-name>
-  </channel>
-  <channel id="disneychannelhd.in">
-    <display-name lang="en">Disney Channel HD (1080p)</display-name>
-  </channel>
-  <channel id="etnow.in">
-    <display-name lang="en">ET Now (720p)</display-name>
-  </channel>
-  <channel id="etnowgeoblocked.in">
-    <display-name lang="en">ET Now (720p) [Geo-blocked]</display-name>
-  </channel>
-  <channel id="faktmarathinot247.in">
-    <display-name lang="en">Fakt Marathi (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="fatehtv.in">
-    <display-name lang="en">Fateh TV</display-name>
-  </channel>
-  <channel id="gaundapunjabtv.in">
-    <display-name lang="en">Gaunda Punjab TV</display-name>
-  </channel>
-  <channel id="geminimovies.in">
-    <display-name lang="en">Gemini Movies (1080p)</display-name>
-  </channel>
-  <channel id="geminimusic.in">
-    <display-name lang="en">Gemini Music (1080p)</display-name>
-  </channel>
-  <channel id="geminitv.in">
-    <display-name lang="en">Gemini TV (1080p)</display-name>
-  </channel>
-  <channel id="globalpunjab.in">
+  <channel id="GlobalPunjab.in@SD">
     <display-name lang="en">Global Punjab (1080p)</display-name>
+    <icon src="https://i.imgur.com/WDLqcWW.png" />
+  </channel>
+  <channel id="GuaranteeNews.in@SD">
+    <display-name lang="en">Guarantee News (1080p)</display-name>
+    <icon src="https://media.licdn.com/dms/image/v2/D560BAQHYZzbGJ7ViZA/company-logo_200_200/company-logo_200_200/0/1728031377890?e=2147483647&amp;v=beta&amp;t=bIsZgNUCcg0M_-Zqeu5wKYgBt_1-pI798X9lP5CxhTM" />
+  </channel>
+  <channel id="IndiaDailyLive.in@SD">
+    <display-name lang="en">India Daily Live (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/India_Daily_24x7.png" />
   </channel>
-  <channel id="goa365.in">
-    <display-name lang="en">Goa365 (1080p)</display-name>
+  <channel id="JantaTV.in@SD">
+    <display-name lang="en">Janta TV (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_JANTA_TV/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="gospeltvindia.in">
-    <display-name lang="en">Gospel TV India (720p)</display-name>
+  <channel id="KolkataTV.in@SD">
+    <display-name lang="en">Kolkata TV (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143271_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="gulistannews.in">
-    <display-name lang="en">Gulistan News (720p)</display-name>
+  <channel id="LivingIndiaNews.in@SD">
+    <display-name lang="en">Living India News (1080p)</display-name>
+    <icon src="https://i.imgur.com/YikaJvd.png" />
   </channel>
-  <channel id="gyandarshan.in">
-    <display-name lang="en">Gyandarshan (720p)</display-name>
+  <channel id="MalaiMurasuTV.in@SD">
+    <display-name lang="en">Malai Murasu TV (1080p) [Geo-blocked]</display-name>
+    <icon src="https://i.imgur.com/OC5TQxp.png" />
   </channel>
-  <channel id="hmtv.in">
-    <display-name lang="en">HMTV (720p)</display-name>
+  <channel id="NDTVMadhyaPradeshChhattisgarh.in@SD">
+    <display-name lang="en">NDTV Madhya Pradesh Chhattisgarh (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_MPCG/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="hamdardtv.in">
-    <display-name lang="en">Hamdard TV (1080p)</display-name>
+  <channel id="NDTVMarathi.in@SD">
+    <display-name lang="en">NDTV Marathi (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_MARATHI/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="harvesttv.in">
-    <display-name lang="en">Harvest TV (720p)</display-name>
+  <channel id="NDTVRajasthan.in@SD">
+    <display-name lang="en">NDTV Rajasthan (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_RAJASTHAN/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="harvesttvkeralam.in">
-    <display-name lang="en">Harvest TV Keralam (720p)</display-name>
+  <channel id="News18AssamNorthEast.in@SD">
+    <display-name lang="en">News18 Assam North-East (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_ASSAM_NORTHSYMHYPEAST/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="harvesttvusa.in">
-    <display-name lang="en">Harvest TV USA</display-name>
+  <channel id="News18Bangla.in@SD">
+    <display-name lang="en">News18 Bangla (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_BANGLA/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="hidost.in">
-    <display-name lang="en">Hi Dost! (720p)</display-name>
+  <channel id="News18BiharJharkhand.in@SD">
+    <display-name lang="en">News18 Bihar Jharkhand (1080p)</display-name>
+    <icon src="https://i.imgur.com/FQ3zDZE.png" />
   </channel>
-  <channel id="historytv18hd.in">
-    <display-name lang="en">History TV18 HD (1080p)</display-name>
+  <channel id="News18DelhiNCRJK.in@SD">
+    <display-name lang="en">News18 Delhi NCR JK (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/News18JKLH.png" />
   </channel>
-  <channel id="historytv18hdgeoblocked.in">
-    <display-name lang="en">History TV18 HD (1080p) [Geo-blocked]</display-name>
+  <channel id="News18Gujarati.in@SD">
+    <display-name lang="en">News18 Gujarati (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_GUJARATI/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="hydertv.in">
-    <display-name lang="en">Hyder TV (720p)</display-name>
+  <channel id="News18India.in@SD">
+    <display-name lang="en">News18 India (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_INDIA/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="ibc24.in">
-    <display-name lang="en">IBC 24 (720p)</display-name>
+  <channel id="News18Kannada.in@SD">
+    <display-name lang="en">like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,News18 Kannada (1080p)</display-name>
+    <icon src="https://i.imgur.com/3XVFxdO.png" />
   </channel>
-  <channel id="inews.in">
-    <display-name lang="en">INews (720p)</display-name>
+  <channel id="News18Kerala.in@SD">
+    <display-name lang="en">News18 Kerala (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_KERALA/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="indianews.in">
-    <display-name lang="en">India News (1080p)</display-name>
+  <channel id="News18MadhyaPradeshChhattisgarh.in@SD">
+    <display-name lang="en">News18 Madhya Pradesh/Chhattisgarh (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_MADHYA_PRADESH_CHHATTISGARH/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="indianewsgujarati.in">
-    <display-name lang="en">India News Gujarati (1080p)</display-name>
+  <channel id="News18Marathi.in@SD">
+    <display-name lang="en">News18 Marathi (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_LOKMAT/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="indianewsharyana.in">
-    <display-name lang="en">India News Haryana (1080p)</display-name>
+  <channel id="News18Odia.in@SD">
+    <display-name lang="en">News18 Odia (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_ODIA/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="indianewspunjabhimachal.in">
-    <display-name lang="en">India News Punjab/Himachal (1080p)</display-name>
+  <channel id="News18PunjabHaryanaHimachal.in@SD">
+    <display-name lang="en">News18 Punjab/Haryana/Himachal (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_PUNJAB_HARYANA/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="indianewsuttarpradesh.in">
-    <display-name lang="en">India News Uttar Pradesh (1080p)</display-name>
+  <channel id="News18Rajasthan.in@SD">
+    <display-name lang="en">News18 Rajasthan (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_RAJASTHAN/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="indiatv.in">
-    <display-name lang="en">India TV (720p)</display-name>
+  <channel id="News18TamilNadu.in@SD">
+    <display-name lang="en">News18 Tamil Nadu (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_TAMIL_NADU/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="indiatvaapkiadalatgeoblocked.in">
-    <display-name lang="en">India TV Aap Ki Adalat (1080p) [Geo-blocked]</display-name>
+  <channel id="News18Urdu.in@SD">
+    <display-name lang="en">News18 Urdu (1080p)</display-name>
+    <icon src="https://i.imgur.com/8xnwMRR.png" />
   </channel>
-  <channel id="indiatvspeednews.in">
-    <display-name lang="en">India TV Speed News (1080p)</display-name>
+  <channel id="News18UttarPradeshUttarakhand.in@SD">
+    <display-name lang="en">News18 Uttar Pradesh Uttarakhand (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_UTTAR_PRADESH_UTTARAKHAND/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="ishwarbhaktitv.in">
-    <display-name lang="en">Ishwar Bhakti TV (720p)</display-name>
+  <channel id="NewsNation.in@SD">
+    <display-name lang="en">News Nation (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143596_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="jk24x7news.in">
-    <display-name lang="en">JK 24x7 News (720p)</display-name>
-  </channel>
-  <channel id="jantatv.in">
-    <display-name lang="en">Janta TV</display-name>
-  </channel>
-  <channel id="jattvibe.in">
-    <display-name lang="en">Jattvibe (720p)</display-name>
-  </channel>
-  <channel id="jayatv.in">
-    <display-name lang="en">Jaya TV (1080p)</display-name>
-  </channel>
-  <channel id="jinvanichannel.in">
-    <display-name lang="en">Jinvani Channel (720p)</display-name>
-  </channel>
-  <channel id="knewsindia.in">
-    <display-name lang="en">K News India (1080p)</display-name>
-  </channel>
-  <channel id="ktv.in">
-    <display-name lang="en">KTV (1080p)</display-name>
-  </channel>
-  <channel id="kairalinews.in">
-    <display-name lang="en">Kairali News (720p)</display-name>
-  </channel>
-  <channel id="kannurvision.in">
-    <display-name lang="en">Kannur Vision (1080p)</display-name>
-  </channel>
-  <channel id="kashishnews.in">
-    <display-name lang="en">Kashish News (720p)</display-name>
-  </channel>
-  <channel id="kaumudytv.in">
-    <display-name lang="en">Kaumudy TV (720p)</display-name>
-  </channel>
-  <channel id="khushboobangla.in">
-    <display-name lang="en">Khushboo Bangla (720p)</display-name>
-  </channel>
-  <channel id="loksabhatv.in">
-    <display-name lang="en">Lok Sabha TV (1080p)</display-name>
-  </channel>
-  <channel id="msignmedianot247.in">
-    <display-name lang="en">M Sign Media (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="mhonemusic.in">
-    <display-name lang="en">MH One Music (1080p)</display-name>
-  </channel>
-  <channel id="mhonenews.in">
-    <display-name lang="en">MH One News (1080p)</display-name>
-  </channel>
-  <channel id="mhoneshraddha.in">
-    <display-name lang="en">MH One Shraddha (1080p)</display-name>
-  </channel>
-  <channel id="mksixnot247.in">
-    <display-name lang="en">MK Six (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="mktvnot247.in">
-    <display-name lang="en">MK TV (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="mktunesnot247.in">
-    <display-name lang="en">MK Tunes (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="mnx.in">
-    <display-name lang="en">MNX (1080p)</display-name>
-  </channel>
-  <channel id="montvbangla.in">
-    <display-name lang="en">MON TV Bangla (720p)</display-name>
-  </channel>
-  <channel id="mtv.in">
-    <display-name lang="en">MTV (1080p)</display-name>
-  </channel>
-  <channel id="mtvhd.in">
-    <display-name lang="en">MTV HD</display-name>
-  </channel>
-  <channel id="madhatv.in">
-    <display-name lang="en">Madha TV (600p)</display-name>
-  </channel>
-  <channel id="maiboli.in">
-    <display-name lang="en">Maiboli (720p)</display-name>
-  </channel>
-  <channel id="malaimurasutvnot247.in">
-    <display-name lang="en">Malai Murasu TV (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="malartvnot247.in">
-    <display-name lang="en">Malar TV (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="manoranjangrand.in">
-    <display-name lang="en">Manoranjan Grand (720p)</display-name>
-  </channel>
-  <channel id="manoranjanmovies.in">
-    <display-name lang="en">Manoranjan Movies (720p)</display-name>
-  </channel>
-  <channel id="manoranjantv.in">
-    <display-name lang="en">Manoranjan TV (720p)</display-name>
-  </channel>
-  <channel id="mastiii.in">
-    <display-name lang="en">Mastiii (1080p)</display-name>
-  </channel>
-  <channel id="mavtv.in">
-    <display-name lang="en">Mav TV</display-name>
-  </channel>
-  <channel id="maxmiddleeast.in">
-    <display-name lang="en">Max Middle East (1080p)</display-name>
-  </channel>
-  <channel id="mayyazhinot247.in">
-    <display-name lang="en">Mayyazhi (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="mazhavilmanoramahd.in">
-    <display-name lang="en">Mazhavil Manorama HD (1080p)</display-name>
-  </channel>
-  <channel id="mediaone.in">
-    <display-name lang="en">Media One (720p)</display-name>
-  </channel>
-  <channel id="metrotv.in">
-    <display-name lang="en">Metro TV (1080p)</display-name>
-  </channel>
-  <channel id="mh1music.in">
-    <display-name lang="en">Mh 1 Music (720p)</display-name>
-  </channel>
-  <channel id="mirrornow.in">
-    <display-name lang="en">Mirror Now (720p)</display-name>
-  </channel>
-  <channel id="moviesnow.in">
-    <display-name lang="en">Movies Now (1080p)</display-name>
-  </channel>
-  <channel id="munsiftv.in">
-    <display-name lang="en">Munsif TV (720p)</display-name>
-  </channel>
-  <channel id="musicindianot247.in">
-    <display-name lang="en">Music India (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="ndtvgoodtimes.in">
-    <display-name lang="en">NDTV Good Times (1080p)</display-name>
-  </channel>
-  <channel id="ndtvprofitgeoblocked.in">
-    <display-name lang="en">NDTV Profit [Geo-blocked]</display-name>
-  </channel>
-  <channel id="nktv24x7.in">
+  <channel id="NKTV24x7.in@SD">
     <display-name lang="en">NK TV 24x7 (1080p)</display-name>
+    <icon src="https://www.nktv.in/wp-content/uploads/2023/01/NEW-LOGO-NEW.png" />
   </channel>
-  <channel id="ntctv.in">
-    <display-name lang="en">NTC TV (720p)</display-name>
+  <channel id="NKTVBangla.in@SD">
+    <display-name lang="en">NK TV Bangla (1080p)</display-name>
+    <icon src="https://www.nktvbangla.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-09-12-at-2.59.18-PM.jpg" />
   </channel>
-  <channel id="namdhari.in">
-    <display-name lang="en">Namdhari</display-name>
+  <channel id="NTVTelugu.in@SD">
+    <display-name lang="en">NTV Telugu (1080p)</display-name>
+    <icon src="https://i.imgur.com/WqTIoWS.png" />
   </channel>
-  <channel id="nandighoshatv.in">
-    <display-name lang="en">Nandighosha TV (720p)</display-name>
-  </channel>
-  <channel id="nationalgeographichd.in">
-    <display-name lang="en">National Geographic HD (1080p)</display-name>
-  </channel>
-  <channel id="nationalgeographicwildhd.in">
-    <display-name lang="en">National Geographic Wild HD (1080p)</display-name>
-  </channel>
-  <channel id="naxatranews.in">
-    <display-name lang="en">Naxatra News (720p)</display-name>
-  </channel>
-  <channel id="news24.in">
-    <display-name lang="en">News 24 (720p)</display-name>
-  </channel>
-  <channel id="newsjnot247.in">
-    <display-name lang="en">News J (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="news18keralageoblocked.in">
-    <display-name lang="en">News18 Kerala (1080p) [Geo-blocked]</display-name>
-  </channel>
-  <channel id="newsxworld.in">
-    <display-name lang="en">NewsX World (1080p)</display-name>
-  </channel>
-  <channel id="nickhd.in">
-    <display-name lang="en">Nick HD+</display-name>
-  </channel>
-  <channel id="nickjrindia.in">
-    <display-name lang="en">Nick Jr India (1080p)</display-name>
-  </channel>
-  <channel id="nickelodeonsonichindi.in">
-    <display-name lang="en">Nickelodeon Sonic Hindi (1080p)</display-name>
-  </channel>
-  <channel id="northeastlive.in">
-    <display-name lang="en">Northeast Live (720p)</display-name>
-  </channel>
-  <channel id="odishatv.in">
-    <display-name lang="en">Odisha TV (720p)</display-name>
-  </channel>
-  <channel id="orangebanglatv.in">
-    <display-name lang="en">Orange Bangla TV (720p)</display-name>
-  </channel>
-  <channel id="oscarmoviesbhojpuri.in">
-    <display-name lang="en">Oscar Movies Bhojpuri (720p)</display-name>
-  </channel>
-  <channel id="ptcchakde.in">
-    <display-name lang="en">PTC Chakde (720p)</display-name>
-  </channel>
-  <channel id="ptcdhol.in">
-    <display-name lang="en">PTC Dhol (720p)</display-name>
-  </channel>
-  <channel id="ptcmusic.in">
-    <display-name lang="en">PTC Music (720p)</display-name>
-  </channel>
-  <channel id="ptcnews.in">
-    <display-name lang="en">PTC News (720p)</display-name>
-  </channel>
-  <channel id="ptcpunjabi.in">
-    <display-name lang="en">PTC Punjabi (720p)</display-name>
-  </channel>
-  <channel id="ptcpunjabigold.in">
-    <display-name lang="en">PTC Punjabi Gold (720p)</display-name>
-  </channel>
-  <channel id="ptcsimran.in">
-    <display-name lang="en">PTC Simran (720p)</display-name>
-  </channel>
-  <channel id="punjabtv.in">
-    <display-name lang="en">PUNJAB TV</display-name>
-  </channel>
-  <channel id="peacetvbangla.in">
-    <display-name lang="en">Peace TV Bangla (1080p)</display-name>
-  </channel>
-  <channel id="peacetvurdu.in">
-    <display-name lang="en">Peace TV Urdu (1080p)</display-name>
-  </channel>
-  <channel id="pepperstv.in">
-    <display-name lang="en">Peppers TV (751p)</display-name>
-  </channel>
-  <channel id="pogo.in">
-    <display-name lang="en">Pogo</display-name>
-  </channel>
-  <channel id="polimernewsgeoblocked.in">
-    <display-name lang="en">Polimer News (720p) [Geo-blocked]</display-name>
-  </channel>
-  <channel id="polimertv.in">
-    <display-name lang="en">Polimer TV (720p)</display-name>
-  </channel>
-  <channel id="prarthanatv.in">
-    <display-name lang="en">Prarthana TV (720p)</display-name>
-  </channel>
-  <channel id="pravahpicturehd.in">
-    <display-name lang="en">Pravah Picture HD (1080p)</display-name>
-  </channel>
-  <channel id="pravasichannel.in">
-    <display-name lang="en">Pravasi Channel (1080p)</display-name>
-  </channel>
-  <channel id="prime9news.in">
-    <display-name lang="en">Prime9 News (1080p)</display-name>
-  </channel>
-  <channel id="prudentmedia.in">
+  <channel id="PrudentMedia.in@SD">
     <display-name lang="en">Prudent Media (1080p)</display-name>
+    <icon src="https://i.imgur.com/DG0x4UD.png" />
   </channel>
-  <channel id="publicmusicnot247.in">
-    <display-name lang="en">Public Music (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="publictv.in">
-    <display-name lang="en">Public TV (720p)</display-name>
-  </channel>
-  <channel id="pularitvnot247.in">
-    <display-name lang="en">Pulari TV (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="punjabihits.in">
-    <display-name lang="en">Punjabi Hits (1080p)</display-name>
-  </channel>
-  <channel id="rplus.in">
-    <display-name lang="en">R Plus (768p)</display-name>
-  </channel>
-  <channel id="rtindia.in">
-    <display-name lang="en">RT India (1080p)</display-name>
-  </channel>
-  <channel id="rajdigitalplus.in">
-    <display-name lang="en">Raj Digital Plus (1080p)</display-name>
-  </channel>
-  <channel id="rajmusixtamil.in">
-    <display-name lang="en">Raj Musix Tamil (1080p)</display-name>
-  </channel>
-  <channel id="rajmusixtelugu.in">
-    <display-name lang="en">Raj Musix Telugu (720p)</display-name>
-  </channel>
-  <channel id="rajnews.in">
-    <display-name lang="en">Raj News (1080p)</display-name>
-  </channel>
-  <channel id="rajpariwarnot247.in">
-    <display-name lang="en">Raj Pariwar (1080p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="realnewskeralanot247.in">
+  <channel id="RealNewsKerala.in@SD">
     <display-name lang="en">Real News Kerala (1080p) [Not 24/7]</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Real_News_Kerala.png" />
   </channel>
-  <channel id="realtvnot247.in">
-    <display-name lang="en">Real TV (720p) [Not 24/7]</display-name>
+  <channel id="RepublicBangla.in@SD">
+    <display-name lang="en">Republic Bangla (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RSYMDOT_BANGLA/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="republictv.in">
+  <channel id="RepublicBharat.in@SD">
+    <display-name lang="en">Republic Bharat (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143724_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="RepublicKannada.in@SD">
+    <display-name lang="en">Republic Kannada (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RSYMDOTKANNADA/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="RepublicTV.in@SD">
     <display-name lang="en">Republic TV (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143723_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="republictvgeoblocked.in">
-    <display-name lang="en">Republic TV [Geo-blocked]</display-name>
+  <channel id="RozanaSpokesman.in@SD">
+    <display-name lang="en">Rozana Spokesman (1080p)</display-name>
+    <icon src="https://www.rozanaspokesman.in/images/logospokesman.png" />
   </channel>
-  <channel id="rojamovies.in">
-    <display-name lang="en">Roja Movies (1080p)</display-name>
+  <channel id="SamayKolkata.in@SD">
+    <display-name lang="en">Samay Kolkata (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Samay_Kolkata.png" />
   </channel>
-  <channel id="rojatv.in">
-    <display-name lang="en">Roja TV (1080p)</display-name>
-  </channel>
-  <channel id="rongeentv.in">
-    <display-name lang="en">Rongeen TV (720p)</display-name>
-  </channel>
-  <channel id="rupasibangla.in">
-    <display-name lang="en">Rupasi Bangla (720p)</display-name>
-  </channel>
-  <channel id="sadatv.in">
-    <display-name lang="en">SADA TV</display-name>
-  </channel>
-  <channel id="saamtv.in">
-    <display-name lang="en">Saam TV</display-name>
-  </channel>
-  <channel id="sadhna.in">
-    <display-name lang="en">Sadhna (720p)</display-name>
-  </channel>
-  <channel id="sadhnaplusnews.in">
-    <display-name lang="en">Sadhna Plus News (720p)</display-name>
-  </channel>
-  <channel id="saitv.in">
-    <display-name lang="en">Sai TV (1080p)</display-name>
-  </channel>
-  <channel id="salvationtv.in">
-    <display-name lang="en">Salvation TV (1080p)</display-name>
-  </channel>
-  <channel id="samacharplus.in">
-    <display-name lang="en">Samachar Plus (1080p)</display-name>
-  </channel>
-  <channel id="sanaplusnot247.in">
-    <display-name lang="en">Sana Plus (1080p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="sangeetbangla.in">
-    <display-name lang="en">Sangeet Bangla (720p)</display-name>
-  </channel>
-  <channel id="sangeetmarathi.in">
-    <display-name lang="en">Sangeet Marathi (720p)</display-name>
-  </channel>
-  <channel id="sansadtvnot247.in">
-    <display-name lang="en">Sansad TV (1080p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="sansadtv2.in">
-    <display-name lang="en">Sansad TV 2 (1080p)</display-name>
-  </channel>
-  <channel id="shekinahtv.in">
-    <display-name lang="en">Shekinah TV (1080p)</display-name>
-  </channel>
-  <channel id="shemarootv.in">
-    <display-name lang="en">Shemaroo TV</display-name>
-  </channel>
-  <channel id="shubhsandesh.in">
-    <display-name lang="en">Shubhsandesh</display-name>
-  </channel>
-  <channel id="songdewtv.in">
-    <display-name lang="en">Songdew TV (720p)</display-name>
-  </channel>
-  <channel id="sonyaath.in">
-    <display-name lang="en">Sony Aath (1080p)</display-name>
-  </channel>
-  <channel id="sonybbcearth.in">
-    <display-name lang="en">Sony BBC Earth (1080p)</display-name>
-  </channel>
-  <channel id="sonybbcearthhd.in">
-    <display-name lang="en">Sony BBC Earth HD (1080p)</display-name>
-  </channel>
-  <channel id="sonybbcearthgeoblocked.in">
-    <display-name lang="en">Sony BBC Earth [Geo-blocked]</display-name>
-  </channel>
-  <channel id="sonyentertainmenttelevision.in">
-    <display-name lang="en">Sony Entertainment Television (1080p)</display-name>
-  </channel>
-  <channel id="sonyentertainmenttelevisionasiahd.in">
-    <display-name lang="en">Sony Entertainment Television Asia HD (1080p)</display-name>
-  </channel>
-  <channel id="sonymax.in">
-    <display-name lang="en">Sony MAX (1080p)</display-name>
-  </channel>
-  <channel id="sonymaxhd.in">
-    <display-name lang="en">Sony MAX HD (1080p)</display-name>
-  </channel>
-  <channel id="sonymarathi.in">
-    <display-name lang="en">Sony Marathi (1080p)</display-name>
-  </channel>
-  <channel id="sonymax2.in">
-    <display-name lang="en">Sony Max 2 (1080p)</display-name>
-  </channel>
-  <channel id="sonypal.in">
-    <display-name lang="en">Sony Pal (1080p)</display-name>
-  </channel>
-  <channel id="sonypix.in">
-    <display-name lang="en">Sony Pix (1080p)</display-name>
-  </channel>
-  <channel id="sonypixgeoblocked.in">
-    <display-name lang="en">Sony Pix [Geo-blocked]</display-name>
-  </channel>
-  <channel id="sonysab.in">
-    <display-name lang="en">Sony SAB (1080p)</display-name>
-  </channel>
-  <channel id="sonysabgeoblocked.in">
-    <display-name lang="en">Sony SAB [Geo-blocked]</display-name>
-  </channel>
-  <channel id="sonysixhd.in">
-    <display-name lang="en">Sony Six HD (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten2hd.in">
-    <display-name lang="en">Sony Sports TEN 2 HD (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten1.in">
-    <display-name lang="en">Sony Sports Ten 1 (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten2.in">
-    <display-name lang="en">Sony Sports Ten 2 (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten3.in">
-    <display-name lang="en">Sony Sports Ten 3 (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten3hd.in">
-    <display-name lang="en">Sony Sports Ten 3 HD (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten4.in">
-    <display-name lang="en">Sony Sports Ten 4 (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten4hd.in">
-    <display-name lang="en">Sony Sports Ten 4 HD (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten5.in">
-    <display-name lang="en">Sony Sports Ten 5 (1080p)</display-name>
-  </channel>
-  <channel id="sonysportsten5hd.in">
-    <display-name lang="en">Sony Sports Ten 5 HD (1080p)</display-name>
-  </channel>
-  <channel id="sonywah.in">
-    <display-name lang="en">Sony Wah (1080p)</display-name>
-  </channel>
-  <channel id="starbharathd.in">
-    <display-name lang="en">Star Bharat HD (1080p)</display-name>
-  </channel>
-  <channel id="stargold2hd.in">
-    <display-name lang="en">Star Gold 2 HD (1080p)</display-name>
-  </channel>
-  <channel id="stargoldhd.in">
-    <display-name lang="en">Star Gold HD (1080p)</display-name>
-  </channel>
-  <channel id="stargoldselecthd.in">
-    <display-name lang="en">Star Gold Select HD (1080p)</display-name>
-  </channel>
-  <channel id="starmaahd.in">
-    <display-name lang="en">Star Maa HD (1080p)</display-name>
-  </channel>
-  <channel id="starmovieshd.in">
-    <display-name lang="en">Star Movies HD (1080p)</display-name>
-  </channel>
-  <channel id="starmoviesselecthd.in">
-    <display-name lang="en">Star Movies Select HD (1080p)</display-name>
-  </channel>
-  <channel id="starpravahhd.in">
-    <display-name lang="en">Star Pravah HD (1080p)</display-name>
-  </channel>
-  <channel id="starsports1hd.in">
-    <display-name lang="en">Star Sports 1 HD (1080p)</display-name>
-  </channel>
-  <channel id="starsports1hdgeoblocked.in">
-    <display-name lang="en">Star Sports 1 HD [Geo-blocked]</display-name>
-  </channel>
-  <channel id="starsports1hindihd.in">
-    <display-name lang="en">Star Sports 1 Hindi HD (1080p)</display-name>
-  </channel>
-  <channel id="starsports1tamilhd.in">
-    <display-name lang="en">Star Sports 1 Tamil HD (1080p)</display-name>
-  </channel>
-  <channel id="starsports1teluguhd.in">
-    <display-name lang="en">Star Sports 1 Telugu HD (1080p)</display-name>
-  </channel>
-  <channel id="starsports2hd.in">
-    <display-name lang="en">Star Sports 2 HD (1080p)</display-name>
-  </channel>
-  <channel id="starsports2hindi.in">
-    <display-name lang="en">Star Sports 2 Hindi (1080p)</display-name>
-  </channel>
-  <channel id="starsportsselect1hd.in">
-    <display-name lang="en">Star Sports Select 1 HD (1080p)</display-name>
-  </channel>
-  <channel id="starsportsselect2hd.in">
-    <display-name lang="en">Star Sports Select 2 HD (1080p)</display-name>
-  </channel>
-  <channel id="starsuvarnahd.in">
-    <display-name lang="en">Star Suvarna HD (1080p)</display-name>
-  </channel>
-  <channel id="starvijayhd.in">
-    <display-name lang="en">Star Vijay HD (1080p)</display-name>
-  </channel>
-  <channel id="starplushd.in">
-    <display-name lang="en">StarPlus HD (1080p)</display-name>
-  </channel>
-  <channel id="steelbirdmusicnot247.in">
-    <display-name lang="en">Steelbird Music (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="studioone.in">
-    <display-name lang="en">Studio One + (720p)</display-name>
-  </channel>
-  <channel id="subhavaarthatv.in">
-    <display-name lang="en">Subhavaartha TV (720p)</display-name>
-  </channel>
-  <channel id="subintv.in">
-    <display-name lang="en">Subin TV (1080p)</display-name>
-  </channel>
-  <channel id="sudarshannews.in">
+  <channel id="SudarshanNews.in@SD">
     <display-name lang="en">Sudarshan News (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SUDARSHAN_NEWS/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="sunmarathi.in">
-    <display-name lang="en">Sun Marathi (1080p)</display-name>
+  <channel id="SwatantraTV.in@SD">
+    <display-name lang="en">Swatantra TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Swatantra_News.png" />
   </channel>
-  <channel id="sunmusic.in">
-    <display-name lang="en">Sun Music (1080p)</display-name>
+  <channel id="TimesNowNavbharat.in@SD">
+    <display-name lang="en">Times Now Navbharat (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TIMES_NOW_NAVBHARAT_HD/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="suntv.in">
-    <display-name lang="en">Sun TV (1080p)</display-name>
+  <channel id="TNPNews.in@SD">
+    <display-name lang="en">TNP News (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/TNP_News.png" />
   </channel>
-  <channel id="suriyatv.in">
-    <display-name lang="en">Suriya TV (1080p)</display-name>
-  </channel>
-  <channel id="suriyantv.in">
-    <display-name lang="en">Suriyan TV (1080p)</display-name>
-  </channel>
-  <channel id="suryatv.in">
-    <display-name lang="en">Surya TV (1080p)</display-name>
-  </channel>
-  <channel id="swadeshnews.in">
-    <display-name lang="en">Swadesh News (720p)</display-name>
-  </channel>
-  <channel id="swagjatt.in">
-    <display-name lang="en">SwagJatt (720p)</display-name>
-  </channel>
-  <channel id="swarajexpresssmbcnot247.in">
-    <display-name lang="en">Swaraj Express SMBC (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="tnews.in">
-    <display-name lang="en">T News (720p)</display-name>
-  </channel>
-  <channel id="tabbarhits.in">
-    <display-name lang="en">Tabbar Hits (1080p)</display-name>
-  </channel>
-  <channel id="tamiljanam.in">
-    <display-name lang="en">Tamil Janam (720p)</display-name>
-  </channel>
-  <channel id="tamilantv.in">
-    <display-name lang="en">Tamilan TV (1080p)</display-name>
-  </channel>
-  <channel id="tarangmusic.in">
-    <display-name lang="en">Tarang Music (720p)</display-name>
-  </channel>
-  <channel id="tarangtv.in">
-    <display-name lang="en">Tarang TV (720p)</display-name>
-  </channel>
-  <channel id="tehzeebtv.in">
-    <display-name lang="en">Tehzeeb TV (720p)</display-name>
-  </channel>
-  <channel id="thanthitv.in">
-    <display-name lang="en">Thanthi TV</display-name>
-  </channel>
-  <channel id="timesnowgeoblocked.in">
-    <display-name lang="en">Times Now (720p) [Geo-blocked]</display-name>
-  </channel>
-  <channel id="timesnownavbharatgeoblocked.in">
-    <display-name lang="en">Times Now Navbharat (1080p) [Geo-blocked]</display-name>
-  </channel>
-  <channel id="twentyfournews.in">
-    <display-name lang="en">Twenty Four News</display-name>
-  </channel>
-  <channel id="udayamusicnot247.in">
-    <display-name lang="en">Udaya Music (288p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="udayatv.in">
-    <display-name lang="en">Udaya TV (1080p)</display-name>
-  </channel>
-  <channel id="ultimatetv.in">
-    <display-name lang="en">Ultimate TV (1080p)</display-name>
-  </channel>
-  <channel id="vcvnot247.in">
-    <display-name lang="en">VCV (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="vaanaviltv.in">
-    <display-name lang="en">Vaanavil TV (720p)</display-name>
-  </channel>
-  <channel id="vanithatv.in">
-    <display-name lang="en">Vanitha TV (720p)</display-name>
-  </channel>
-  <channel id="vasanthtv.in">
-    <display-name lang="en">Vasanth TV (240p)</display-name>
-  </channel>
-  <channel id="vendhartvnot247.in">
-    <display-name lang="en">Vendhar TV (720p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="vijaysuperhd.in">
-    <display-name lang="en">Vijay Super HD (1080p)</display-name>
-  </channel>
-  <channel id="vissatvnot247.in">
-    <display-name lang="en">Vissa TV (1080p) [Not 24/7]</display-name>
-  </channel>
-  <channel id="wion.in">
+  <channel id="WION.in@SD">
     <display-name lang="en">WION (1080p)</display-name>
+    <icon src="https://i.imgur.com/Wc5Z3iS.png" />
   </channel>
-  <channel id="wayanadvision.in">
-    <display-name lang="en">Wayanad Vision (1080p)</display-name>
-  </channel>
-  <channel id="weonekeralageoblocked.in">
-    <display-name lang="en">We One Kerala (720p) [Geo-blocked]</display-name>
-  </channel>
-  <channel id="wintv.in">
-    <display-name lang="en">Win TV (720p)</display-name>
-  </channel>
-  <channel id="zbbhakti.in">
-    <display-name lang="en">ZB Bhakti (720p)</display-name>
-  </channel>
-  <channel id="zbcartoon.in">
-    <display-name lang="en">ZB Cartoon (1080p)</display-name>
-  </channel>
-  <channel id="zbcinema.in">
-    <display-name lang="en">ZB Cinema (720p)</display-name>
-  </channel>
-  <channel id="zbmusic.in">
-    <display-name lang="en">ZB Music (720p)</display-name>
-  </channel>
-  <channel id="zee24taas.in">
-    <display-name lang="en">Zee 24 Taas (720p)</display-name>
-  </channel>
-  <channel id="zeebusiness.in">
-    <display-name lang="en">Zee Business (720p)</display-name>
-  </channel>
-  <channel id="zeecafe.in">
-    <display-name lang="en">Zee Cafe (1080p)</display-name>
-  </channel>
-  <channel id="zeecineclassic.in">
-    <display-name lang="en">Zee Cine Classic (1080p)</display-name>
-  </channel>
-  <channel id="zeecinema.in">
-    <display-name lang="en">Zee Cinema (1080p)</display-name>
-  </channel>
-  <channel id="zeecinemalu.in">
-    <display-name lang="en">Zee Cinemalu (1080p)</display-name>
-  </channel>
-  <channel id="zeecomedynation.in">
-    <display-name lang="en">Zee Comedy Nation (1080p)</display-name>
-  </channel>
-  <channel id="zeedilse.in">
-    <display-name lang="en">Zee Dil Se (1080p)</display-name>
-  </channel>
-  <channel id="zeehorrornights.in">
-    <display-name lang="en">Zee Horror Nights (1080p)</display-name>
-  </channel>
-  <channel id="zeekannada.in">
-    <display-name lang="en">Zee Kannada (1080p)</display-name>
-  </channel>
-  <channel id="zeekannadanews.in">
-    <display-name lang="en">Zee Kannada News (720p)</display-name>
-  </channel>
-  <channel id="zeekeralam.in">
-    <display-name lang="en">Zee Keralam (1080p)</display-name>
-  </channel>
-  <channel id="zeemarathi.in">
-    <display-name lang="en">Zee Marathi (1080p)</display-name>
-  </channel>
-  <channel id="zeenews.in">
+  <channel id="ZeeNews.in@SD">
     <display-name lang="en">Zee News (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/GNLZZGG0023VWYC.png?lock=720x540" />
   </channel>
-  <channel id="zeenewsmalayalam.in">
-    <display-name lang="en">Zee News Malayalam (720p)</display-name>
+  <channel id="DDSports.in@SD">
+    <display-name lang="en">DD Sports SD (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s158255_ld_h15_aa.png?lock=720x540" />
   </channel>
-  <channel id="zeesouthflix.in">
+  <channel id="AndTV.in@International">
+    <display-name lang="en">&amp;TV International (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
+  <channel id="B4UBhojpuri.in@SD">
+    <display-name lang="en">B4U Bhojpuri (1080p)</display-name>
+    <icon src="https://i.imgur.com/NwOQUDp.png" />
+  </channel>
+  <channel id="PunjabiShorts.in@SD">
+    <display-name lang="en">Punjabi Shorts (1080p)</display-name>
+    <icon src="https://www.thegtcnetwork.com/punjabi-shorts.jpg" />
+  </channel>
+  <channel id="RajDigitalPlus.in@SD">
+    <display-name lang="en">Raj Digital Plus (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_DIGITAL_PLUS/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="SonyPix.in@HD">
+    <display-name lang="en">Sony Pix HD (1080p) [Geo-blocked]</display-name>
+    <icon src="https://i.postimg.cc/Z5G8j67L/PIX-HD-WHITE.png" />
+  </channel>
+  <channel id="SonyWah.in@SD">
+    <display-name lang="en">Sony Wah (1080p) [Geo-blocked]</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_WAH/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="ThalaaTV.in@HD">
+    <display-name lang="en">Thalaa TV (1080p)</display-name>
+    <icon src="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/thalaa-tv.png" />
+  </channel>
+  <channel id="TollyTV.in@HD">
+    <display-name lang="en">Tolly TV (1080p)</display-name>
+    <icon src="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/aumnrs.png" />
+  </channel>
+  <channel id="ZeeSouthFlix.in@HD">
     <display-name lang="en">Zee South Flix (1080p)</display-name>
+    <icon src="https://d3bd0tgyk368z1.cloudfront.net/zeelg/LG%20logo%20artwork/400x200/zsouthflix.png" />
   </channel>
-  <channel id="zeetv.in">
-    <display-name lang="en">Zee TV (1080p)</display-name>
+  <channel id="DDNational.in@HD">
+    <display-name lang="en">DD National HD (1080p)</display-name>
+    <icon src="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20National.png" />
   </channel>
-  <channel id="zeetamil.in">
-    <display-name lang="en">Zee Tamil (1080p)</display-name>
+  <channel id="EETTV.in@SD">
+    <display-name lang="en">EET TV (1080p) [Not 24/7]</display-name>
+    <icon src="https://i.imgur.com/rMldFW8.png" />
   </channel>
-  <channel id="zeetelugu.in">
-    <display-name lang="en">Zee Telugu (1080p)</display-name>
+  <channel id="ETVJosh.in@HD">
+    <display-name lang="en">ETV Josh (1080p)</display-name>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4900004LP_20250811T033452SQUARE.png" />
   </channel>
-  <channel id="zeethirai.in">
-    <display-name lang="en">Zee Thirai (1080p)</display-name>
+  <channel id="ETVPlus.in@HD">
+    <display-name lang="en">ETV Plus HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ETV_PLUS/images/LOGO_HD/image.png" />
   </channel>
-  <channel id="zeeuttarpradeshuttarakhand.in">
-    <display-name lang="en">Zee Uttar Pradesh/Uttarakhand (720p)</display-name>
+  <channel id="GangaurTV.in@SD">
+    <display-name lang="en">Gangaur TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Gangaur.png" />
   </channel>
-  <channel id="zillarbartanews.in">
-    <display-name lang="en">ZillarBarta News</display-name>
+  <channel id="GTCPunjabi.in@SD">
+    <display-name lang="en">GTC Punjabi (1080p)</display-name>
+    <icon src="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg" />
   </channel>
-  <channel id="zoom.in">
-    <display-name lang="en">Zoom (1080p)</display-name>
+  <channel id="MangoMobileTV.in@HD">
+    <display-name lang="en">Mango Mobile TV (1080p)</display-name>
+    <icon src="https://dvvlqr1rtlak3.cloudfront.net/Mango/MANGOTVLOGO.jpg" />
   </channel>
-  <channel id="channel.in">
-    <display-name lang="en">РТР Планета Азия</display-name>
+  <channel id="MazhavilManorama.in@HD">
+    <display-name lang="en">Mazhavil Manorama HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/fjgzW20.png" />
   </channel>
+  <channel id="OliTV.in@SD">
+    <display-name lang="en">Oli TV (1080p)</display-name>
+    <icon src="https://i.ibb.co/XfvTQyJn/main-removebg-preview.png" />
+  </channel>
+  <channel id="PTCPunjabiGold.in@SD">
+    <display-name lang="en">PTC Punjabi Gold (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI_GOLD/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="PTCPunjabi.in@HD">
+    <display-name lang="en">PTC Punjabi HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_PUNJABI/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="RajTV.in@SD">
+    <display-name lang="en">Raj TV (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_TV/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="SADATV.in@SD">
+    <display-name lang="en">Sada TV (1080p) [Not 24/7]</display-name>
+    <icon src="https://i.ibb.co/cXPzpGp/SADA-CHANNEL-HBN-global-Punjabi-Satellite-TV.png" />
+  </channel>
+  <channel id="SonyEntertainmentTelevision.in@HD">
+    <display-name lang="en">Sony Entertainment Television HD (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s159096_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="SonyMarathi.in@SD">
+    <display-name lang="en">Sony Marathi (1080p) [Geo-blocked]</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_MARATHI/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="Spondon.in@SD">
+    <display-name lang="en">Spondon (1080p)</display-name>
+    <icon src="https://www.spondontv.com/wp-content/uploads/2025/10/cropped-SPONDON_Blue-Violet_1-copy-300x100.png" />
+  </channel>
+  <channel id="SubinTV.in@SD">
+    <display-name lang="en">Subin TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/subintvtamil.png" />
+  </channel>
+  <channel id="SuriyaTV.in@SD">
+    <display-name lang="en">Suriya TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/suryatvtamil.png" />
+  </channel>
+  <channel id="TeluguOne.in@HD">
+    <display-name lang="en">Telugu One (1080p)</display-name>
+    <icon src="https://dvvlqr1rtlak3.cloudfront.net/TeluguOne/teluguone_logo_resized_400x200.png" />
+  </channel>
+  <channel id="ZeeDilSe.in@HD">
+    <display-name lang="en">Zee Dil Se (1080p)</display-name>
+    <icon src="https://d2mxb63djushzm.cloudfront.net/images/Zee_Dil_Se.png" />
+  </channel>
+  <channel id="ZeeHorrorNights.in@HD">
+    <display-name lang="en">Zee Horror Nights (1080p)</display-name>
+    <icon src="https://d3bd0tgyk368z1.cloudfront.net/zeelg/LG%20logo%20artwork/400x200/zhornights.png" />
+  </channel>
+  <channel id="ZeeKannada.in@HD">
+    <display-name lang="en">Zee Kannada HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_KANNADA_HD/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
+  <channel id="9XJhakaas.in@SD">
+    <display-name lang="en">9X Jhakaas (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s90012_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="9XM.in@SD">
+    <display-name lang="en">9XM (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9XM/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="AaryaaTV.in@SD">
+    <display-name lang="en">Aaryaa TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/aryatvtamil.png" />
+  </channel>
+  <channel id="ETVMusic.in@HD">
+    <display-name lang="en">ETV Music (1080p)</display-name>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4900002RV_20250811T033455SQUARE.png" />
+  </channel>
+  <channel id="PunjabiHits.in@SD">
+    <display-name lang="en">Punjabi Hits (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="RajMusixTamil.in@SD">
+    <display-name lang="en">Raj Musix Tamil (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_MUSIX_TAMIL/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="SanaPlus.in@SD">
+    <display-name lang="en">Sana Plus (1080p)</display-name>
+    <icon src="https://i.imgur.com/N6tKUZv.png" />
+  </channel>
+  <channel id="UltimateTV.in@SD">
+    <display-name lang="en">Ultimate TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/utvtamil.png" />
+  </channel>
+  <channel id="VijayTakkar.in@APAC">
+    <display-name lang="en">Vijay Takkar APAC (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s144078_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="YRFMusic.in@SD">
+    <display-name lang="en">YRF Music (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/YRF_Music.png" />
+  </channel>
+  <channel id="SanskarUSA.in@SD">
+    <display-name lang="en">Sanskar USA (1080p)</display-name>
+    <icon src="https://i.imgur.com/5WBWruX.png" />
+  </channel>
+  <channel id="SanskarUK.in@SD">
+    <display-name lang="en">Sanskar UK (1080p)</display-name>
+    <icon src="https://i.imgur.com/AU5vSPF.png" />
+  </channel>
+  <channel id="AnandTV.in@SD">
+    <display-name lang="en">Anand TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" />
+  </channel>
+  <channel id="ChannelDivya.in@SD">
+    <display-name lang="en">Channel Divya (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143010_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="CNBCAwaaz.in@SD">
+    <display-name lang="en">CNBC Awaaz (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/CNBCAwaaz.png" />
+  </channel>
+  <channel id="CNBCBajar.in@SD">
+    <display-name lang="en">CNBC Bajar (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/CNBCBajar.png" />
+  </channel>
+  <channel id="CNBCTV18.in@SD">
+    <display-name lang="en">CNBC TV18 (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/CNBCTV18.png" />
+  </channel>
+  <channel id="CNBCTV18PrimeHD.in@SD">
+    <display-name lang="en">CNBC TV18 Prime HD (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/CNBCTV18Prime.png" />
+  </channel>
+  <channel id="DDIndia.in@SD">
+    <display-name lang="en">DD India (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s158251_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="DDTamil.in@SD">
+    <display-name lang="en">DD Tamil (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="ETVComedy.in@HD">
+    <display-name lang="en">ETV Comedy (1080p)</display-name>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4900003U3_20251106T195117SQUARE.png" />
+  </channel>
+  <channel id="FatehTV.in@SD">
+    <display-name lang="en">Fateh TV (1080p) [Not 24/7]</display-name>
+    <icon src="https://i.imgur.com/c4ItNkB.png" />
+  </channel>
+  <channel id="HebronTV.in@SD">
+    <display-name lang="en">Hebron TV (1080p)</display-name>
+    <icon src="https://i0.wp.com/hebrontv.in/wp-content/uploads/2023/11/hebron-.png?w=512" />
+  </channel>
+  <channel id="JoyTV.in@SD">
+    <display-name lang="en">Joy TV (1080p)</display-name>
+    <icon src="https://joytvchennai.org/wp-content/uploads/2026/04/cropped-512.png" />
+  </channel>
+  <channel id="MahaaBhakti.in@SD">
+    <display-name lang="en">Mahaa Bhakti (1080p)</display-name>
+    <icon src="https://yt3.googleusercontent.com/OWECRvCVJh-dXU2MTRZhMRIDvFvcWan0YMoWWfXsM5_WEHobQy2QoHQbGr7AZUXzMOByTMAXbg=s900-c-k-c0x00ffffff-no-rj" />
+  </channel>
+  <channel id="MercyTV.in@SD">
+    <display-name lang="en">Mercy TV (1080p)</display-name>
+    <icon src="https://i.imgur.com/klNH4tV.png" />
+  </channel>
+  <channel id="MetroTV.in@SD">
+    <display-name lang="en">Metro TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Metro_TV.png" />
+  </channel>
+  <channel id="NDTVGoodTimes.in@SD">
+    <display-name lang="en">NDTV Good Times (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOOD_TIMES/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="NDTVProfit.in@SD">
+    <display-name lang="en">NDTV Profit (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="NKRTVKannada.in@SD">
+    <display-name lang="en">NKR TV Kannada (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/NKRTV.png" />
+  </channel>
+  <channel id="PMCTelugu.in@SD">
+    <display-name lang="en">PMC Telugu (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/PMC_Telugu.png" />
+  </channel>
+  <channel id="PravasiChannel.in@SD">
+    <display-name lang="en">Pravasi Channel (1080p)</display-name>
+    <icon src="https://i.imgur.com/1dHarb7.png" />
+  </channel>
+  <channel id="SalvationTV.in@SD">
+    <display-name lang="en">Salvation TV (1080p)</display-name>
+    <icon src="https://content.jdmagicbox.com/comp/bangalore/l5/080pxx80.xx80.150207120517.e4l5/catalogue/salvation-tv-network-pvt-m-g-road-bangalore-religious-organizations-1sabn2d.jpg" />
+  </channel>
+  <channel id="SansadTV1.in@SD">
+    <display-name lang="en">Sansad TV 1 (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SANSAD_TV_SYMHYP_1_HD/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
+  <channel id="SansadTV1.in@HD">
+    <display-name lang="en">Sansad TV 1 HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SANSAD_TV_SYMHYP_1_HD/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
+  <channel id="SansadTV2.in@HD">
+    <display-name lang="en">Sansad TV 2 (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143761_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="SanskarTV.in@SD">
+    <display-name lang="en">Sanskar TV (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SANSKAR/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="SanskarWebTV.in@SD">
+    <display-name lang="en">Sanskar Web TV (1080p)</display-name>
+    <icon src="https://i.imgur.com/mu2B6hw.png" />
+  </channel>
+  <channel id="SatsangTV.in@SD">
+    <display-name lang="en">Satsang TV (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SATSANG/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="SatsangWebTV.in@SD">
+    <display-name lang="en">Satsang Web TV (1080p)</display-name>
+    <icon src="https://i.imgur.com/40kNu1w.png" />
+  </channel>
+  <channel id="Shalom.in@SD">
+    <display-name lang="en">Shalom (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143774_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="ShekinahTV.in@SD">
+    <display-name lang="en">Shekinah TV (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Shekinah.png" />
+  </channel>
+  <channel id="ShubhTV.in@SD">
+    <display-name lang="en">Shubh TV (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHUBH_TV/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="SVBC2.in@SD">
+    <display-name lang="en">SVBC 2 (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143890_ld_h9_aa.png?lock=720x540" />
+  </channel>
+  <channel id="SVBC4.in@SD">
+    <display-name lang="en">SVBC 4 (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/SVBC4.png" />
+  </channel>
+  <channel id="SVBC.in@SD">
+    <display-name lang="en">SVBC Sri Venkateswara Bhakti Channel (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143889_ld_h9_ab.png?lock=720x540" />
+  </channel>
+  <channel id="TotalBhakti.in@SD">
+    <display-name lang="en">Total Bhakti (1080p)</display-name>
+    <icon src="https://i.imgur.com/LPwRdmF.png" />
+  </channel>
+  <channel id="Travelxp.in@HD">
+    <display-name lang="en">Travelxp HD (1080p) [Geo-blocked]</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TRAVELXP/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="UTVPalakkad.in@SD">
+    <display-name lang="en">UTV Palakkad (1080p)</display-name>
+    <icon src="https://utvpkd.in/assets/img/logo.png" />
+  </channel>
+  <channel id="VTU.in@SD">
+    <display-name lang="en">VTU (1080p)</display-name>
+    <icon src="https://i.imgur.com/zMwZRGJ.png" />
+  </channel>
+  <channel id="ZBCartoon.in@HD">
+    <display-name lang="en">ZB Cartoon (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/zbcatun.png" />
+  </channel>
+  <channel id="ZeeCineClassic.in@SD">
+    <display-name lang="en">Zee Cine Classic (1080p)</display-name>
+    <icon src="https://i.imgur.com/QCRhS1n.png" />
+  </channel>
+  <channel id="ZeeComedyNation.in@HD">
+    <display-name lang="en">Zee Comedy Nation (1080p)</display-name>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100002GD_20260325T012327SQUARE.png" />
+  </channel>
+  <channel id="Shalom.in@Global">
+    <display-name lang="en">Shalom Global (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143774_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="9XM.in@SD">
+    <display-name lang="en">9XM (1080p)</display-name>
+    
+  </channel>
+  <channel id="AajTak.in@HD">
+    <display-name lang="en">Aaj Tak HD (1080p)</display-name>
+    
+  </channel>
+  <channel id="ABPNews.in@SD">
+    <display-name lang="en">ABP News (1080p)</display-name>
+    
+  </channel>
+  <channel id="AsianetNews.in@SD">
+    <display-name lang="en">Asianet News (1080p)</display-name>
+    
+  </channel>
+  <channel id="HistoryTV18.in@HD">
+    <display-name lang="en">History TV18 HD (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
+  <channel id="HistoryTV18.in@HD">
+    <display-name lang="en">History TV18 HD (1080p)</display-name>
+    
+  </channel>
+  <channel id="HistoryTV18.in@HD">
+    <display-name lang="en">History TV18 HD Hindi (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
+  <channel id="IndiaTVSpeedNews.in@HD">
+    <display-name lang="en">India TV Speed News (1080p)</display-name>
+    
+  </channel>
+  <channel id="IndiaTVSpeedNews.in@HD">
+    <display-name lang="en">India TV Speed News (1080p)</display-name>
+    
+  </channel>
+  <channel id="NDTVProfit.in@HD">
+    <display-name lang="en">NDTV Profit (1080p)</display-name>
+    
+  </channel>
+  <channel id="News18Kerala.in@SD">
+    <display-name lang="en">News18 Kerala (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
+  <channel id="RepublicBharat.in@SD">
+    <display-name lang="en">Republic Bharat (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
+  <channel id="RepublicTV.in@SD">
+    <display-name lang="en">Republic TV (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
+  <channel id="RepublicTV.in@SD">
+    <display-name lang="en">Republic TV (1080p)</display-name>
+    
+  </channel>
+  <channel id="SanaPlus.in@SD">
+    <display-name lang="en">Sana Plus (1080p) [Not 24/7]</display-name>
+    
+  </channel>
+  <channel id="SansadTV2.in@HD">
+    <display-name lang="en">Sansad TV 2 (1080p)</display-name>
+    
+  </channel>
+  <channel id="ShemarooFilmiGaane.in@HD">
+    <display-name lang="en">Shemaroo Filmi Gaane (1080p)</display-name>
+    
+  </channel>
+  <channel id="TimesNowNavbharat.in@SD">
+    <display-name lang="en">Times Now Navbharat (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
+  <channel id="TimesNowNavbharat.in@SD">
+    <display-name lang="en">Times Now Navbharat (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
+  <channel id="WION.in@SD">
+    <display-name lang="en">WION (1080p)</display-name>
+    
+  </channel>
+  <channel id="WION.in@SD">
+    <display-name lang="en">WION (Adaptive) (1080p)</display-name>
+    
+  </channel>
+  <channel id="ZeeNews.in@SD">
+    <display-name lang="en">Zee News (1080p)</display-name>
+    
+  </channel>
+  <channel id="GoUSATV.us@SD">
+    <display-name lang="en">Go USA</display-name>
+    
+  </channel>
+  <channel id="PeopleAreAwesome.us@SD">
+    <display-name lang="en">People are Awesome</display-name>
+    
+  </channel>
+  <channel id="ThePetCollective.us@India">
+    <display-name lang="en">The Pet Collective</display-name>
+    
+  </channel>
+  <channel id="WeatherSpy.in@SD">
+    <display-name lang="en">Weatherspy</display-name>
+    
+  </channel>
+  <programme channel="AajTak.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Aaj Tak HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Aaj Tak HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ABPAnanda.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ABP Ananda (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ABP Ananda (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ABPAsmita.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ABP Asmita (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ABP Asmita (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ABPGanga.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ABP Ganga (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ABP Ganga (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ABPNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ABP News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ABP News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="AKDCalcuttaNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">AKD Calcutta News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for AKD Calcutta News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="AmarUjala.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">AmarUjala (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for AmarUjala (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="AsianetSuvarnaNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Asianet Suvarna News (1080p) [Not 24/7]</title>
+    <desc lang="en">Auto-generated guide entry for Asianet Suvarna News (1080p) [Not 24/7].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="Bharat24.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,Bharat24 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,Bharat24 (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ChardiklaTimeTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Chardikla Time TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Chardikla Time TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ChardiklaTimeTVNorthAmerica.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Chardikla Time TV North America (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Chardikla Time TV North America (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="CTVNAKDPlus.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">CTVN AKD Plus (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for CTVN AKD Plus (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="DDNews.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">DD News HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for DD News HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ETVNews.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ETV News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ETV News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="GlobalPunjab.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Global Punjab (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Global Punjab (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="GuaranteeNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Guarantee News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Guarantee News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="IndiaDailyLive.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">India Daily Live (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for India Daily Live (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="JantaTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Janta TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Janta TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="KolkataTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Kolkata TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Kolkata TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="LivingIndiaNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Living India News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Living India News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="MalaiMurasuTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Malai Murasu TV (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Malai Murasu TV (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NDTVMadhyaPradeshChhattisgarh.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NDTV Madhya Pradesh Chhattisgarh (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NDTV Madhya Pradesh Chhattisgarh (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NDTVMarathi.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NDTV Marathi (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NDTV Marathi (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NDTVRajasthan.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NDTV Rajasthan (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NDTV Rajasthan (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18AssamNorthEast.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Assam North-East (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Assam North-East (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Bangla.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Bangla (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Bangla (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18BiharJharkhand.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Bihar Jharkhand (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Bihar Jharkhand (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18DelhiNCRJK.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Delhi NCR JK (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Delhi NCR JK (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Gujarati.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Gujarati (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Gujarati (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18India.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 India (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 India (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Kannada.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,News18 Kannada (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,News18 Kannada (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Kerala.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Kerala (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Kerala (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18MadhyaPradeshChhattisgarh.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Madhya Pradesh/Chhattisgarh (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Madhya Pradesh/Chhattisgarh (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Marathi.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Marathi (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Marathi (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Odia.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Odia (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Odia (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18PunjabHaryanaHimachal.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Punjab/Haryana/Himachal (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Punjab/Haryana/Himachal (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Rajasthan.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Rajasthan (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Rajasthan (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18TamilNadu.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Tamil Nadu (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Tamil Nadu (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Urdu.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Urdu (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Urdu (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18UttarPradeshUttarakhand.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Uttar Pradesh Uttarakhand (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Uttar Pradesh Uttarakhand (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NewsNation.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News Nation (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News Nation (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NKTV24x7.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NK TV 24x7 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NK TV 24x7 (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NKTVBangla.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NK TV Bangla (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NK TV Bangla (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NTVTelugu.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NTV Telugu (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NTV Telugu (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="PrudentMedia.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Prudent Media (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Prudent Media (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RealNewsKerala.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Real News Kerala (1080p) [Not 24/7]</title>
+    <desc lang="en">Auto-generated guide entry for Real News Kerala (1080p) [Not 24/7].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RepublicBangla.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Republic Bangla (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Republic Bangla (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RepublicBharat.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Republic Bharat (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Republic Bharat (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RepublicKannada.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Republic Kannada (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Republic Kannada (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RepublicTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Republic TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Republic TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RozanaSpokesman.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Rozana Spokesman (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Rozana Spokesman (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SamayKolkata.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Samay Kolkata (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Samay Kolkata (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SudarshanNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sudarshan News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sudarshan News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SwatantraTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Swatantra TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Swatantra TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Times Now Navbharat (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Times Now Navbharat (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="TNPNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">TNP News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for TNP News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="WION.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">WION (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for WION (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZeeNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Zee News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Zee News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="DDSports.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">DD Sports SD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for DD Sports SD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="AndTV.in@International" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">&amp;TV International (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for &amp;TV International (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="B4UBhojpuri.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">B4U Bhojpuri (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for B4U Bhojpuri (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="PunjabiShorts.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Punjabi Shorts (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Punjabi Shorts (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RajDigitalPlus.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Raj Digital Plus (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Raj Digital Plus (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SonyPix.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sony Pix HD (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Sony Pix HD (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SonyWah.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sony Wah (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Sony Wah (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ThalaaTV.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Thalaa TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Thalaa TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="TollyTV.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Tolly TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Tolly TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZeeSouthFlix.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Zee South Flix (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Zee South Flix (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="DDNational.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">DD National HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for DD National HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="EETTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">EET TV (1080p) [Not 24/7]</title>
+    <desc lang="en">Auto-generated guide entry for EET TV (1080p) [Not 24/7].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ETVJosh.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ETV Josh (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ETV Josh (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ETVPlus.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ETV Plus HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ETV Plus HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="GangaurTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Gangaur TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Gangaur TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="GTCPunjabi.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">GTC Punjabi (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for GTC Punjabi (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="MangoMobileTV.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Mango Mobile TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Mango Mobile TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="MazhavilManorama.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Mazhavil Manorama HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Mazhavil Manorama HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="OliTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Oli TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Oli TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="PTCPunjabiGold.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">PTC Punjabi Gold (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for PTC Punjabi Gold (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="PTCPunjabi.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">PTC Punjabi HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for PTC Punjabi HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RajTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Raj TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Raj TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SADATV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sada TV (1080p) [Not 24/7]</title>
+    <desc lang="en">Auto-generated guide entry for Sada TV (1080p) [Not 24/7].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SonyEntertainmentTelevision.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sony Entertainment Television HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sony Entertainment Television HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SonyMarathi.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sony Marathi (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Sony Marathi (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="Spondon.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Spondon (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Spondon (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SubinTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Subin TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Subin TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SuriyaTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Suriya TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Suriya TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="TeluguOne.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Telugu One (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Telugu One (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZeeDilSe.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Zee Dil Se (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Zee Dil Se (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZeeHorrorNights.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Zee Horror Nights (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Zee Horror Nights (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZeeKannada.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Zee Kannada HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Zee Kannada HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="9XJhakaas.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">9X Jhakaas (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for 9X Jhakaas (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="9XM.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">9XM (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for 9XM (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="AaryaaTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Aaryaa TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Aaryaa TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ETVMusic.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ETV Music (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ETV Music (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="PunjabiHits.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Punjabi Hits (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Punjabi Hits (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RajMusixTamil.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Raj Musix Tamil (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Raj Musix Tamil (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SanaPlus.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sana Plus (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sana Plus (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="UltimateTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Ultimate TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Ultimate TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="VijayTakkar.in@APAC" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Vijay Takkar APAC (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Vijay Takkar APAC (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="YRFMusic.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">YRF Music (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for YRF Music (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SanskarUSA.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sanskar USA (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sanskar USA (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SanskarUK.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sanskar UK (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sanskar UK (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="AnandTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Anand TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Anand TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ChannelDivya.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Channel Divya (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Channel Divya (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="CNBCAwaaz.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">CNBC Awaaz (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for CNBC Awaaz (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="CNBCBajar.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">CNBC Bajar (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for CNBC Bajar (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="CNBCTV18.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">CNBC TV18 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for CNBC TV18 (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="CNBCTV18PrimeHD.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">CNBC TV18 Prime HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for CNBC TV18 Prime HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="DDIndia.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">DD India (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for DD India (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="DDTamil.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">DD Tamil (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for DD Tamil (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ETVComedy.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ETV Comedy (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ETV Comedy (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="FatehTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Fateh TV (1080p) [Not 24/7]</title>
+    <desc lang="en">Auto-generated guide entry for Fateh TV (1080p) [Not 24/7].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="HebronTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Hebron TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Hebron TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="JoyTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Joy TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Joy TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="MahaaBhakti.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Mahaa Bhakti (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Mahaa Bhakti (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="MercyTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Mercy TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Mercy TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="MetroTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Metro TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Metro TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NDTVGoodTimes.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NDTV Good Times (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NDTV Good Times (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NDTVProfit.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NDTV Profit (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NDTV Profit (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NKRTVKannada.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NKR TV Kannada (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NKR TV Kannada (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="PMCTelugu.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">PMC Telugu (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for PMC Telugu (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="PravasiChannel.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Pravasi Channel (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Pravasi Channel (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SalvationTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Salvation TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Salvation TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SansadTV1.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sansad TV 1 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sansad TV 1 (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SansadTV1.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sansad TV 1 HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sansad TV 1 HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SansadTV2.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sansad TV 2 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sansad TV 2 (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SanskarTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sanskar TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sanskar TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SanskarWebTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sanskar Web TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sanskar Web TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SatsangTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Satsang TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Satsang TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SatsangWebTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Satsang Web TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Satsang Web TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="Shalom.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Shalom (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Shalom (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ShekinahTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Shekinah TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Shekinah TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ShubhTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Shubh TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Shubh TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SVBC2.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">SVBC 2 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for SVBC 2 (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SVBC4.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">SVBC 4 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for SVBC 4 (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SVBC.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">SVBC Sri Venkateswara Bhakti Channel (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for SVBC Sri Venkateswara Bhakti Channel (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="TotalBhakti.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Total Bhakti (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Total Bhakti (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="Travelxp.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Travelxp HD (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Travelxp HD (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="UTVPalakkad.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">UTV Palakkad (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for UTV Palakkad (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="VTU.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">VTU (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for VTU (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZBCartoon.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ZB Cartoon (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ZB Cartoon (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZeeCineClassic.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Zee Cine Classic (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Zee Cine Classic (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZeeComedyNation.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Zee Comedy Nation (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Zee Comedy Nation (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="Shalom.in@Global" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Shalom Global (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Shalom Global (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="9XM.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">9XM (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for 9XM (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="AajTak.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Aaj Tak HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Aaj Tak HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ABPNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">ABP News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for ABP News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="AsianetNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Asianet News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Asianet News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="HistoryTV18.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">History TV18 HD (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for History TV18 HD (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="HistoryTV18.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">History TV18 HD (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for History TV18 HD (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="HistoryTV18.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">History TV18 HD Hindi (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for History TV18 HD Hindi (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="IndiaTVSpeedNews.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">India TV Speed News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for India TV Speed News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="IndiaTVSpeedNews.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">India TV Speed News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for India TV Speed News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="NDTVProfit.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">NDTV Profit (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for NDTV Profit (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="News18Kerala.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">News18 Kerala (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for News18 Kerala (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RepublicBharat.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Republic Bharat (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Republic Bharat (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RepublicTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Republic TV (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Republic TV (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="RepublicTV.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Republic TV (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Republic TV (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SanaPlus.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sana Plus (1080p) [Not 24/7]</title>
+    <desc lang="en">Auto-generated guide entry for Sana Plus (1080p) [Not 24/7].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="SansadTV2.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Sansad TV 2 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Sansad TV 2 (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ShemarooFilmiGaane.in@HD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Shemaroo Filmi Gaane (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Shemaroo Filmi Gaane (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Times Now Navbharat (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Times Now Navbharat (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Times Now Navbharat (1080p) [Geo-blocked]</title>
+    <desc lang="en">Auto-generated guide entry for Times Now Navbharat (1080p) [Geo-blocked].</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="WION.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">WION (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for WION (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="WION.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">WION (Adaptive) (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for WION (Adaptive) (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ZeeNews.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Zee News (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Zee News (1080p).</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="GoUSATV.us@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Go USA</title>
+    <desc lang="en">Auto-generated guide entry for Go USA.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="PeopleAreAwesome.us@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">People are Awesome</title>
+    <desc lang="en">Auto-generated guide entry for People are Awesome.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="ThePetCollective.us@India" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">The Pet Collective</title>
+    <desc lang="en">Auto-generated guide entry for The Pet Collective.</desc>
+    <category>Entertainment</category>
+  </programme>
+  <programme channel="WeatherSpy.in@SD" start="2026-08-20T12:35:49Z" stop="2026-08-20T14:35:49Z">
+    <title lang="en">Weatherspy</title>
+    <desc lang="en">Auto-generated guide entry for Weatherspy.</desc>
+    <category>Entertainment</category>
+  </programme>
 </tv>
