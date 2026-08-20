@@ -33,7 +33,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add channels.m3u output/epg.xml
+          git add channels.m3u epg.xml
 
           # Only commit when there are changes
           if git diff --cached --quiet; then
