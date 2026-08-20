@@ -54,7 +54,19 @@ A GitHub Actions workflow (`.github/workflows/daily-guide.yml`) runs every day a
 - `epg.xml` — a matching EPG (XMLTV) file for the same channels.
 
 The generated files are committed back into the repository automatically.
+#### Run it manually
 
+Open **Actions → Daily TV Guide → Run workflow**. Available inputs:
+
+| Input | Default | Purpose |
+| --- | --- | --- |
+| `verify` | `true` | Probe each stream URL and drop dead ones |
+| `commit` | `true` | Commit & push the regenerated files |
+| `dry_run` | `false` | Generate files in the workspace only (no commit/push) |
+
+For a preview without pushing, run with `verify=true, commit=true, dry_run=true`
+and inspect the `channels.m3u` artifact. To disable verification (faster but
+riskier), set `verify=false`.
 ### Sources
 
 The generator currently fetches playlists from the following iptv-org sources:
@@ -74,6 +86,32 @@ The final list is filtered to include only channels with "1080p" in their name:
 ```bash
 node scripts/generate.js
 ```
+
+### Verify channels actually work
+
+The `scripts/verify.js` module probes each stream URL and keeps only the ones
+that respond. It's used automatically by the daily CI job, and can be invoked
+locally in two ways:
+
+```bash
+# Generate + verify in one pass — only working channels end up in channels.m3u
+node scripts/generate.js --verify
+
+# Verify an existing playlist directly
+node scripts/verify.js channels.m3u
+```
+
+Verification uses a HEAD request (with a ranged-GET fallback for servers that
+reject HEAD) and a short timeout, so it's safe to run in CI. Tune with:
+
+| Env var | Default | Purpose |
+| --- | --- | --- |
+| `VERIFY_TIMEOUT_MS` | `6000` | Per-request timeout |
+| `VERIFY_CONCURRENCY` | `8` | Max parallel probes |
+
+> Note: reachable ≠ perfectly working. Some streams respond OK but stall at
+> playback time. For stricter validation, pipe the first ~256 KB through
+> `ffprobe` to confirm a real media container.
 
 ## License
 

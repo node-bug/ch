@@ -17,9 +17,10 @@ const fs = require('fs');
 const path = require('path');
 
 const m3u = require('../index.js');
+const { verifyChannels } = require('./verify.js');
 
 // Expose pure helpers for testing. The module is also runnable directly.
-module.exports = { parseExtinf, escapeXml, buildEpg, buildPlaylistFromText };
+module.exports = { parseExtinf, escapeXml, buildEpg, buildPlaylistFromText, verifyChannels };
 
 // ---------------------------------------------------------------------------
 // iptv-org playlist sources
@@ -251,8 +252,26 @@ async function main() {
   const now = new Date();
   const stamp = now.toISOString().slice(0, 10); // YYYY-MM-DD
 
-  const channels = await buildPlaylist();
+  const args = new Set(process.argv.slice(2));
+  const shouldVerify = args.has('--verify');
+  const dryRun = args.has('--dry-run');
+  let channels = await buildPlaylist();
   console.log(`Fetched ${channels.length} unique channels from iptv-org`);
+
+  if (shouldVerify) {
+    const { alive, dead } = await verifyChannels(channels, {
+      log: (s) => (typeof s === 'string' && s.includes('\n') ? process.stdout.write(s + '\n') : process.stdout.write(s)),
+    });
+    console.log(`Kept ${alive.length} working channels, dropped ${dead.length} dead ones.`);
+    channels = alive;
+  }
+
+  if (dryRun) {
+    console.log(`\n--dry-run: would write ${channels.length} channels to channels.m3u + epg.xml`);
+    for (const ch of channels.slice(0, 10)) console.log(`  ${ch.name}  ${ch.url}`);
+    if (channels.length > 10) console.log(`  ...and ${channels.length - 10} more`);
+    return;
+  }
 
   // --- M3U ---
   const playlist = {
