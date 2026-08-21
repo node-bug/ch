@@ -81,7 +81,17 @@ function parse(filePath) {
  * @returns {void}
  */
 function generate(filePath, playlist) {
-  const lines = ['#EXTM3U'];
+  // #EXTM3U supports a few header attributes. The most useful for IPTV
+  // players is `url-tvg`, which points at a remote XMLTV file the player
+  // fetches on its own — so we don't need to bundle the EPG in the M3U.
+  const extm3uAttrs = [];
+  if (playlist.urlTvg) {
+    extm3uAttrs.push(`url-tvg="${playlist.urlTvg}"`);
+  }
+  const header = extm3uAttrs.length
+    ? `#EXTM3U ${extm3uAttrs.join(' ')}`
+    : '#EXTM3U';
+  const lines = [header];
 
   if (playlist.title) {
     lines.push(`#PLAYLIST:${playlist.title}`);
