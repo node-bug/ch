@@ -20,7 +20,7 @@ const m3u = require('../index.js');
 const { verifyChannels } = require('./verify.js');
 
 // Expose pure helpers for testing. The module is also runnable directly.
-module.exports = { parseExtinf, findTitleCommaIdx, escapeXml, buildEpg, buildPlaylistFromText, verifyChannels };
+module.exports = { parseExtinf, findTitleCommaIdx, escapeXml, buildEpg, buildPlaylistFromText, validateIconUrls, probeIcon, verifyChannels };
 
 // ---------------------------------------------------------------------------
 // iptv-org playlist sources
@@ -241,6 +241,111 @@ function hoursLater(now, hour) {
   return d.toISOString().replace(/\.\d{3}Z$/, 'Z');
 }
 
+/**
+ * Probe a single icon URL with a HEAD request. Resolves to
+ * { ok, status, reason }. 4xx/5xx responses are unambiguously bad;
+ * network errors are treated as *ambiguous* (ok=false, but the caller
+ * may decide to keep the logo in case the failure is just local DNS).
+ */
+function probeIcon(url, timeoutMs = 6000) {
+  return new Promise((resolve) => {
+    let parsed;
+    try {
+      parsed = new URL(url);
+    } catch {
+      return resolve({ ok: false, status: 0, reason: 'bad-url' });
+    }
+    const lib = parsed.protocol === 'https:' ? require('https') : require('http');
+    const req = lib.request(
+      {
+        method: 'HEAD',
+        host: parsed.hostname,
+        port: parsed.port || undefined,
+        path: parsed.pathname + parsed.search,
+        headers: { 'User-Agent': 'm3u-ci/icon-check (+https://github.com/nodebug/m3u)' },
+        timeout: timeoutMs,
+      },
+      (res) => {
+        const status = res.statusCode || 0;
+        res.resume();
+        resolve({
+          ok: status >= 200 && status < 400,
+          status,
+          reason: status >= 200 && status < 400 ? undefined : `HTTP ${status}`,
+        });
+      }
+    );
+    req.on('error', (err) => resolve({ ok: false, status: 0, reason: err.code || err.message }));
+    req.on('timeout', () => {
+      req.destroy();
+      resolve({ ok: false, status: 0, reason: 'timeout' });
+    });
+    req.end();
+  });
+}
+
+/**
+ * Validate every logo URL we'll emit in the EPG.
+ *
+ * - Issues HEAD requests in parallel (capped by `concurrency`).
+ * - Drops logos that return a clear 4xx/5xx (icon is definitively gone).
+ * - KEEPS logos whose lookup failed for ambiguous reasons (DNS / timeout
+ *   / TLS) so that CI doesn't lose icons just because the runner has a
+ *   flaky network.
+ *
+ * Mutates `channels` in place (clears `logo` for dead ones) and returns
+ * a summary { kept, dropped, ambiguous }.
+ */
+async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = {}) {
+  // Dedupe URLs but remember which channels share them.
+  const urlToChannels = new Map();
+  for (const ch of channels) {
+    if (ch.logo) {
+      if (!urlToChannels.has(ch.logo)) urlToChannels.set(ch.logo, []);
+      urlToChannels.get(ch.logo).push(ch);
+    }
+  }
+
+  const urls = [...urlToChannels.keys()];
+  const results = new Array(urls.length);
+  let cursor = 0;
+
+  async function worker() {
+    while (cursor < urls.length) {
+      const i = cursor++;
+      results[i] = { url: urls[i], probe: await probeIcon(urls[i]) };
+    }
+  }
+
+  log(`Probing ${urls.length} unique logos (concurrency=${concurrency})... `);
+  await Promise.all(
+    Array.from({ length: Math.min(concurrency, urls.length) }, worker)
+  );
+  log('\n');
+
+  let kept = 0, dropped = 0, ambiguous = 0;
+  for (const r of results) {
+    const { url, probe } = r;
+    const owners = urlToChannels.get(url) || [];
+    if (probe.ok) {
+      kept += owners.length;
+      continue;
+    }
+    // 4xx/5xx are definitive — drop. Network errors are ambiguous — keep.
+    if (probe.status >= 400 && probe.status < 600) {
+      for (const ch of owners) ch.logo = '';
+      dropped += owners.length;
+      log(`  [HTTP ${probe.status}] drop icon: ${url}`);
+    } else {
+      ambiguous += owners.length;
+      log(`  [${probe.reason || 'net-err'}] keep icon: ${url}`);
+    }
+  }
+
+  log(`Logos: kept=${kept} (${kept - ambiguous} verified, ${ambiguous} kept-due-to-ambiguity), dropped=${dropped}`);
+  return { kept, dropped, ambiguous };
+}
+
 function buildEpg(channels, now) {
   const channelNodes = channels
     .map((ch) => `  <channel id="${escapeXml(ch.id || ch.name)}">
@@ -279,6 +384,7 @@ async function main() {
 
   const args = new Set(process.argv.slice(2));
   const shouldVerify = args.has('--verify');
+  const shouldVerifyIcons = !args.has('--no-verify-icons');
   const dryRun = args.has('--dry-run');
   let channels = await buildPlaylist();
   console.log(`Fetched ${channels.length} unique channels from iptv-org`);
@@ -289,6 +395,14 @@ async function main() {
     });
     console.log(`Kept ${alive.length} working channels, dropped ${dead.length} dead ones.`);
     channels = alive;
+  }
+
+  if (shouldVerifyIcons) {
+    await validateIconUrls(channels, {
+      log: (s) => process.stdout.write(s + '\n'),
+    });
+  } else {
+    console.log('--no-verify-icons: skipping icon URL checks');
   }
 
   if (dryRun) {
