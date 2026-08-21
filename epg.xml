@@ -4,10 +4,6 @@
     <display-name lang="en">22Scope News (1080p)</display-name>
     <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/22Scope_News.png" />
   </channel>
-  <channel id="AajTak.in@SD">
-    <display-name lang="en">Aaj Tak (1080p)</display-name>
-    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_AAJ_TAK/images/LOGO_HD/image.png" />
-  </channel>
   <channel id="AajTak.in@HD">
     <display-name lang="en">Aaj Tak HD (1080p)</display-name>
     <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_AAJ_TAK/images/LOGO_HD/image.png" />
@@ -45,7 +41,7 @@
     <icon src="https://dtil.tmsimg.com/assets/s142682_ld_h15_aa.png?lock=720x540" />
   </channel>
   <channel id="Bharat24.in@SD">
-    <display-name lang="en">like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,Bharat24 (1080p)</display-name>
+    <display-name lang="en">Bharat24 (1080p)</display-name>
     <icon src="https://dtil.tmsimg.com/assets/s142710_ld_h15_aa.png?lock=720x540" />
   </channel>
   <channel id="ChardiklaGurbaaniTV.in@SD">
@@ -99,10 +95,6 @@
   <channel id="IndiaTVAapKiAdalat.in@SD">
     <display-name lang="en">India TV Aap Ki Adalat (1080p) [Geo-blocked]</display-name>
     <icon src="https://play-lh.googleusercontent.com/2IlBX3IQHna8g4g-56vwGWb14K38spcviIh3i7uJCJ32ydfhcKZdOsacgijPkPeerEA" />
-  </channel>
-  <channel id="IndiaTVSpeedNews.in@HD">
-    <display-name lang="en">India TV Speed News (1080p)</display-name>
-    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_INDIA_TV_SPEED_NEWS/images/LOGO_HD/image.png" />
   </channel>
   <channel id="JantaTV.in@SD">
     <display-name lang="en">Janta TV (1080p)</display-name>
@@ -169,7 +161,7 @@
     <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_INDIA/images/LOGO_HD/image.png" />
   </channel>
   <channel id="News18Kannada.in@SD">
-    <display-name lang="en">like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,News18 Kannada (1080p)</display-name>
+    <display-name lang="en">News18 Kannada (1080p)</display-name>
     <icon src="https://i.imgur.com/3XVFxdO.png" />
   </channel>
   <channel id="News18Kerala.in@SD">
@@ -288,10 +280,6 @@
     <display-name lang="en">WION (1080p)</display-name>
     <icon src="https://i.imgur.com/Wc5Z3iS.png" />
   </channel>
-  <channel id="ZeeNews.in@SD">
-    <display-name lang="en">Zee News (1080p)</display-name>
-    <icon src="https://dtil.tmsimg.com/assets/GNLZZGG0023VWYC.png?lock=720x540" />
-  </channel>
   <channel id="DDSports.in@SD">
     <display-name lang="en">DD Sports SD (1080p)</display-name>
     <icon src="https://dtil.tmsimg.com/assets/s158255_ld_h15_aa.png?lock=720x540" />
@@ -378,7 +366,7 @@
   </channel>
   <channel id="SonyWah.in@SD">
     <display-name lang="en">Sony Wah (1080p) [Geo-blocked]</display-name>
-    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_WAH/images/LOGO_HD/image.png" />
+    
   </channel>
   <channel id="SouthStation.in@HD">
     <display-name lang="en">South Station (1080p)</display-name>
@@ -480,14 +468,6 @@
     <display-name lang="en">ETV Josh (1080p)</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4900004LP_20250811T033452SQUARE.png" />
   </channel>
-  <channel id="ETVPlus.in@HD">
-    <display-name lang="en">ETV Plus HD (1080p)</display-name>
-    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ETV_PLUS/images/LOGO_HD/image.png" />
-  </channel>
-  <channel id="ETVTelugu.in@HD">
-    <display-name lang="en">ETV Telugu HD (1080p)</display-name>
-    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ETV_HD/images/LOGO_HD/image.png" />
-  </channel>
   <channel id="GangaurTV.in@SD">
     <display-name lang="en">Gangaur TV (1080p)</display-name>
     <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Gangaur.png" />
@@ -546,7 +526,7 @@
   </channel>
   <channel id="SonyMarathi.in@SD">
     <display-name lang="en">Sony Marathi (1080p) [Geo-blocked]</display-name>
-    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_MARATHI/images/LOGO_HD/image.png" />
+    
   </channel>
   <channel id="Spondon.in@SD">
     <display-name lang="en">Spondon (1080p)</display-name>
@@ -848,14 +828,6 @@
     <display-name lang="en">ZB Cartoon (1080p)</display-name>
     <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/zbcatun.png" />
   </channel>
-  <channel id="ZeeCafe.in@HD">
-    <display-name lang="en">Zee Cafe HD (1080p)</display-name>
-    <icon src="https://dtil.tmsimg.com/assets/GNLZZGG0022ZMMH.png?lock=720x540" />
-  </channel>
-  <channel id="ZeeCineClassic.in@SD">
-    <display-name lang="en">Zee Cine Classic (1080p)</display-name>
-    <icon src="https://i.imgur.com/QCRhS1n.png" />
-  </channel>
   <channel id="ZeeComedyNation.in@HD">
     <display-name lang="en">Zee Comedy Nation (1080p)</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100002GD_20260325T012327SQUARE.png" />
@@ -1024,1302 +996,904 @@
     <display-name lang="en">The Pet Collective</display-name>
     
   </channel>
-  <channel id="WeatherSpy.in@SD">
-    <display-name lang="en">Weatherspy</display-name>
-    
-  </channel>
-  <channel id="Sony Entertainment Television Asia HD (1080p)">
-    <display-name lang="en">Sony Entertainment Television Asia HD (1080p)</display-name>
-    
-  </channel>
-  <programme channel="22ScopeNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="22ScopeNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">22Scope News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 22Scope News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AajTak.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Aaj Tak (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Aaj Tak (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="AajTak.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AajTak.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Aaj Tak HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Aaj Tak HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ABPAnanda.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ABPAnanda.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ABP Ananda (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ABP Ananda (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ABPAsmita.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ABPAsmita.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ABP Asmita (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ABP Asmita (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ABPGanga.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ABPGanga.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ABP Ganga (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ABP Ganga (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ABPNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ABPNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ABP News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ABP News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AKDCalcuttaNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AKDCalcuttaNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">AKD Calcutta News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for AKD Calcutta News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AmarUjala.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AmarUjala.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">AmarUjala (1080p)</title>
     <desc lang="en">Auto-generated guide entry for AmarUjala (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AsianetNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AsianetNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Asianet News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Asianet News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AsianetSuvarnaNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AsianetSuvarnaNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Asianet Suvarna News (1080p) [Not 24/7]</title>
     <desc lang="en">Auto-generated guide entry for Asianet Suvarna News (1080p) [Not 24/7].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="Bharat24.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,Bharat24 (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,Bharat24 (1080p).</desc>
+  <programme channel="Bharat24.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
+    <title lang="en">Bharat24 (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for Bharat24 (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ChardiklaGurbaaniTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ChardiklaGurbaaniTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Chardikla Gurbaani TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Chardikla Gurbaani TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ChardiklaTimeTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ChardiklaTimeTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Chardikla Time TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Chardikla Time TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ChardiklaTimeTVNorthAmerica.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ChardiklaTimeTVNorthAmerica.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Chardikla Time TV North America (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Chardikla Time TV North America (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="CTVNAKDPlus.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="CTVNAKDPlus.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">CTVN AKD Plus (1080p)</title>
     <desc lang="en">Auto-generated guide entry for CTVN AKD Plus (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="DDNews.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="DDNews.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">DD News HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for DD News HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ETVAndhraPradesh.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">ETV Andhra Pradesh (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for ETV Andhra Pradesh (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ETVNews.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ETVNews.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ETV News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ETV News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ETVTelangana.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">ETV Telangana (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for ETV Telangana (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="GlobalPunjab.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="GlobalPunjab.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Global Punjab (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Global Punjab (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="GTCNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">GTC News (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for GTC News (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="GuaranteeNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="GuaranteeNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Guarantee News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Guarantee News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="IndiaDailyLive.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="IndiaDailyLive.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">India Daily Live (1080p)</title>
     <desc lang="en">Auto-generated guide entry for India Daily Live (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="IndiaTVAapKiAdalat.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="IndiaTVAapKiAdalat.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">India TV Aap Ki Adalat (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for India TV Aap Ki Adalat (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="IndiaTVSpeedNews.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">India TV Speed News (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for India TV Speed News (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="JantaTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="JantaTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Janta TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Janta TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="KolkataTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="KolkataTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Kolkata TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Kolkata TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="LivingIndiaNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="LivingIndiaNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Living India News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Living India News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="LokshahiNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Lokshahi News (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Lokshahi News (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="MalaiMurasuTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="MalaiMurasuTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Malai Murasu TV (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Malai Murasu TV (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ManoramaNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Manorama News (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Manorama News (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="NDTVMadhyaPradeshChhattisgarh.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NDTVMadhyaPradeshChhattisgarh.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NDTV Madhya Pradesh Chhattisgarh (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NDTV Madhya Pradesh Chhattisgarh (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NDTVMarathi.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NDTVMarathi.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NDTV Marathi (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NDTV Marathi (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NDTVRajasthan.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NDTVRajasthan.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NDTV Rajasthan (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NDTV Rajasthan (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News9Live.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News9Live.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News9Live (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News9Live (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18AssamNorthEast.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18AssamNorthEast.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Assam North-East (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Assam North-East (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Bangla.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18Bangla.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Bangla (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Bangla (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18BiharJharkhand.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18BiharJharkhand.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Bihar Jharkhand (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Bihar Jharkhand (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18DelhiNCRJK.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18DelhiNCRJK.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Delhi NCR JK (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Delhi NCR JK (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Gujarati.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18Gujarati.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Gujarati (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Gujarati (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18India.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18India.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 India (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 India (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Kannada.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,News18 Kannada (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0&quot; group-title=&quot;News&quot;,News18 Kannada (1080p).</desc>
+  <programme channel="News18Kannada.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
+    <title lang="en">News18 Kannada (1080p)</title>
+    <desc lang="en">Auto-generated guide entry for News18 Kannada (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Kerala.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18Kerala.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Kerala (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Kerala (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18MadhyaPradeshChhattisgarh.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18MadhyaPradeshChhattisgarh.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Madhya Pradesh/Chhattisgarh (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Madhya Pradesh/Chhattisgarh (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Marathi.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18Marathi.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Marathi (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Marathi (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Odia.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18Odia.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Odia (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Odia (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18PunjabHaryanaHimachal.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18PunjabHaryanaHimachal.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Punjab/Haryana/Himachal (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Punjab/Haryana/Himachal (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Rajasthan.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18Rajasthan.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Rajasthan (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Rajasthan (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18TamilNadu.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18TamilNadu.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Tamil Nadu (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Tamil Nadu (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Urdu.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18Urdu.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Urdu (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Urdu (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18UttarPradeshUttarakhand.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18UttarPradeshUttarakhand.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Uttar Pradesh Uttarakhand (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News18 Uttar Pradesh Uttarakhand (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NewsNation.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NewsNation.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News Nation (1080p)</title>
     <desc lang="en">Auto-generated guide entry for News Nation (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NKTV24x7.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NKTV24x7.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NK TV 24x7 (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NK TV 24x7 (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NKTVBangla.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NKTVBangla.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NK TV Bangla (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NK TV Bangla (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NTVTelugu.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NTVTelugu.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NTV Telugu (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NTV Telugu (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="PrudentMedia.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="PrudentMedia.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Prudent Media (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Prudent Media (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RealNewsKerala.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RealNewsKerala.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Real News Kerala (1080p) [Not 24/7]</title>
     <desc lang="en">Auto-generated guide entry for Real News Kerala (1080p) [Not 24/7].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RepublicBangla.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RepublicBangla.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Republic Bangla (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Republic Bangla (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RepublicBharat.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RepublicBharat.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Republic Bharat (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Republic Bharat (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RepublicKannada.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RepublicKannada.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Republic Kannada (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Republic Kannada (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RepublicTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RepublicTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Republic TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Republic TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RozanaSpokesman.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RozanaSpokesman.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Rozana Spokesman (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Rozana Spokesman (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RTIndia.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">RT India (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for RT India (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="SamayKolkata.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SamayKolkata.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Samay Kolkata (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Samay Kolkata (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SudarshanNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SudarshanNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sudarshan News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sudarshan News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SwatantraTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SwatantraTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Swatantra TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Swatantra TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Times Now Navbharat (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Times Now Navbharat (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="TimesNowWorld.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Times Now World (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Times Now World (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="TNPNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="TNPNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">TNP News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for TNP News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="TOIGlobal.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="TOIGlobal.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">TOI Global (1080p)</title>
     <desc lang="en">Auto-generated guide entry for TOI Global (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="WION.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="WION.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">WION (1080p)</title>
     <desc lang="en">Auto-generated guide entry for WION (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ZeeNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee News (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Zee News (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="DDSports.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="DDSports.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">DD Sports SD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for DD Sports SD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="StarSports1.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Sports 1 HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Sports 1 HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarSports2Hindi.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Sports 2 Hindi HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Sports 2 Hindi HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarSportsKhel.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">like Gecko) Chrome/147.0.0.0 Safari/537.36&quot; group-title=&quot;Sports&quot;,Star Sports Khel (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for like Gecko) Chrome/147.0.0.0 Safari/537.36&quot; group-title=&quot;Sports&quot;,Star Sports Khel (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="Andflix.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">&amp;flix HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for &amp;flix HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="Andpictures.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">&amp;pictures HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for &amp;pictures HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="AndTV.in@International" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AndTV.in@International" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">&amp;TV International (1080p)</title>
     <desc lang="en">Auto-generated guide entry for &amp;TV International (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AndxplorHD.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">&amp;xplor HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for &amp;xplor HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="AsianetMovies.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Asianet Movies HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Asianet Movies HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="B4UBhojpuri.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="B4UBhojpuri.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">B4U Bhojpuri (1080p)</title>
     <desc lang="en">Auto-generated guide entry for B4U Bhojpuri (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="B4UKadak.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">B4U Kadak (1080p) [Not 24/7]</title>
-    <desc lang="en">Auto-generated guide entry for B4U Kadak (1080p) [Not 24/7].</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ColorsCineplex.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Colors Cineplex HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Colors Cineplex HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ETVCinema.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">ETV Cinema HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for ETV Cinema HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="MNX.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">MNX HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for MNX HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="MoviesNowPlus.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Movies Now + (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Movies Now + (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="MoviesNow.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Movies Now HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Movies Now HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="PravahPicture.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Pravah Picture HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Pravah Picture HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="PunjabiShorts.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="PunjabiShorts.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Punjabi Shorts (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Punjabi Shorts (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RajDigitalPlus.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RajDigitalPlus.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Raj Digital Plus (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Raj Digital Plus (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ShemarooFilmiGaane.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Shemaroo Filmi Gaane (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Shemaroo Filmi Gaane (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="SonyPix.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SonyPix.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sony Pix HD (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Sony Pix HD (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SonyWah.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SonyWah.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sony Wah (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Sony Wah (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SouthStation.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">South Station (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for South Station (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarGold.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Gold HD (1080p) [Not 24/7]</title>
-    <desc lang="en">Auto-generated guide entry for Star Gold HD (1080p) [Not 24/7].</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarGoldSelect.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Gold Select HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Gold Select HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarMaaMovies.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Maa Movies HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Maa Movies HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarMovies.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Movies HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Movies HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarMoviesSelect.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Movies Select HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Movies Select HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ThalaaTV.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ThalaaTV.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Thalaa TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Thalaa TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="TheMovieClub.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">The Movie Club (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for The Movie Club (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="TheMovieClub.in@Plus2" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">The Movie Club +2 (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for The Movie Club +2 (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="TollyTV.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="TollyTV.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Tolly TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Tolly TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ZeeBollymovies.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee Bollymovies (1080p) [Geo-blocked]</title>
-    <desc lang="en">Auto-generated guide entry for Zee Bollymovies (1080p) [Geo-blocked].</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ZeeBollymovies.in@Australia" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee Bollymovies Australia (1080p) [Geo-blocked]</title>
-    <desc lang="en">Auto-generated guide entry for Zee Bollymovies Australia (1080p) [Geo-blocked].</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ZeeCinema.in@APAC" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee Cinema APAC (1080p) [Geo-blocked]</title>
-    <desc lang="en">Auto-generated guide entry for Zee Cinema APAC (1080p) [Geo-blocked].</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ZeeCinema.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee Cinema HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Zee Cinema HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ZeeSouthFlix.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ZeeSouthFlix.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Zee South Flix (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Zee South Flix (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ZeeTalkies.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee Talkies HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Zee Talkies HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ColorsBangla.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Colors Bangla HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Colors Bangla HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ColorsInfinity.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Colors Infinity HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Colors Infinity HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ColorsKannada.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Colors Kannada HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Colors Kannada HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ColorsMarathi.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Colors Marathi HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Colors Marathi HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ColorsSuper.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Colors Super (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Colors Super (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="DDNational.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="DDNational.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">DD National HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for DD National HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="EETTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="EETTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">EET TV (1080p) [Not 24/7]</title>
     <desc lang="en">Auto-generated guide entry for EET TV (1080p) [Not 24/7].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="EpicTV.in@Digital" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Epic TV Digital (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Epic TV Digital (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ETVJosh.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ETVJosh.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ETV Josh (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ETV Josh (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ETVPlus.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">ETV Plus HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for ETV Plus HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ETVTelugu.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">ETV Telugu HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for ETV Telugu HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="GangaurTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="GangaurTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Gangaur TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Gangaur TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="GTCPunjabi.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="GTCPunjabi.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">GTC Punjabi (1080p)</title>
     <desc lang="en">Auto-generated guide entry for GTC Punjabi (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="JayaTV.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Jaya TV (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Jaya TV (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="MangoMobileTV.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="MangoMobileTV.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Mango Mobile TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Mango Mobile TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="MazhavilManorama.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="MazhavilManorama.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Mazhavil Manorama HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Mazhavil Manorama HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="MarutamTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">MNTV (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for MNTV (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="EpicBharat.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Nazara (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Nazara (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="OliTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="OliTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Oli TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Oli TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="PTCPunjabiGold.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="PTCPunjabiGold.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">PTC Punjabi Gold (1080p)</title>
     <desc lang="en">Auto-generated guide entry for PTC Punjabi Gold (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="PTCPunjabi.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="PTCPunjabi.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">PTC Punjabi HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for PTC Punjabi HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RajTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RajTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Raj TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Raj TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SADATV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SADATV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sada TV (1080p) [Not 24/7]</title>
     <desc lang="en">Auto-generated guide entry for Sada TV (1080p) [Not 24/7].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SanaTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Sana TV (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Sana TV (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="SonyEntertainmentTelevision.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SonyEntertainmentTelevision.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sony Entertainment Television HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sony Entertainment Television HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SonyMarathi.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SonyMarathi.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sony Marathi (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Sony Marathi (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="Spondon.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="Spondon.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Spondon (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Spondon (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="StarMaa.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">like Gecko) Chrome/150.0.0.0 Safari/537.36&quot; group-title=&quot;Entertainment&quot;,Star Maa HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for like Gecko) Chrome/150.0.0.0 Safari/537.36&quot; group-title=&quot;Entertainment&quot;,Star Maa HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarPravah.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Pravah HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Pravah HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarVijay.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Vijay HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Vijay HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="SubinTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SubinTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Subin TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Subin TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SuriyaTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SuriyaTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Suriya TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Suriya TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="TeluguOne.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="TeluguOne.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Telugu One (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Telugu One (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ZeeDilSe.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ZeeDilSe.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Zee Dil Se (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Zee Dil Se (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ZeeHorrorNights.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ZeeHorrorNights.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Zee Horror Nights (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Zee Horror Nights (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ZeeKannada.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ZeeKannada.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Zee Kannada HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Zee Kannada HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XJalwa.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XJalwa.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9X Jalwa (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9X Jalwa (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XJhakaas.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XJhakaas.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9X Jhakaas (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9X Jhakaas (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XTashan.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XTashan.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9X Tashan (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9X Tashan (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XM.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XM.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9XM (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9XM (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AaryaaTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AaryaaTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Aaryaa TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Aaryaa TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ETVMusic.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ETVMusic.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ETV Music (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ETV Music (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="PunjabiHits.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="PunjabiHits.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Punjabi Hits (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Punjabi Hits (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RajMusixTamil.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RajMusixTamil.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Raj Musix Tamil (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Raj Musix Tamil (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SanaPlus.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SanaPlus.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sana Plus (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sana Plus (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SangeetBhojpuri.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Sangeet Bhojpuri (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Sangeet Bhojpuri (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="TabbarHits.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Tabbar Hits (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Tabbar Hits (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="UltimateTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="UltimateTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Ultimate TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Ultimate TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="VijayTakkar.in@APAC" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="VijayTakkar.in@APAC" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Vijay Takkar APAC (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Vijay Takkar APAC (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="YRFMusic.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="YRFMusic.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">YRF Music (1080p)</title>
     <desc lang="en">Auto-generated guide entry for YRF Music (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="DocuBayTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">DocuBay TV (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for DocuBay TV (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="HistoryTV18.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">History TV18 HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for History TV18 HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="NationalGeographicWild.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">National Geographic Wild HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for National Geographic Wild HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="SanskarUSA.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SanskarUSA.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sanskar USA (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sanskar USA (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SanskarUK.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SanskarUK.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sanskar UK (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sanskar UK (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AnandTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AnandTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Anand TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Anand TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ChannelDivya.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ChannelDivya.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Channel Divya (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Channel Divya (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="CNBCAwaaz.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="CNBCAwaaz.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">CNBC Awaaz (1080p)</title>
     <desc lang="en">Auto-generated guide entry for CNBC Awaaz (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="CNBCBajar.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="CNBCBajar.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">CNBC Bajar (1080p)</title>
     <desc lang="en">Auto-generated guide entry for CNBC Bajar (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="CNBCTV18.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="CNBCTV18.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">CNBC TV18 (1080p)</title>
     <desc lang="en">Auto-generated guide entry for CNBC TV18 (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="CNBCTV18PrimeHD.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="CNBCTV18PrimeHD.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">CNBC TV18 Prime HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for CNBC TV18 Prime HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="DDIndia.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="DDIndia.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">DD India (1080p)</title>
     <desc lang="en">Auto-generated guide entry for DD India (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="DDTamil.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="DDTamil.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">DD Tamil (1080p)</title>
     <desc lang="en">Auto-generated guide entry for DD Tamil (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="DisneyInternationalHD.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Disney International HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Disney International HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ETVAbhiruchi.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">ETV Abhiruchi (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for ETV Abhiruchi (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ETVComedy.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ETVComedy.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ETV Comedy (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ETV Comedy (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="FatehTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="FatehTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Fateh TV (1080p) [Not 24/7]</title>
     <desc lang="en">Auto-generated guide entry for Fateh TV (1080p) [Not 24/7].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="HareKrsnaTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="HareKrsnaTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Hare Krsna TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Hare Krsna TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="HebronTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="HebronTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Hebron TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Hebron TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="JothiTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Jothi TV (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Jothi TV (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="JoyTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="JoyTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Joy TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Joy TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="MahaaBhakti.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="MahaaBhakti.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Mahaa Bhakti (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Mahaa Bhakti (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="MercyTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="MercyTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Mercy TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Mercy TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="MetroTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="MetroTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Metro TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Metro TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NDTVGoodTimes.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NDTVGoodTimes.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NDTV Good Times (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NDTV Good Times (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NDTVProfit.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NDTVProfit.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NDTV Profit (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NDTV Profit (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NickHDPlus.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Nick HD+ (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Nick HD+ (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="NKRTVKannada.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NKRTVKannada.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NKR TV Kannada (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NKR TV Kannada (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="PMCTelugu.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="PMCTelugu.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">PMC Telugu (1080p)</title>
     <desc lang="en">Auto-generated guide entry for PMC Telugu (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="PravasiChannel.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="PravasiChannel.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Pravasi Channel (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Pravasi Channel (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SalvationTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SalvationTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Salvation TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Salvation TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SansadTV1.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SansadTV1.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sansad TV 1 (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sansad TV 1 (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SansadTV1.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SansadTV1.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sansad TV 1 HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sansad TV 1 HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SansadTV2.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SansadTV2.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sansad TV 2 (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sansad TV 2 (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SanskarTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SanskarTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sanskar TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sanskar TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SanskarWebTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SanskarWebTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sanskar Web TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sanskar Web TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SatsangTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SatsangTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Satsang TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Satsang TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SatsangWebTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SatsangWebTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Satsang Web TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Satsang Web TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="Shalom.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="Shalom.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Shalom (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Shalom (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ShekinahTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ShekinahTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Shekinah TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Shekinah TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ShubhTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ShubhTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Shubh TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Shubh TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SVBC2.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SVBC2.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">SVBC 2 (1080p)</title>
     <desc lang="en">Auto-generated guide entry for SVBC 2 (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SVBC4.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SVBC4.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">SVBC 4 (1080p)</title>
     <desc lang="en">Auto-generated guide entry for SVBC 4 (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SVBC.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SVBC.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">SVBC Sri Venkateswara Bhakti Channel (1080p)</title>
     <desc lang="en">Auto-generated guide entry for SVBC Sri Venkateswara Bhakti Channel (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="TotalBhakti.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="TotalBhakti.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Total Bhakti (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Total Bhakti (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="Travelxp.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="Travelxp.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Travelxp HD (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Travelxp HD (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="TVBRICSEnglish.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">TV BRICS English (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for TV BRICS English (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="UTVPalakkad.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="UTVPalakkad.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">UTV Palakkad (1080p)</title>
     <desc lang="en">Auto-generated guide entry for UTV Palakkad (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="VTU.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="VTU.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">VTU (1080p)</title>
     <desc lang="en">Auto-generated guide entry for VTU (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="WayanadVision.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Wayanad Vision (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Wayanad Vision (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ZBCartoon.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ZBCartoon.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ZB Cartoon (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ZB Cartoon (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ZeeCafe.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee Cafe HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Zee Cafe HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ZeeCineClassic.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee Cine Classic (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Zee Cine Classic (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ZeeComedyNation.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ZeeComedyNation.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Zee Comedy Nation (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Zee Comedy Nation (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ZeeZest.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Zee Zest HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Zee Zest HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="Shalom.in@Global" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="Shalom.in@Global" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Shalom Global (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Shalom Global (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XM.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XM.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9XM (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9XM (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AajTak.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AajTak.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Aaj Tak HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Aaj Tak HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ABPNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ABPNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">ABP News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for ABP News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="AsianetNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="AsianetNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Asianet News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Asianet News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="B4UKadak.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">B4U Kadak (1080p) [Geo-blocked]</title>
-    <desc lang="en">Auto-generated guide entry for B4U Kadak (1080p) [Geo-blocked].</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="HistoryTV18.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="HistoryTV18.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">History TV18 HD (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for History TV18 HD (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="HistoryTV18.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="HistoryTV18.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">History TV18 HD (1080p)</title>
     <desc lang="en">Auto-generated guide entry for History TV18 HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="HistoryTV18.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="HistoryTV18.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">History TV18 HD Hindi (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for History TV18 HD Hindi (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="HistoryTV18.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">History TV18 HD Tamil (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for History TV18 HD Tamil (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="IndiaTVSpeedNews.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="IndiaTVSpeedNews.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">India TV Speed News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for India TV Speed News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="IndiaTVSpeedNews.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="IndiaTVSpeedNews.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">India TV Speed News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for India TV Speed News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NDTVProfit.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="NDTVProfit.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">NDTV Profit (1080p)</title>
     <desc lang="en">Auto-generated guide entry for NDTV Profit (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="News18Kerala.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="News18Kerala.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">News18 Kerala (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for News18 Kerala (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="NickHDPlus.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Nick HD+ (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Nick HD+ (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="RepublicBharat.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RepublicBharat.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Republic Bharat (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Republic Bharat (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RepublicTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RepublicTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Republic TV (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Republic TV (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="RepublicTV.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="RepublicTV.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Republic TV (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Republic TV (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SanaPlus.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SanaPlus.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sana Plus (1080p) [Not 24/7]</title>
     <desc lang="en">Auto-generated guide entry for Sana Plus (1080p) [Not 24/7].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SansadTV1.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Sansad TV 1 (1080p) [Not 24/7]</title>
-    <desc lang="en">Auto-generated guide entry for Sansad TV 1 (1080p) [Not 24/7].</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="SansadTV2.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Sansad TV 2 (1080p) [Not 24/7]</title>
-    <desc lang="en">Auto-generated guide entry for Sansad TV 2 (1080p) [Not 24/7].</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="SansadTV2.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="SansadTV2.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Sansad TV 2 (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Sansad TV 2 (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ShemarooFilmiGaane.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ShemarooFilmiGaane.in@HD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Shemaroo Filmi Gaane (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Shemaroo Filmi Gaane (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="SonyEntertainmentTelevision.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Sony Entertainment Television HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Sony Entertainment Television HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarGoldSelect.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Gold Select HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Gold Select HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="StarSports1.in@HD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Star Sports 1 HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Star Sports 1 HD (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Times Now Navbharat (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Times Now Navbharat (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="TimesNowNavbharat.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Times Now Navbharat (1080p) [Geo-blocked]</title>
     <desc lang="en">Auto-generated guide entry for Times Now Navbharat (1080p) [Geo-blocked].</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="WION.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="WION.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">WION (1080p)</title>
     <desc lang="en">Auto-generated guide entry for WION (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="WION.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="WION.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">WION (Adaptive) (1080p)</title>
     <desc lang="en">Auto-generated guide entry for WION (Adaptive) (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="YRFMusic.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">YRF Music (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for YRF Music (1080p).</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="ZeeNews.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ZeeNews.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Zee News (1080p)</title>
     <desc lang="en">Auto-generated guide entry for Zee News (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XJalwa.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XJalwa.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9X Jalwa (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9X Jalwa (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XJhakaas.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XJhakaas.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9X Jhakaas (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9X Jhakaas (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XTashan.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XTashan.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9X Tashan (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9X Tashan (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="9XM.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="9XM.in@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">9XM (1080p)</title>
     <desc lang="en">Auto-generated guide entry for 9XM (1080p).</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="FailArmy.us@US" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="FailArmy.us@US" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Failarmy International</title>
     <desc lang="en">Auto-generated guide entry for Failarmy International.</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="GoUSATV.us@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="GoUSATV.us@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">Go USA</title>
     <desc lang="en">Auto-generated guide entry for Go USA.</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="PeopleAreAwesome.us@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="PeopleAreAwesome.us@SD" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">People are Awesome</title>
     <desc lang="en">Auto-generated guide entry for People are Awesome.</desc>
     <category>Entertainment</category>
   </programme>
-  <programme channel="ThePetCollective.us@India" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
+  <programme channel="ThePetCollective.us@India" start="2026-08-21T07:40:12Z" stop="2026-08-21T09:40:12Z">
     <title lang="en">The Pet Collective</title>
     <desc lang="en">Auto-generated guide entry for The Pet Collective.</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="WeatherSpy.in@SD" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Weatherspy</title>
-    <desc lang="en">Auto-generated guide entry for Weatherspy.</desc>
-    <category>Entertainment</category>
-  </programme>
-  <programme channel="Sony Entertainment Television Asia HD (1080p)" start="2026-08-21T07:08:35Z" stop="2026-08-21T09:08:35Z">
-    <title lang="en">Sony Entertainment Television Asia HD (1080p)</title>
-    <desc lang="en">Auto-generated guide entry for Sony Entertainment Television Asia HD (1080p).</desc>
     <category>Entertainment</category>
   </programme>
 </tv>
