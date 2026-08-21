@@ -2,8 +2,6 @@
 #PLAYLIST:Generated TV Guide (2026-08-21)
 #EXTINF:-1,22Scope News (1080p)
 https://thelegitpro.in/HDlive/22scope/index.fmp4.m3u8
-#EXTINF:-1,Aaj Tak (1080p)
-http://103.213.31.109:90/AajtakHD/playlist.m3u8
 #EXTINF:-1,Aaj Tak HD (1080p)
 https://feeds.intoday.in/aajtak/api/aajtakhd/master.m3u8
 #EXTINF:-1,ABP Ananda (1080p)
@@ -34,36 +32,24 @@ https://chardikalanorthamerica.gigabitcdn.net/in-chardikala/chardikala-north-usa
 https://live.legitpro.co.in/ctvnakdplus/index.m3u8
 #EXTINF:-1,DD News HD (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/0811cd8c37ca4c409d5385a6cd2fa18b/index.m3u8
-#EXTINF:-1,ETV Andhra Pradesh (1080p)
-https://d1g35elx8qnif3.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_AP_H264_cloud_in/index.m3u8
 #EXTINF:-1,ETV News (1080p)
 https://cc-3448kp65yhc5w.akamaized.net/WWBI/Amagi/ETV_News_IN/playlist.m3u8
-#EXTINF:-1,ETV Telangana (1080p)
-https://d37d7pfp7vjqhh.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_TS_H264_cloud_in/index.m3u8
 #EXTINF:-1,Global Punjab (1080p)
 https://server.livelegitpro.in/globalpunjab/globalpunjab/index.m3u8
-#EXTINF:-1,GTC News (1080p)
-https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/921cca59-daee-4f89-8c38-7ffe8de44f4c/index.m3u8
 #EXTINF:-1,Guarantee News (1080p)
 https://guaranteenews.in:8443/live/gnews/index.m3u8
 #EXTINF:-1,India Daily Live (1080p)
 https://indiadaily.ottlive.co.in/indiadailylive/index.m3u8
 #EXTINF:-1,India TV Aap Ki Adalat (1080p) [Geo-blocked]
 https://amg01550-amg01550c6-samsung-in-4679.playouts.now.amagi.tv/playlist/amg01550-indiatvfast-indiatvakasamsung-samsungin/playlist.m3u8
-#EXTINF:-1,India TV Speed News (1080p)
-https://cc-lyf4c0hwzg5dd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lyf4c0hwzg5dd/v1/vglive-sk-479089/main.m3u8
 #EXTINF:-1,Janta TV (1080p)
 https://live.jswk.online/IK_RTPM/live/index.m3u8
 #EXTINF:-1,Kolkata TV (1080p)
 https://cdn.ottlive.co.in/kolkatatv/index.m3u8
 #EXTINF:-1,Living India News (1080p)
 https://stream.ottlive.co.in/livingindia/index.m3u8
-#EXTINF:-1,Lokshahi News (1080p)
-https://see.lokshahi.live/live/index.m3u8
 #EXTINF:-1,Malai Murasu TV (1080p) [Geo-blocked]
 https://amg17783-amg17783c1-amgplt0173.playout.now3.amagi.tv/playlist/amg17783-amg17783c1-amgplt0173/playlist.m3u8
-#EXTINF:-1,Manorama News (1080p)
-https://mmtvnews1.akamaized.net/v1/master/673630b269b766886555eebfddd4f27f3de3ab50/mmtvNewsCampaign1/index.m3u8
 #EXTINF:-1,NDTV Madhya Pradesh Chhattisgarh (1080p)
 https://ndtvregional.akamaized.net/hls/live/2102726-b/ndtvmpcg/master_1.m3u8
 #EXTINF:-1,NDTV Marathi (1080p)
@@ -126,8 +112,6 @@ https://vg-republictvlive.akamaized.net/ptnr-republicweb/title-Republic_TV_Kanna
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/RepublicTV.m3u8
 #EXTINF:-1,Rozana Spokesman (1080p)
 https://live1.ottlive.co.in/spokesman/spokesman/index.m3u8
-#EXTINF:-1,RT India (1080p)
-https://rt-india.rttv.com/dvr/rtindia/playlist.m3u8
 #EXTINF:-1,Samay Kolkata (1080p)
 https://server.livelegitpro.in/samaykolkata/samaykolkata/index.m3u8
 #EXTINF:-1,Sudarshan News (1080p)
@@ -136,128 +120,46 @@ https://ott.livelegitpro.in/sudarshannews/sudarshannews/tracks-v1/index.fmp4.m3u
 https://mumbai-edge.smartplaytv.in/SwatantraTV/index.m3u8
 #EXTINF:-1,Times Now Navbharat (1080p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/TimesNowNavbharat.m3u8
-#EXTINF:-1,Times Now World (1080p)
-http://103.72.101.252:8080/live/876.m3u8
 #EXTINF:-1,TNP News (1080p)
 https://server.thelegitpro.in/tnpnews/tnpnews/index.m3u8
 #EXTINF:-1,TOI Global (1080p)
 https://live.sli.ke/live/npnhm84gz9/master.m3u8
 #EXTINF:-1,WION (1080p)
 http://vg-zeefta.akamaized.net/ptnr-yupptv/title-wion/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/20c3c0d9-0256-43fe-bca6-70fdd490b957/main.m3u8
-#EXTINF:-1,Zee News (1080p)
-https://dknttpxmr0dwf.cloudfront.net/index_57.m3u8
 #EXTINF:-1,DD Sports SD (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/b17adfe543354fdd8d189b110617cddd/index.m3u8
-#EXTINF:-1,Star Sports 1 HD (1080p)
-http://41.205.93.154/STARSPORTS1/index.m3u8
-#EXTINF:-1,Star Sports 2 Hindi HD (1080p)
-http://103.157.248.140:8000/play/a01m/index.m3u8
-#EXTINF:-1,Star Sports Khel (1080p)
-http://103.175.73.12:8080/live/151/151_0.m3u8
-#EXTINF:-1,&flix HD (1080p)
-http://103.72.101.252:8080/live/1322.m3u8
-#EXTINF:-1,&pictures HD (1080p)
-http://103.72.101.252:8080/live/185.m3u8
 #EXTINF:-1,&TV International (1080p)
 https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
-#EXTINF:-1,&xplor HD (1080p)
-http://149.71.34.166:8000/play/a001/index.m3u8
-#EXTINF:-1,Asianet Movies HD (1080p)
-http://149.71.34.166:8000/play/a06e/index.m3u8
 #EXTINF:-1,B4U Bhojpuri (1080p)
 https://cdnb4u.wiseplayout.com/B4U_Bhojpuri/master.m3u8
-#EXTINF:-1,B4U Kadak (1080p) [Not 24/7]
-https://cdnb4u.wiseplayout.com/B4U_Kadak/master.m3u8
-#EXTINF:-1,Colors Cineplex HD (1080p)
-http://149.71.34.166:8000/play/a00b/index.m3u8
-#EXTINF:-1,ETV Cinema HD (1080p)
-https://d27zlkxhgwrfgo.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_CINEMA_H264_cloud_in/index.m3u8
-#EXTINF:-1,MNX HD (1080p)
-http://149.71.34.166:8000/play/a05u/index.m3u8
-#EXTINF:-1,Movies Now + (1080p)
-http://149.71.34.166:8000/play/a05t/index.m3u8
-#EXTINF:-1,Movies Now HD (1080p)
-http://103.161.153.165:8000/play/mnh/index.m3u8
-#EXTINF:-1,Pravah Picture HD (1080p)
-http://149.71.34.166:8000/play/a06f/index.m3u8
 #EXTINF:-1,Punjabi Shorts (1080p)
 https://vglivessai.akamaized.net/ptnr-yupptv/title-Punjabi_Shorts/in/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/27c3fd7a-b01f-4b00-ac03-557ac77acd47/index.m3u8
 #EXTINF:-1,Raj Digital Plus (1080p)
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RajTV_Digital_plus/master_1.m3u8
-#EXTINF:-1,Shemaroo Filmi Gaane (1080p)
-http://103.213.31.109:90/ShemarooFilmiGaane/playlist.m3u8
 #EXTINF:-1,Sony Pix HD (1080p) [Geo-blocked]
 https://sl.vodep39240327.workers.dev/channel/SONY+PIX+HD.m3u8
 #EXTINF:-1,Sony Wah (1080p) [Geo-blocked]
 https://sl.vodep39240327.workers.dev/channel/SONY+WAH.m3u8
-#EXTINF:-1,South Station (1080p)
-https://cc-yw7ztecy8do3q.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yw7ztecy8do3q/SS_IN.m3u8
-#EXTINF:-1,Star Gold HD (1080p) [Not 24/7]
-http://103.253.18.58:8000/play/a00q
-#EXTINF:-1,Star Gold Select HD (1080p)
-http://103.253.18.58:8000/play/a02u
-#EXTINF:-1,Star Maa Movies HD (1080p)
-https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/maamovies_live_https/index.m3u8
-#EXTINF:-1,Star Movies HD (1080p)
-http://149.71.34.166:8000/play/a01f/index.m3u8
-#EXTINF:-1,Star Movies Select HD (1080p)
-http://149.71.34.166:8000/play/a01g/index.m3u8
 #EXTINF:-1,Thalaa TV (1080p)
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/2069c593-3c07-4d62-9d44-746be5c3a5d6/manifest.m3u8
-#EXTINF:-1,The Movie Club (1080p)
-https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8
-#EXTINF:-1,The Movie Club +2 (1080p)
-https://d3gnyty2vddhsg.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-ytipwjqub3kf8/TMC2_IN.m3u8?ads.ads_cdn=cf&ads.cdn=cf
 #EXTINF:-1,Tolly TV (1080p)
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/13b5735d-52c3-4be0-853d-e0ec0127e708/manifest.m3u8
-#EXTINF:-1,Zee Bollymovies (1080p) [Geo-blocked]
-https://amg17931-zee-amg17931c8-samsung-th-6526.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Zee Bollymovies Australia (1080p) [Geo-blocked]
-https://amg17931-zee-amg17931c8-samsung-au-8871.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Zee Cinema APAC (1080p) [Geo-blocked]
-https://amg17931-zee-amg17931c5-samsung-au-8873.playouts.now.amagi.tv/playlist.m3u8
-#EXTINF:-1,Zee Cinema HD (1080p)
-http://103.72.101.252:8080/live/165.m3u8
 #EXTINF:-1,Zee South Flix (1080p)
 https://amg00862-amg00862c9-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c9-amgplt0173/playlist.m3u8
-#EXTINF:-1,Zee Talkies HD (1080p)
-http://103.72.101.252:8080/live/1358.m3u8
-#EXTINF:-1,Colors Bangla HD (1080p)
-http://103.72.101.252:8080/live/756.m3u8
-#EXTINF:-1,Colors Infinity HD (1080p)
-http://149.71.34.166:8002/play/a01d/index.m3u8
-#EXTINF:-1,Colors Kannada HD (1080p)
-http://103.72.101.252:8080/live/757.m3u8
-#EXTINF:-1,Colors Marathi HD (1080p)
-http://103.72.101.252:8080/live/755.m3u8
-#EXTINF:-1,Colors Super (1080p)
-http://103.72.101.252:8080/live/785.m3u8
 #EXTINF:-1,DD National HD (1080p)
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/40492a64c1db4a1385ba1a397d357d3a/index.m3u8
 #EXTINF:-1,EET TV (1080p) [Not 24/7]
 https://live.streamjo.com/eetlive/eettv.m3u8
-#EXTINF:-1,Epic TV Digital (1080p)
-https://cc-czbq30x55knit.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-czbq30x55knit/DIYC/PMSL/IN10/Epic_TV_IN_B/Epic_TV_IN_B.m3u8
 #EXTINF:-1,ETV Josh (1080p)
 https://cc-uyh1ow5zouoio.akamaized.net/WWBI/Amagi/ETV_Josh_IN/playlist.m3u8
-#EXTINF:-1,ETV Plus HD (1080p)
-https://d12ee3o8yfkkhd.cloudfront.net/c6a4b411295f47f48c908d2ac0605bad/index.m3u8
-#EXTINF:-1,ETV Telugu HD (1080p)
-https://d27zlkxhgwrfgo.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_HD_H264_cloud_in/index.m3u8
 #EXTINF:-1,Gangaur TV (1080p)
 https://pbgangaur.wiseplayout.com/Gangaur/master.m3u8
 #EXTINF:-1,GTC Punjabi (1080p)
 https://gtc-yupp.vgcdn.net/vglive-sk-254807/index.m3u8
-#EXTINF:-1,Jaya TV (1080p)
-http://103.72.101.252:8080/live/419.m3u8
 #EXTINF:-1,Mango Mobile TV (1080p)
 https://amg01911-mangotv-amg01911c1-xiaomi-in-1270.playouts.now.amagi.tv/playlist/amg01911-mangomassmedia-mangotv-xiaomiin/playlist.m3u8
 #EXTINF:-1,Mazhavil Manorama HD (1080p)
 https://cdn-7.pishow.tv/live/1129/master.m3u8
-#EXTINF:-1,MNTV (1080p)
-https://mntv.livebox.co.in/mntvhls/live.m3u8
-#EXTINF:-1,Nazara (1080p)
-https://cc-p1izg43bk7sj5.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-p1izg43bk7sj5/DIYC/PMSL/IN10/Nazara_IN_B/Nazara_IN_B.m3u8
 #EXTINF:-1,Oli TV (1080p)
 https://live.olidigital.in/olitv/olitv/index.m3u8
 #EXTINF:-1,PTC Punjabi Gold (1080p)
@@ -268,20 +170,12 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/3e22a9c278db4e3eb779afd42e41b0a6/in
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/RAJTV/master_1.m3u8
 #EXTINF:-1,Sada TV (1080p) [Not 24/7]
 http://cdn12.henico.net:8080/live/sadatv/index.m3u8
-#EXTINF:-1,Sana TV (1080p)
-https://vglivessai.akamaized.net/us/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/b6d9e864-ec16-410a-804d-ccf8f720bfaa/index.m3u8
 #EXTINF:-1,Sony Entertainment Television HD (1080p)
 http://38.96.178.205/SONYHD/index.m3u8
 #EXTINF:-1,Sony Marathi (1080p) [Geo-blocked]
 https://sl.vodep39240327.workers.dev/channel/SONY+MARATHI.m3u8
 #EXTINF:-1,Spondon (1080p)
 https://nktv.smartstream.video/smartstream-us/spondon/spondon/playlist.m3u8
-#EXTINF:-1,Star Maa HD (1080p)
-https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/starmaa1_live_https/index.m3u8
-#EXTINF:-1,Star Pravah HD (1080p)
-https://anet.keralive.workers.dev/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/starpravah_live_https/index.m3u8
-#EXTINF:-1,Star Vijay HD (1080p)
-http://149.71.34.166:8000/play/a06i/index.m3u8
 #EXTINF:-1,Subin TV (1080p)
 https://stream.galaxyott.live/live/subintv/index.m3u8
 #EXTINF:-1,Suriya TV (1080p)
@@ -312,22 +206,12 @@ https://stream.ottlive.co.in/punjabihits/index.m3u8
 https://livestream.rajtv.tv/hlslive/Admin/px08241087/live/Raj_Musix/master_1.m3u8
 #EXTINF:-1,Sana Plus (1080p)
 https://mumbai-edge.smartplaytv.in/SanaPlusHD/index.m3u8
-#EXTINF:-1,Sangeet Bhojpuri (1080p)
-http://103.213.31.109:90/SangeetBhojpuri/playlist.m3u8
-#EXTINF:-1,Tabbar Hits (1080p)
-https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/e11b0319-52e8-4190-ab03-3931cc68eac9/index.m3u8
 #EXTINF:-1,Ultimate TV (1080p)
 https://stream.ottlive.co.in/utvtamil/index.m3u8
 #EXTINF:-1,Vijay Takkar APAC (1080p)
 https://tglmp01.akamaized.net/out/v1/c1071012b73f4f189b202e1529e8f802/manifest.mpd
 #EXTINF:-1,YRF Music (1080p)
 https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
-#EXTINF:-1,DocuBay TV (1080p)
-https://cc-mgr91yrk4pehy.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mgr91yrk4pehy/playlist.m3u8
-#EXTINF:-1,History TV18 HD (1080p)
-http://103.154.3.101:5001/live/577.m3u8
-#EXTINF:-1,National Geographic Wild HD (1080p)
-http://149.71.34.166:8002/play/a012/index.m3u8
 #EXTINF:-1,Sanskar USA (1080p)
 https://d2netiedy8cz3x.cloudfront.net/out/v1/9bf6fa4ac8d6432cb98da13b121ba3c2/index.m3u8
 #EXTINF:-1,Sanskar UK (1080p)
@@ -348,10 +232,6 @@ https://n18syndication.akamaized.net/bpk-tv/CNBC_Tv18_Prime_HD_NW18_MOB/output01
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/ceda14583477426aa162a65392d8ea07/index.m3u8
 #EXTINF:-1,DD Tamil (1080p)
 https://d2lk5u59tns74c.cloudfront.net/out/v1/abf46b14847e45499f4a47f3a9afe93d/index.m3u8
-#EXTINF:-1,Disney International HD (1080p)
-http://149.71.34.166:8002/play/a01p/index.m3u8
-#EXTINF:-1,ETV Abhiruchi (1080p)
-https://dg3721c3ez5m0.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_ABHIRUCHI_H264_cloud-in/index.m3u8
 #EXTINF:-1,ETV Comedy (1080p)
 https://cc-wie8j8y69d2uy.akamaized.net/WWBI/Amagi/ETV_Comedy_IN/playlist.m3u8
 #EXTINF:-1,Fateh TV (1080p) [Not 24/7]
@@ -360,8 +240,6 @@ https://ott.livelegitpro.in/fatehtv/fatehtv/index.m3u8
 https://hktv.harekrsnatv.com/HKTV/HKWebApp/manifest.mpd
 #EXTINF:-1,Hebron TV (1080p)
 https://account20.livebox.co.in/charleshls/live.m3u8
-#EXTINF:-1,Jothi TV (1080p)
-http://103.154.3.101:5001/live/2768.m3u8
 #EXTINF:-1,Joy TV (1080p)
 https://ktismaservers.in:3412/live/joytvlive.m3u8
 #EXTINF:-1,Mahaa Bhakti (1080p)
@@ -374,8 +252,6 @@ https://mercury.streambridge.link:8042/telugu/metrotv/index.m3u8
 https://amg01448-samsungin-ndtvgoodtimes-samsungin-ad-gp.amagi.tv/playlist/amg01448-samsungin-ndtvgoodtimes-samsungin/playlist.m3u8
 #EXTINF:-1,NDTV Profit (1080p)
 https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/chunklist_5.m3u8
-#EXTINF:-1,Nick HD+ (1080p)
-http://103.72.101.252:8080/live/1226.m3u8
 #EXTINF:-1,NKR TV Kannada (1080p)
 https://stream.ottlive.co.in/nkrtv/index.m3u8
 #EXTINF:-1,PMC Telugu (1080p)
@@ -414,24 +290,14 @@ https://player.mslivestream.net/telugu/5d076e5c3d34cb8bb08e54a4bb7e223e.sdp/play
 https://d34z4embz0hjf6.cloudfront.net/out/v1/d55b3323a9f142638f897378f0b526fe/index.m3u8
 #EXTINF:-1,Travelxp HD (1080p) [Geo-blocked]
 https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8
-#EXTINF:-1,TV BRICS English (1080p)
-https://engbrics.mediacdn.ru/cdn/brics/english/playlist.m3u8
 #EXTINF:-1,UTV Palakkad (1080p)
 https://em4qj6nedyvg-hls-live.wmncdn.net/liveunit/89b1e919eed04e59383cf820d644c20e.sdp/playlist.m3u8
 #EXTINF:-1,VTU (1080p)
 https://lbgo.bozztv.com/ssh101/ssh101/afghantheatretv/playlist.m3u8
-#EXTINF:-1,Wayanad Vision (1080p)
-https://cloudsavre.in.net/hls/stream.m3u8
 #EXTINF:-1,ZB Cartoon (1080p)
 https://server.zillarbarta.com/zbcatun/video.m3u8
-#EXTINF:-1,Zee Cafe HD (1080p)
-http://103.72.101.252:8080/live/1319.m3u8
-#EXTINF:-1,Zee Cine Classic (1080p)
-https://amg00862-amg00862c8-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c8-amgplt0173/playlist.m3u8
 #EXTINF:-1,Zee Comedy Nation (1080p)
 https://amg00862-amg00862c5-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c5-amgplt0173/playlist.m3u8
-#EXTINF:-1,Zee Zest HD (1080p)
-http://103.72.101.252:8080/live/2757.m3u8
 #EXTINF:-1,Shalom Global (1080p)
 https://d28xtgmk9tfk6b.cloudfront.net/master.m3u8
 #EXTINF:-1,9XM (1080p)
@@ -442,16 +308,12 @@ https://livehub-voidnet.onrender.com/cluster/streamcore/in/AAJTAK_REDIS.m3u8
 https://d2l4ar6y3mrs4k.cloudfront.net/live-streaming/abpnews-livetv/master.m3u8
 #EXTINF:-1,Asianet News (1080p)
 https://asianet-samsung.vgcdn.net/ptnr-monitoring/vglive-sk-906908/playlist.m3u8
-#EXTINF:-1,B4U Kadak (1080p) [Geo-blocked]
-https://amg00877-b4unew-amg00877c4-lg-in-5452.playouts.now.amagi.tv/playlist.m3u8
 #EXTINF:-1,History TV18 HD (1080p) [Geo-blocked]
 https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/playlist/amg01448-samsungindia-historychannelenglish-samsungin/playlist.m3u8
 #EXTINF:-1,History TV18 HD (1080p)
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/HistoryTV18HD.m3u8
 #EXTINF:-1,History TV18 HD Hindi (1080p) [Geo-blocked]
 https://amg01448-amg01448c16-samsung-in-3495.playouts.now.amagi.tv/ts-ap-s1-n1/playlist/amg01448-samsungindia-historychannelhindi-samsungin/playlist.m3u8
-#EXTINF:-1,History TV18 HD Tamil (1080p)
-http://103.72.101.252:8080/live/579.m3u8
 #EXTINF:-1,India TV Speed News (1080p)
 https://cc-lyf4c0hwzg5dd.akamaized.net/v1/vglive-sk-479089/main.m3u8
 #EXTINF:-1,India TV Speed News (1080p)
@@ -460,8 +322,6 @@ https://poclive-indiatvnews.akamaized.net/hlslive/Admin/px0219297/live/janya/mas
 https://ndtvprofit.akamaized.net/hls/live/2107404/ndtvprofit/master_1.m3u8
 #EXTINF:-1,News18 Kerala (1080p) [Geo-blocked]
 https://nw18live.cdn.jio.com/bpk-tv/News18_Kerala_NW18_MOB/output01/index.m3u8
-#EXTINF:-1,Nick HD+ (1080p)
-http://116.90.120.157:8000/play/a0i3/index.m3u8
 #EXTINF:-1,Republic Bharat (1080p) [Geo-blocked]
 https://vg-republictvlive.akamaized.net/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/vglive-sk-275673/main.m3u8
 #EXTINF:-1,Republic TV (1080p) [Geo-blocked]
@@ -470,20 +330,10 @@ https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2e31d831f08640ff92f65003bdc89991/in
 https://samsung-republictv.amagi.tv/ts-ap-s1-n1/playlist/samsungin-republictv-samsungindia/playlist.m3u8
 #EXTINF:-1,Sana Plus (1080p) [Not 24/7]
 https://galaxyott.live/hls/sanaplus.m3u8
-#EXTINF:-1,Sansad TV 1 (1080p) [Not 24/7]
-https://hls.media.nic.in/hls/live/lstv/lstv.m3u8
-#EXTINF:-1,Sansad TV 2 (1080p) [Not 24/7]
-https://hls.media.nic.in/hls/live/rstv/rstv.m3u8
 #EXTINF:-1,Sansad TV 2 (1080p)
 https://playhls.media.nic.in/hls/live/rstv/rstv.m3u8
 #EXTINF:-1,Shemaroo Filmi Gaane (1080p)
 https://prod-runn.cdn.runn.tv/shemaroo/stream/smrfgn/playlist.m3u8
-#EXTINF:-1,Sony Entertainment Television HD (1080p)
-http://stb-air.wasmer.app/play.php?id=LIVETV_LIVETVCHANNEL_SET_HD&pass=krish-ka&uid=gana-sunega
-#EXTINF:-1,Star Gold Select HD (1080p)
-http://149.71.34.166:8000/play/a01d/index.m3u8
-#EXTINF:-1,Star Sports 1 HD (1080p)
-http://103.253.18.58:8000/play/a00m
 #EXTINF:-1,Times Now Navbharat (1080p) [Geo-blocked]
 https://amg01448-samsungin-tinnavbharat-samsungin-ad-m8.amagi.tv/playlist/amg01448-samsungin-tinnavbharat-samsungin/playlist.m3u8
 #EXTINF:-1,Times Now Navbharat (1080p) [Geo-blocked]
@@ -492,8 +342,6 @@ https://dztlhgid9me95.cloudfront.net/live-tv/Vidgyor/navbharat/navbharat_master.
 https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
 #EXTINF:-1,WION (Adaptive) (1080p)
 https://raw.githubusercontent.com/Alstruit/adaptive-streams/alstruit-10_23_in/streams/in/WION.in.m3u8
-#EXTINF:-1,YRF Music (1080p)
-https://d14c63magvk61v.cloudfront.net/strm/channels/yrfmusic/master.m3u8
 #EXTINF:-1,Zee News (1080p)
 https://dt3lrqnyx3dks.cloudfront.net/index.m3u8
 #EXTINF:-1,9X Jalwa (1080p)
@@ -512,7 +360,3 @@ https://brandusa-gousa-1-in.samsung.wurl.tv/playlist.m3u8
 https://jukin-peopleareawesome-2-in.samsung.wurl.tv/playlist.m3u8
 #EXTINF:-1,The Pet Collective
 https://the-pet-collective-international-in.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Weatherspy
-https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
-#EXTINF:-1,Sony Entertainment Television Asia HD (1080p)
-https://dai.google.com/linear/hls/event/dBdwOiGaQvy0TA1zOsjV6w/master.m3u8?checkedby:iptvcat.com
