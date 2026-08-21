@@ -64,13 +64,25 @@
     <display-name lang="en">DD News HD (1080p)</display-name>
     <icon src="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD%20News%20HD.png" />
   </channel>
+  <channel id="ETVAndhraPradesh.in@SD">
+    <display-name lang="en">ETV Andhra Pradesh (1080p)</display-name>
+    <icon src="https://i.imgur.com/pFNCRnf.png" />
+  </channel>
   <channel id="ETVNews.in@HD">
     <display-name lang="en">ETV News (1080p)</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4900001AQ_20250811T033458SQUARE.png" />
   </channel>
+  <channel id="ETVTelangana.in@SD">
+    <display-name lang="en">ETV Telangana (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143032_ld_h15_aa.png?lock=720x540" />
+  </channel>
   <channel id="GlobalPunjab.in@SD">
     <display-name lang="en">Global Punjab (1080p)</display-name>
     <icon src="https://i.imgur.com/WDLqcWW.png" />
+  </channel>
+  <channel id="GTCNews.in@SD">
+    <display-name lang="en">GTC News (1080p)</display-name>
+    <icon src="https://www.thegtcnetwork.com/gtc-news.png" />
   </channel>
   <channel id="GuaranteeNews.in@SD">
     <display-name lang="en">Guarantee News (1080p)</display-name>
@@ -96,9 +108,17 @@
     <display-name lang="en">Living India News (1080p)</display-name>
     <icon src="https://i.imgur.com/YikaJvd.png" />
   </channel>
+  <channel id="LokshahiNews.in@SD">
+    <display-name lang="en">Lokshahi News (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_LOKSHAHI/images/LOGO_HD/image.png" />
+  </channel>
   <channel id="MalaiMurasuTV.in@SD">
     <display-name lang="en">Malai Murasu TV (1080p) [Geo-blocked]</display-name>
     <icon src="https://i.imgur.com/OC5TQxp.png" />
+  </channel>
+  <channel id="ManoramaNews.in@SD">
+    <display-name lang="en">Manorama News (1080p)</display-name>
+    <icon src="https://i.imgur.com/adjRrVx.png" />
   </channel>
   <channel id="NDTVMadhyaPradeshChhattisgarh.in@SD">
     <display-name lang="en">NDTV Madhya Pradesh Chhattisgarh (1080p)</display-name>
@@ -224,6 +244,10 @@
     <display-name lang="en">Rozana Spokesman (1080p)</display-name>
     <icon src="https://www.rozanaspokesman.in/images/logospokesman.png" />
   </channel>
+  <channel id="RTIndia.in@HD">
+    <display-name lang="en">RT India (1080p)</display-name>
+    <icon src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Russia-today-logo.svg" />
+  </channel>
   <channel id="SamayKolkata.in@SD">
     <display-name lang="en">Samay Kolkata (1080p)</display-name>
     <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/Samay_Kolkata.png" />
@@ -239,6 +263,10 @@
   <channel id="TimesNowNavbharat.in@SD">
     <display-name lang="en">Times Now Navbharat (1080p)</display-name>
     <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TIMES_NOW_NAVBHARAT_HD/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="TimesNowWorld.in@SD">
+    <display-name lang="en">Times Now World (1080p)</display-name>
+    <icon src="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Times-Now-World-transparent.png" />
   </channel>
   <channel id="TNPNews.in@SD">
     <display-name lang="en">TNP News (1080p)</display-name>
@@ -256,13 +284,69 @@
     <display-name lang="en">DD Sports SD (1080p)</display-name>
     <icon src="https://dtil.tmsimg.com/assets/s158255_ld_h15_aa.png?lock=720x540" />
   </channel>
+  <channel id="StarSports1.in@HD">
+    <display-name lang="en">Star Sports 1 HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/E5jjKHI.png" />
+  </channel>
+  <channel id="StarSports2Hindi.in@HD">
+    <display-name lang="en">Star Sports 2 Hindi HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/kHerF19.png" />
+  </channel>
+  <channel id="StarSportsKhel.in@SD">
+    <display-name lang="en">like Gecko) Chrome/147.0.0.0 Safari/537.36&quot; group-title=&quot;Sports&quot;,Star Sports Khel (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_KHEL/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
+  <channel id="Andflix.in@HD">
+    <display-name lang="en">&amp;flix HD (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/GNLZZGG0022J67W.png?lock=720x540" />
+  </channel>
+  <channel id="Andpictures.in@HD">
+    <display-name lang="en">&amp;pictures HD (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/GNLZZGG0022J67R.png?lock=720x540" />
+  </channel>
   <channel id="AndTV.in@International">
     <display-name lang="en">&amp;TV International (1080p)</display-name>
     <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" />
   </channel>
+  <channel id="AndxplorHD.in@HD">
+    <display-name lang="en">&amp;xplor HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDXPLOR_HD/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
+  <channel id="AsianetMovies.in@HD">
+    <display-name lang="en">Asianet Movies HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/cps67hs.png" />
+  </channel>
   <channel id="B4UBhojpuri.in@SD">
     <display-name lang="en">B4U Bhojpuri (1080p)</display-name>
     <icon src="https://i.imgur.com/NwOQUDp.png" />
+  </channel>
+  <channel id="B4UKadak.in@SD">
+    <display-name lang="en">B4U Kadak (1080p) [Not 24/7]</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s142695_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="ColorsCineplex.in@HD">
+    <display-name lang="en">Colors Cineplex HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX_HD/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="ETVCinema.in@HD">
+    <display-name lang="en">ETV Cinema HD (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143026_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="MNX.in@HD">
+    <display-name lang="en">MNX HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MNX_HD/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="MoviesNowPlus.in@SD">
+    <display-name lang="en">Movies Now + (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MNSYMPLUS/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="MoviesNow.in@HD">
+    <display-name lang="en">Movies Now HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MOVIES_NOW/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="PravahPicture.in@HD">
+    <display-name lang="en">Pravah Picture HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/T76S4x3.png" />
   </channel>
   <channel id="PunjabiShorts.in@SD">
     <display-name lang="en">Punjabi Shorts (1080p)</display-name>
@@ -272,6 +356,10 @@
     <display-name lang="en">Raj Digital Plus (1080p)</display-name>
     <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_RAJ_DIGITAL_PLUS/images/LOGO_HD/image.png" />
   </channel>
+  <channel id="ShemarooFilmiGaane.in@HD">
+    <display-name lang="en">Shemaroo Filmi Gaane (1080p)</display-name>
+    <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/channel/0d5b07555b2d4415aa9f145273095ed7.png" />
+  </channel>
   <channel id="SonyPix.in@HD">
     <display-name lang="en">Sony Pix HD (1080p) [Geo-blocked]</display-name>
     <icon src="https://i.postimg.cc/Z5G8j67L/PIX-HD-WHITE.png" />
@@ -280,17 +368,89 @@
     <display-name lang="en">Sony Wah (1080p) [Geo-blocked]</display-name>
     
   </channel>
+  <channel id="SouthStation.in@HD">
+    <display-name lang="en">South Station (1080p)</display-name>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3800008CX_20260325T012316SQUARE.png" />
+  </channel>
+  <channel id="StarGold.in@HD">
+    <display-name lang="en">Star Gold HD (1080p) [Not 24/7]</display-name>
+    <icon src="https://i.imgur.com/xC460sj.png" />
+  </channel>
+  <channel id="StarGoldSelect.in@HD">
+    <display-name lang="en">Star Gold Select HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/U7eiuqv.png" />
+  </channel>
+  <channel id="StarMaaMovies.in@HD">
+    <display-name lang="en">Star Maa Movies HD (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143826_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="StarMovies.in@HD">
+    <display-name lang="en">Star Movies HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="StarMoviesSelect.in@HD">
+    <display-name lang="en">Star Movies Select HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES_SELECT_HD/images/LOGO_HD/image.png" />
+  </channel>
   <channel id="ThalaaTV.in@HD">
     <display-name lang="en">Thalaa TV (1080p)</display-name>
     <icon src="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/thalaa-tv.png" />
+  </channel>
+  <channel id="TheMovieClub.in@HD">
+    <display-name lang="en">The Movie Club (1080p)</display-name>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN38000072R_20260325T012318SQUARE.png" />
+  </channel>
+  <channel id="TheMovieClub.in@Plus2">
+    <display-name lang="en">The Movie Club +2 (1080p)</display-name>
+    <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN40000100Y_20260204T004058SQUARE.png" />
   </channel>
   <channel id="TollyTV.in@HD">
     <display-name lang="en">Tolly TV (1080p)</display-name>
     <icon src="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/aumnrs.png" />
   </channel>
+  <channel id="ZeeBollymovies.in@SD">
+    <display-name lang="en">Zee Bollymovies (1080p) [Geo-blocked]</display-name>
+    <icon src="https://framerusercontent.com/images/mqfJ18x4jYe0GbZUbxSHsbnWU.png?scale-down-to=512" />
+  </channel>
+  <channel id="ZeeBollymovies.in@Australia">
+    <display-name lang="en">Zee Bollymovies Australia (1080p) [Geo-blocked]</display-name>
+    <icon src="https://framerusercontent.com/images/mqfJ18x4jYe0GbZUbxSHsbnWU.png?scale-down-to=512" />
+  </channel>
+  <channel id="ZeeCinema.in@APAC">
+    <display-name lang="en">Zee Cinema APAC (1080p) [Geo-blocked]</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
+  <channel id="ZeeCinema.in@HD">
+    <display-name lang="en">Zee Cinema HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
   <channel id="ZeeSouthFlix.in@HD">
     <display-name lang="en">Zee South Flix (1080p)</display-name>
     <icon src="https://d3bd0tgyk368z1.cloudfront.net/zeelg/LG%20logo%20artwork/400x200/zsouthflix.png" />
+  </channel>
+  <channel id="ZeeTalkies.in@HD">
+    <display-name lang="en">Zee Talkies HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_TALKIES/images/LOGO_HD/LOGO_HD_image.png" />
+  </channel>
+  <channel id="ColorsBangla.in@HD">
+    <display-name lang="en">Colors Bangla HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_BANGLA/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="ColorsInfinity.in@HD">
+    <display-name lang="en">Colors Infinity HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_INFINITY/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="ColorsKannada.in@HD">
+    <display-name lang="en">Colors Kannada HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_KANNADA_HD/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="ColorsMarathi.in@HD">
+    <display-name lang="en">Colors Marathi HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_MARATHI/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="ColorsSuper.in@SD">
+    <display-name lang="en">Colors Super (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_SUPER/images/LOGO_HD/image.png" />
   </channel>
   <channel id="DDNational.in@HD">
     <display-name lang="en">DD National HD (1080p)</display-name>
@@ -299,6 +459,10 @@
   <channel id="EETTV.in@SD">
     <display-name lang="en">EET TV (1080p) [Not 24/7]</display-name>
     <icon src="https://i.imgur.com/rMldFW8.png" />
+  </channel>
+  <channel id="EpicTV.in@Digital">
+    <display-name lang="en">Epic TV Digital (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EPIC/images/LOGO_HD/image.png" />
   </channel>
   <channel id="ETVJosh.in@HD">
     <display-name lang="en">ETV Josh (1080p)</display-name>
@@ -312,6 +476,10 @@
     <display-name lang="en">GTC Punjabi (1080p)</display-name>
     <icon src="https://media.thegtcnetwork.com/uploads/gtc-pujabin-s.jpg" />
   </channel>
+  <channel id="JayaTV.in@HD">
+    <display-name lang="en">Jaya TV (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_JAYA_TV/images/LOGO_HD/image.png" />
+  </channel>
   <channel id="MangoMobileTV.in@HD">
     <display-name lang="en">Mango Mobile TV (1080p)</display-name>
     <icon src="https://dvvlqr1rtlak3.cloudfront.net/Mango/MANGOTVLOGO.jpg" />
@@ -319,6 +487,14 @@
   <channel id="MazhavilManorama.in@HD">
     <display-name lang="en">Mazhavil Manorama HD (1080p)</display-name>
     <icon src="https://i.imgur.com/fjgzW20.png" />
+  </channel>
+  <channel id="MarutamTV.in@SD">
+    <display-name lang="en">MNTV (1080p)</display-name>
+    <icon src="https://i.imgur.com/cFNw4Af.png" />
+  </channel>
+  <channel id="EpicBharat.in@SD">
+    <display-name lang="en">Nazara (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/GNLZZGG0032BW6T.png?lock=720x540" />
   </channel>
   <channel id="OliTV.in@SD">
     <display-name lang="en">Oli TV (1080p)</display-name>
@@ -340,6 +516,10 @@
     <display-name lang="en">Sada TV (1080p) [Not 24/7]</display-name>
     <icon src="https://i.ibb.co/cXPzpGp/SADA-CHANNEL-HBN-global-Punjabi-Satellite-TV.png" />
   </channel>
+  <channel id="SanaTV.in@SD">
+    <display-name lang="en">Sana TV (1080p)</display-name>
+    <icon src="https://i.imgur.com/CR7DGBv.png" />
+  </channel>
   <channel id="SonyEntertainmentTelevision.in@HD">
     <display-name lang="en">Sony Entertainment Television HD (1080p)</display-name>
     <icon src="https://dtil.tmsimg.com/assets/s159096_ld_h15_aa.png?lock=720x540" />
@@ -351,6 +531,18 @@
   <channel id="Spondon.in@SD">
     <display-name lang="en">Spondon (1080p)</display-name>
     <icon src="https://www.spondontv.com/wp-content/uploads/2025/10/cropped-SPONDON_Blue-Violet_1-copy-300x100.png" />
+  </channel>
+  <channel id="StarMaa.in@HD">
+    <display-name lang="en">like Gecko) Chrome/150.0.0.0 Safari/537.36&quot; group-title=&quot;Entertainment&quot;,Star Maa HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/5c9PVS0.png" />
+  </channel>
+  <channel id="StarPravah.in@HD">
+    <display-name lang="en">Star Pravah HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/ZT0u7AK.png" />
+  </channel>
+  <channel id="StarVijay.in@HD">
+    <display-name lang="en">Star Vijay HD (1080p)</display-name>
+    <icon src="https://i.imgur.com/dZtJHAe.png" />
   </channel>
   <channel id="SubinTV.in@SD">
     <display-name lang="en">Subin TV (1080p)</display-name>
@@ -412,6 +604,14 @@
     <display-name lang="en">Sana Plus (1080p)</display-name>
     <icon src="https://i.imgur.com/N6tKUZv.png" />
   </channel>
+  <channel id="SangeetBhojpuri.in@SD">
+    <display-name lang="en">Sangeet Bhojpuri (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143757_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="TabbarHits.in@SD">
+    <display-name lang="en">Tabbar Hits (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TABBAR_HITS/images/LOGO_HD/image.png" />
+  </channel>
   <channel id="UltimateTV.in@SD">
     <display-name lang="en">Ultimate TV (1080p)</display-name>
     <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/utvtamil.png" />
@@ -423,6 +623,18 @@
   <channel id="YRFMusic.in@SD">
     <display-name lang="en">YRF Music (1080p)</display-name>
     <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/YRF_Music.png" />
+  </channel>
+  <channel id="DocuBayTV.in@SD">
+    <display-name lang="en">DocuBay TV (1080p)</display-name>
+    <icon src="https://i.imgur.com/OGyeLLR.png" />
+  </channel>
+  <channel id="HistoryTV18.in@HD">
+    <display-name lang="en">History TV18 HD (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s143133_ld_h15_aa.png?lock=720x540" />
+  </channel>
+  <channel id="NationalGeographicWild.in@HD">
+    <display-name lang="en">National Geographic Wild HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NAT_GEO_WILD/images/LOGO_HD/image.png" />
   </channel>
   <channel id="SanskarUSA.in@SD">
     <display-name lang="en">Sanskar USA (1080p)</display-name>
@@ -464,6 +676,14 @@
     <display-name lang="en">DD Tamil (1080p)</display-name>
     <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png" />
   </channel>
+  <channel id="DisneyInternationalHD.in@SD">
+    <display-name lang="en">Disney International HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DISNEY_INTERNATIONAL_HD/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="ETVAbhiruchi.in@SD">
+    <display-name lang="en">ETV Abhiruchi (1080p)</display-name>
+    <icon src="https://i.imgur.com/3D5SN3E.png" />
+  </channel>
   <channel id="ETVComedy.in@HD">
     <display-name lang="en">ETV Comedy (1080p)</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4900003U3_20251106T195117SQUARE.png" />
@@ -479,6 +699,10 @@
   <channel id="HebronTV.in@SD">
     <display-name lang="en">Hebron TV (1080p)</display-name>
     <icon src="https://i0.wp.com/hebrontv.in/wp-content/uploads/2023/11/hebron-.png?w=512" />
+  </channel>
+  <channel id="JothiTV.in@SD">
+    <display-name lang="en">Jothi TV (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_JOTHI_TV/images/LOGO_HD/image.png" />
   </channel>
   <channel id="JoyTV.in@SD">
     <display-name lang="en">Joy TV (1080p)</display-name>
@@ -503,6 +727,10 @@
   <channel id="NDTVProfit.in@SD">
     <display-name lang="en">NDTV Profit (1080p)</display-name>
     <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_PROFIT_PRIME/images/LOGO_HD/image.png" />
+  </channel>
+  <channel id="NickHDPlus.in@HD">
+    <display-name lang="en">Nick HD+ (1080p)</display-name>
+    <icon src="https://dtil.tmsimg.com/assets/s159121_ld_h15_aa.png?lock=720x540" />
   </channel>
   <channel id="NKRTVKannada.in@SD">
     <display-name lang="en">NKR TV Kannada (1080p)</display-name>
@@ -580,6 +808,10 @@
     <display-name lang="en">Travelxp HD (1080p) [Geo-blocked]</display-name>
     <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TRAVELXP/images/LOGO_HD/image.png" />
   </channel>
+  <channel id="TVBRICSEnglish.in@SD">
+    <display-name lang="en">TV BRICS English (1080p)</display-name>
+    <icon src="https://i.imgur.com/8rKNuS6.png" />
+  </channel>
   <channel id="UTVPalakkad.in@SD">
     <display-name lang="en">UTV Palakkad (1080p)</display-name>
     <icon src="https://utvpkd.in/assets/img/logo.png" />
@@ -588,6 +820,10 @@
     <display-name lang="en">VTU (1080p)</display-name>
     <icon src="https://i.imgur.com/zMwZRGJ.png" />
   </channel>
+  <channel id="WayanadVision.in@SD">
+    <display-name lang="en">Wayanad Vision (1080p)</display-name>
+    <icon src="https://i.imgur.com/yF2C4Dt.png" />
+  </channel>
   <channel id="ZBCartoon.in@HD">
     <display-name lang="en">ZB Cartoon (1080p)</display-name>
     <icon src="https://jiotvimages.cdn.jio.com/dare_images/images/zbcatun.png" />
@@ -595,6 +831,10 @@
   <channel id="ZeeComedyNation.in@HD">
     <display-name lang="en">Zee Comedy Nation (1080p)</display-name>
     <icon src="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100002GD_20260325T012327SQUARE.png" />
+  </channel>
+  <channel id="ZeeZest.in@HD">
+    <display-name lang="en">Zee Zest HD (1080p)</display-name>
+    <icon src="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_ZEST/images/LOGO_HD/LOGO_HD_image.png" />
   </channel>
   <channel id="Shalom.in@Global">
     <display-name lang="en">Shalom Global (1080p)</display-name>
@@ -616,6 +856,10 @@
     <display-name lang="en">Asianet News (1080p)</display-name>
     
   </channel>
+  <channel id="B4UKadak.in@SD">
+    <display-name lang="en">B4U Kadak (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
   <channel id="HistoryTV18.in@HD">
     <display-name lang="en">History TV18 HD (1080p) [Geo-blocked]</display-name>
     
@@ -626,6 +870,10 @@
   </channel>
   <channel id="HistoryTV18.in@HD">
     <display-name lang="en">History TV18 HD Hindi (1080p) [Geo-blocked]</display-name>
+    
+  </channel>
+  <channel id="HistoryTV18.in@HD">
+    <display-name lang="en">History TV18 HD Tamil (1080p)</display-name>
     
   </channel>
   <channel id="IndiaTVSpeedNews.in@HD">
@@ -644,6 +892,10 @@
     <display-name lang="en">News18 Kerala (1080p) [Geo-blocked]</display-name>
     
   </channel>
+  <channel id="NickHDPlus.in@HD">
+    <display-name lang="en">Nick HD+ (1080p)</display-name>
+    
+  </channel>
   <channel id="RepublicBharat.in@SD">
     <display-name lang="en">Republic Bharat (1080p) [Geo-blocked]</display-name>
     
@@ -660,12 +912,32 @@
     <display-name lang="en">Sana Plus (1080p) [Not 24/7]</display-name>
     
   </channel>
+  <channel id="SansadTV1.in@SD">
+    <display-name lang="en">Sansad TV 1 (1080p) [Not 24/7]</display-name>
+    
+  </channel>
+  <channel id="SansadTV2.in@HD">
+    <display-name lang="en">Sansad TV 2 (1080p) [Not 24/7]</display-name>
+    
+  </channel>
   <channel id="SansadTV2.in@HD">
     <display-name lang="en">Sansad TV 2 (1080p)</display-name>
     
   </channel>
   <channel id="ShemarooFilmiGaane.in@HD">
     <display-name lang="en">Shemaroo Filmi Gaane (1080p)</display-name>
+    
+  </channel>
+  <channel id="SonyEntertainmentTelevision.in@HD">
+    <display-name lang="en">Sony Entertainment Television HD (1080p)</display-name>
+    
+  </channel>
+  <channel id="StarGoldSelect.in@HD">
+    <display-name lang="en">Star Gold Select HD (1080p)</display-name>
+    
+  </channel>
+  <channel id="StarSports1.in@HD">
+    <display-name lang="en">Star Sports 1 HD (1080p)</display-name>
     
   </channel>
   <channel id="TimesNowNavbharat.in@SD">
@@ -682,6 +954,10 @@
   </channel>
   <channel id="WION.in@SD">
     <display-name lang="en">WION (Adaptive) (1080p)</display-name>
+    
+  </channel>
+  <channel id="YRFMusic.in@SD">
+    <display-name lang="en">YRF Music (1080p)</display-name>
     
   </channel>
   <channel id="ZeeNews.in@SD">
