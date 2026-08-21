@@ -274,8 +274,12 @@ async function main() {
   }
 
   // --- M3U ---
+  // `urlTvg` becomes a `url-tvg="..."` attribute on the #EXTM3U header.
+  // IPTV players fetch that XMLTV file on their own, so we don't need to
+  // download or inline the EPG here.
   const playlist = {
     title: `Generated TV Guide (${stamp})`,
+    urlTvg: 'https://raw.githubusercontent.com/node-bug/ch/refs/heads/master/epg.xml',
     tracks: channels.map((ch) => ({
       title: ch.name,
       path: ch.url,
