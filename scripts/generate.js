@@ -20,7 +20,7 @@ const m3u = require('../index.js');
 const { verifyChannels } = require('./verify.js');
 
 // Expose pure helpers for testing. The module is also runnable directly.
-module.exports = { parseExtinf, escapeXml, buildEpg, buildPlaylistFromText, verifyChannels };
+module.exports = { parseExtinf, findTitleCommaIdx, escapeXml, buildEpg, buildPlaylistFromText, verifyChannels };
 
 // ---------------------------------------------------------------------------
 // iptv-org playlist sources
@@ -89,15 +89,40 @@ async function fetchText(url, retries = 2) {
 }
 
 /**
+ * Find the index of the comma that separates the EXTINF attribute block
+ * from the title — i.e. the *first* comma that lives outside of a
+ * double-quoted region.
+ *
+ * Upstream iptv-org playlists often have attribute values that contain
+ * commas (notably `http-user-agent="Mozilla/5.0 (..., like Gecko)
+ * Chrome/142.0.0.0 ..."`), so a naive `line.indexOf(',')` will land
+ * inside an attribute value and chop the title to garbage.
+ */
+function findTitleCommaIdx(line) {
+  let inQuotes = false;
+  for (let i = 0; i < line.length; i++) {
+    const ch = line[i];
+    if (ch === '"') {
+      inQuotes = !inQuotes;
+    } else if (ch === ',' && !inQuotes) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+/**
  * Parse an EXTINF line into its attribute map.
  * e.g. #EXTINF:-1 tvg-id="X" tvg-logo="Y" group-title="Z",Title
+ *
+ * The title is everything after the first comma that lives outside of
+ * any double-quoted attribute value, so we don't trip on values like
+ * `http-user-agent="Mozilla/5.0 (..., like Gecko) Chrome/..."`.
  */
 function parseExtinf(line) {
   const attrs = {};
-  // The EXTINF title is everything after the *first* comma:
-  //   #EXTINF:<duration> <attrs>,<title>
-  const commaIdx = line.indexOf(',');
-  const name = commaIdx >= 0 ? line.slice(commaIdx + 1).trim() : '';
+  const commaIdx = findTitleCommaIdx(line);
+  const name = (commaIdx >= 0 ? line.slice(commaIdx + 1) : '').trim();
   const attrPart = commaIdx >= 0 ? line.slice(0, commaIdx) : line;
 
   const attrRegex = /([a-zA-Z0-9_-]+)="([^"]*)"/g;
