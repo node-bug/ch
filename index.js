@@ -99,7 +99,13 @@ function generate(filePath, playlist) {
 
   for (const track of playlist.tracks || []) {
     if (track.duration !== undefined) {
-      lines.push(`#EXTINF:${track.duration},${track.title || ''}`);
+      const attrs = [];
+      if (track.tvgId) attrs.push(`tvg-id="${track.tvgId}"`);
+      if (track.tvgName) attrs.push(`tvg-name="${track.tvgName}"`);
+      if (track.tvgGroup) attrs.push(`group-title="${track.tvgGroup}"`);
+      if (track.tvgLogo) attrs.push(`tvg-logo="${track.tvgLogo}"`);
+      const attrStr = attrs.length ? ` ${attrs.join(' ')}` : '';
+      lines.push(`#EXTINF:${track.duration}${attrStr},${track.title || ''}`);
     }
     lines.push(track.path || '');
   }
