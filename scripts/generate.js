@@ -409,7 +409,7 @@ async function main() {
   // of the raw master branch. It defaults to the current repo's Pages
   // URL so local runs (where the env var isn't set) still produce a
   // valid `url-tvg`.
-  const baseUrl = process.env.BASE_URL || 'https://nodebug.github.io/ch/';
+  const baseUrl = process.env.BASE_URL || 'https://node-bug.github.io/ch/';
 
   const playlist = {
     title: `Generated TV Guide (${stamp})`,

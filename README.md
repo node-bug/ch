@@ -54,8 +54,8 @@ A GitHub Actions workflow (`.github/workflows/daily-guide.yml`) runs every day a
 - `epg.xml` — a matching EPG (XMLTV) file for the same channels.
 
 The generated files are published to **GitHub Pages** at
-<https://nodebug.github.io/ch/channels.m3u> and
-<https://nodebug.github.io/ch/epg.xml> — no commit is made to the repo.
+<https://node-bug.github.io/ch/channels.m3u> and
+<https://node-bug.github.io/ch/epg.xml> — no commit is made to the repo.
 #### Run it manually
 
 Open **Actions → Daily TV Guide → Run workflow**. Available inputs:
