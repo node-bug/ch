@@ -404,9 +404,16 @@ async function main() {
   // `urlTvg` becomes a `url-tvg="..."` attribute on the #EXTM3U header.
   // IPTV players fetch that XMLTV file on their own, so we don't need to
   // download or inline the EPG here.
+  //
+  // BASE_URL lets the workflow point the header at GitHub Pages instead
+  // of the raw master branch. It defaults to the current repo's Pages
+  // URL so local runs (where the env var isn't set) still produce a
+  // valid `url-tvg`.
+  const baseUrl = process.env.BASE_URL || 'https://nodebug.github.io/ch/';
+
   const playlist = {
     title: `Generated TV Guide (${stamp})`,
-    urlTvg: 'https://raw.githubusercontent.com/node-bug/ch/refs/heads/master/epg.xml',
+    urlTvg: `${baseUrl}epg.xml`,
     tracks: channels.map((ch) => ({
       title: ch.name,
       path: ch.url,

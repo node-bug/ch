@@ -53,7 +53,9 @@ A GitHub Actions workflow (`.github/workflows/daily-guide.yml`) runs every day a
   - For Samsung India source: all 1080p channels are included (no India filter)
 - `epg.xml` — a matching EPG (XMLTV) file for the same channels.
 
-The generated files are committed back into the repository automatically.
+The generated files are published to **GitHub Pages** at
+<https://nodebug.github.io/ch/channels.m3u> and
+<https://nodebug.github.io/ch/epg.xml> — no commit is made to the repo.
 #### Run it manually
 
 Open **Actions → Daily TV Guide → Run workflow**. Available inputs:
@@ -61,11 +63,10 @@ Open **Actions → Daily TV Guide → Run workflow**. Available inputs:
 | Input | Default | Purpose |
 | --- | --- | --- |
 | `verify` | `true` | Probe each stream URL and drop dead ones |
-| `commit` | `true` | Commit & push the regenerated files |
-| `dry_run` | `false` | Generate files in the workspace only (no commit/push) |
 
-For a preview without pushing, run with `verify=true, commit=true, dry_run=true`
-and inspect the `channels.m3u` artifact. To disable verification (faster but
+After the run completes, the **deploy** job publishes the files to the
+Pages site; the workflow run summary links straight to the new
+`channels.m3u` / `epg.xml`. To disable verification (faster but
 riskier), set `verify=false`.
 ### Sources
 

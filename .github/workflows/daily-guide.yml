@@ -5,8 +5,11 @@ name: Daily TV Guide
 #
 # The pipeline can also be triggered manually from the Actions tab via
 # "Run workflow". Available inputs:
-#   - verify    : Probe each stream URL and drop dead ones (default: true)
-#   - commit    : Commit & push the regenerated files (default: true)
+#   - verify : Probe each stream URL and drop dead ones (default: true)
+#
+# Output: publishes channels.m3u + epg.xml to GitHub Pages instead of
+# committing them to the repository. The repo's Pages URL is the
+# `github-pages` environment URL shown after a successful deploy.
 on:
   schedule:
     - cron: '30 22 * * *'
@@ -17,18 +20,22 @@ on:
         type: boolean
         required: false
         default: true
-      commit:
-        description: 'Commit and push regenerated channels.m3u + epg.xml'
-        type: boolean
-        required: false
-        default: true
+
+# Required for GitHub Pages deployment via Actions.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Only one deploy runs at a time so a slow generate doesn't get
+# overwritten by a newer one mid-deploy.
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   build-guide:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -46,24 +53,36 @@ jobs:
           # Allow tuning from the workflow inputs (or env in the Actions UI).
           VERIFY_TIMEOUT_MS: ${{ vars.VERIFY_TIMEOUT_MS || '6000' }}
           VERIFY_CONCURRENCY: ${{ vars.VERIFY_CONCURRENCY || '8' }}
+          # BASE_URL is interpolated into the generated M3U's `url-tvg`
+          # header so players know where to fetch the matching EPG from.
+          # Override via repo variable `vars.PAGES_BASE_URL` if your
+          # Pages URL differs from the default.
+          BASE_URL: ${{ vars.PAGES_BASE_URL || 'https://nodebug.github.io/ch/' }}
         run: |
           ARGS=""
           if [ "${{ inputs.verify }}" = "true" ]; then ARGS="$ARGS --verify"; fi
           echo "Running: node scripts/generate.js $ARGS"
           node scripts/generate.js $ARGS
 
-      - name: Commit and push generated files
-        if: ${{ inputs.commit == 'true' }}
+      - name: Stage Pages artifact
+        # Copy only the two deliverables into a clean directory so we
+        # don't ship node_modules / package.json to the Pages site.
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p _pages
+          cp channels.m3u epg.xml _pages/
+          ls -la _pages
 
-          git add channels.m3u epg.xml
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _pages
 
-          # Only commit when there are changes
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "Update daily TV guide (M3U + EPG) [skip ci]"
-            git push
-          fi
+  deploy:
+    needs: build-guide
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
