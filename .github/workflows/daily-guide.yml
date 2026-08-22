@@ -57,7 +57,7 @@ jobs:
           # header so players know where to fetch the matching EPG from.
           # Override via repo variable `vars.PAGES_BASE_URL` if your
           # Pages URL differs from the default.
-          BASE_URL: ${{ vars.PAGES_BASE_URL || 'https://nodebug.github.io/ch/' }}
+          BASE_URL: ${{ vars.PAGES_BASE_URL || 'https://node-bug.github.io/ch/' }}
         run: |
           ARGS=""
           if [ "${{ inputs.verify }}" = "true" ]; then ARGS="$ARGS --verify"; fi
