@@ -385,7 +385,6 @@ async function main() {
   const args = new Set(process.argv.slice(2));
   const shouldVerify = !args.has('--no-verify');
   const shouldVerifyIcons = true;
-  const dryRun = args.has('--dry-run');
   let channels = await buildPlaylist();
   console.log(`Fetched ${channels.length} unique channels from iptv-org`);
 
@@ -400,13 +399,6 @@ async function main() {
   await validateIconUrls(channels, {
       log: (s) => process.stdout.write(s + '\n'),
     });
-
-  if (dryRun) {
-    console.log(`\n--dry-run: would write ${channels.length} channels to channels.m3u + epg.xml`);
-    for (const ch of channels.slice(0, 10)) console.log(`  ${ch.name}  ${ch.url}`);
-    if (channels.length > 10) console.log(`  ...and ${channels.length - 10} more`);
-    return;
-  }
 
   // --- M3U ---
   // `urlTvg` becomes a `url-tvg="..."` attribute on the #EXTM3U header.

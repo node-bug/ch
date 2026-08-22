@@ -7,8 +7,6 @@ name: Daily TV Guide
 # "Run workflow". Available inputs:
 #   - verify    : Probe each stream URL and drop dead ones (default: true)
 #   - commit    : Commit & push the regenerated files (default: true)
-#   - dry_run   : Generate files in the workspace but do NOT commit/push
-#                 (default: false). Useful for previewing output before pushing.
 on:
   schedule:
     - cron: '30 22 * * *'
@@ -24,11 +22,6 @@ on:
         type: boolean
         required: false
         default: true
-      dry_run:
-        description: 'Preview only — generate files but skip the commit/push step'
-        type: boolean
-        required: false
-        default: false
 
 jobs:
   build-guide:
@@ -56,12 +49,11 @@ jobs:
         run: |
           ARGS=""
           if [ "${{ inputs.verify }}" = "true" ]; then ARGS="$ARGS --verify"; fi
-          if [ "${{ inputs.dry_run }}" = "true" ]; then ARGS="$ARGS --dry-run"; fi
           echo "Running: node scripts/generate.js $ARGS"
           node scripts/generate.js $ARGS
 
       - name: Commit and push generated files
-        if: ${{ inputs.commit == 'true' && inputs.dry_run != 'true' }}
+        if: ${{ inputs.commit == 'true' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
