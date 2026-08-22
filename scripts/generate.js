@@ -383,8 +383,8 @@ async function main() {
   const stamp = now.toISOString().slice(0, 10); // YYYY-MM-DD
 
   const args = new Set(process.argv.slice(2));
-  const shouldVerify = args.has('--verify');
-  const shouldVerifyIcons = !args.has('--no-verify-icons');
+  const shouldVerify = !args.has('--no-verify');
+  const shouldVerifyIcons = true;
   const dryRun = args.has('--dry-run');
   let channels = await buildPlaylist();
   console.log(`Fetched ${channels.length} unique channels from iptv-org`);
@@ -397,13 +397,9 @@ async function main() {
     channels = alive;
   }
 
-  if (shouldVerifyIcons) {
-    await validateIconUrls(channels, {
+  await validateIconUrls(channels, {
       log: (s) => process.stdout.write(s + '\n'),
     });
-  } else {
-    console.log('--no-verify-icons: skipping icon URL checks');
-  }
 
   if (dryRun) {
     console.log(`\n--dry-run: would write ${channels.length} channels to channels.m3u + epg.xml`);
