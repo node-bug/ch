@@ -16,6 +16,35 @@
 const fs = require('fs');
 const path = require('path');
 
+// `data/dead-icons.json` holds the list of icon URLs we've previously
+// determined to be definitively broken (HTTP 4xx/5xx). On subsequent
+// runs we skip probing them — they're already cleared from `channels`
+// before they reach the EPG writer — and skip the wasted network round
+// trip. A user (or a workflow) can prune entries from this file if a
+// CDN recovers.
+const DEAD_ICONS_PATH = path.join(__dirname, '..', 'data', 'dead-icons.json');
+function loadDeadIcons() {
+  try {
+    const raw = fs.readFileSync(DEAD_ICONS_PATH, 'utf-8');
+    const arr = JSON.parse(raw);
+    return Array.isArray(arr) ? new Set(arr) : new Set();
+  } catch {
+    return new Set();
+  }
+}
+function saveDeadIcons(set) {
+  try {
+    fs.mkdirSync(path.dirname(DEAD_ICONS_PATH), { recursive: true });
+    fs.writeFileSync(
+      DEAD_ICONS_PATH,
+      JSON.stringify([...set].sort(), null, 2) + '\n',
+      'utf-8'
+    );
+  } catch (err) {
+    console.warn(`Warning: could not write ${DEAD_ICONS_PATH}: ${err.message}`);
+  }
+}
+
 const m3u = require('../index.js');
 const { verifyChannels } = require('./verify.js');
 
@@ -237,7 +266,14 @@ function escapeXml(str) {
 
 function hoursLater(now, hour) {
   const d = new Date(now);
-  d.setHours(d.getHours() + hour);
+  d.setMinutes(d.getMinutes() + hour * 60);
+  return d.toISOString().replace(/\.\d{3}Z$/, 'Z');
+}
+
+/**
+ * Format a Date as an XMLTV timestamp (YYYY-MM-DDTHH:MM:SSZ).
+ */
+function xmltvTs(d) {
   return d.toISOString().replace(/\.\d{3}Z$/, 'Z');
 }
 
@@ -297,6 +333,19 @@ function probeIcon(url, timeoutMs = 6000) {
  * a summary { kept, dropped, ambiguous }.
  */
 async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = {}) {
+  // Pre-seed from the persistent dead-icons denylist so we don't re-probe
+  // icons we already know are broken. They get cleared from `channels`
+  // up-front to keep the EPG clean.
+  const deadIconCache = loadDeadIcons();
+  let preCleared = 0;
+  for (const ch of channels) {
+    if (ch.logo && deadIconCache.has(ch.logo)) {
+      ch.logo = '';
+      preCleared++;
+    }
+  }
+  if (preCleared) log(`Skipped ${preCleared} icons from dead-icons cache.\n`);
+
   // Dedupe URLs but remember which channels share them.
   const urlToChannels = new Map();
   for (const ch of channels) {
@@ -335,12 +384,15 @@ async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = 
     if (probe.status >= 400 && probe.status < 600) {
       for (const ch of owners) ch.logo = '';
       dropped += owners.length;
+      deadIconCache.add(url);
       log(`  [HTTP ${probe.status}] drop icon: ${url}`);
     } else {
       ambiguous += owners.length;
       log(`  [${probe.reason || 'net-err'}] keep icon: ${url}`);
     }
   }
+
+  saveDeadIcons(deadIconCache);
 
   log(`Logos: kept=${kept} (${kept - ambiguous} verified, ${ambiguous} kept-due-to-ambiguity), dropped=${dropped}`);
   return { kept, dropped, ambiguous };
@@ -354,16 +406,40 @@ function buildEpg(channels, now) {
   </channel>`)
     .join('\n');
 
+  // Snap the programme start time to the most recent half-hour boundary.
+  // IPTV players key the on-screen guide off the programme that contains
+  // "now", so we need a slot whose [start, stop) window actually covers
+  // the present moment — not a fixed [+1h, +3h) window that may already
+  // be in the past by the time the user opens the playlist.
+  //
+  // We then emit three consecutive 2-hour slots so the guide covers
+  // ~6 hours of "now" rather than a single stale 2-hour block.
+  const slotMs = 2 * 60 * 60 * 1000;
+  const slotCount = 3;
+  const anchor = new Date(now.getTime());
+  anchor.setMinutes(anchor.getMinutes() - (anchor.getMinutes() % 30), 0, 0);
+  const baseStart = anchor.getTime();
+
   const programmeNodes = channels
     .map((ch) => {
-      const start = hoursLater(now, 1);
-      const stop = hoursLater(now, 3);
-      return `  <programme channel="${escapeXml(ch.id || ch.name)}" start="${start}" stop="${stop}">
+      const slots = [];
+      for (let i = 0; i < slotCount; i++) {
+        const startMs = baseStart + i * slotMs;
+        const stopMs = startMs + slotMs;
+        // Skip slots that have already ended — a stale EPG entry is
+        // worse than a missing one for IPTV players.
+        if (stopMs <= now.getTime()) continue;
+        const start = xmltvTs(new Date(startMs));
+        const stop = xmltvTs(new Date(stopMs));
+        slots.push(`  <programme channel="${escapeXml(ch.id || ch.name)}" start="${start}" stop="${stop}">
     <title lang="en">${escapeXml(ch.name)}</title>
     <desc lang="en">Auto-generated guide entry for ${escapeXml(ch.name)}.</desc>
     <category>Entertainment</category>
-  </programme>`;
+  </programme>`);
+      }
+      return slots.join('\n');
     })
+    .filter(Boolean)
     .join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
