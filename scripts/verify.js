@@ -26,6 +26,21 @@ const { URL } = require('url');
 
 const HEAD_TIMEOUT_MS = Number(process.env.VERIFY_TIMEOUT_MS || 6000);
 const MAX_PARALLEL = Number(process.env.VERIFY_CONCURRENCY || 8);
+// Transient network errors that look "dead" but are often just local DNS,
+// a brief CDN blip, or a flaky residential route. We retry these up to
+// MAX_PROBE_RETRIES times before counting the channel as dead, so a
+// single botched probe from GitHub Actions doesn't knock out a stream.
+const TRANSIENT_REASONS = new Set([
+  'ENOTFOUND',
+  'EAI_AGAIN',
+  'ECONNRESET',
+  'ECONNREFUSED',
+  'ETIMEDOUT',
+  'EPIPE',
+  'socket hang up',
+  'timeout',
+]);
+const MAX_PROBE_RETRIES = Number(process.env.VERIFY_RETRIES || 2);
 const USER_AGENT = 'm3u-ci/verify (+https://github.com/nodebug/m3u)';
 
 /**
@@ -149,7 +164,16 @@ async function verifyChannels(channels, opts = {}) {
     while (cursor < channels.length) {
       const i = cursor++;
       const ch = channels[i];
-      const r = await probe(ch.url);
+      // Retry on transient network failures (DNS, timeout, connection reset)
+      // before declaring the channel dead. A definitive 4xx/5xx fails fast.
+      let r = await probe(ch.url);
+      let attempt = 0;
+      while (!r.ok && r.reason && TRANSIENT_REASONS.has(r.reason) && attempt < MAX_PROBE_RETRIES) {
+        attempt++;
+        // Tiny exponential back-off: 250ms, 500ms.
+        await new Promise((res) => setTimeout(res, 250 * (1 << (attempt - 1))));
+        r = await probe(ch.url);
+      }
       results[i] = { channel: ch, probe: r };
       log(r.ok ? '.' : 'x');
     }
