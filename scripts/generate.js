@@ -512,7 +512,9 @@ async function main() {
   console.log(`Generated ${epgPath}`);
 }
 
-main().catch((err) => {
-  console.error('Generation failed:', err);
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((err) => {
+    console.error('Generation failed:', err);
+    process.exit(1);
+  });
+}
