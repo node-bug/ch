@@ -1,7 +1,8 @@
 name: Daily TV Guide
 
-# Runs every day at 4:00 AM IST (22:30 UTC the previous day).
-# IST is UTC+5:30, so 04:00 IST == 22:30 UTC.
+# Runs four times per day at 00:00, 06:00, 12:00, and 18:00 UTC
+# (05:30, 11:30, 17:30, and 23:30 IST). The EPG window is wide enough
+# to bridge a single missed run without leaving the guide stale.
 #
 # The pipeline can also be triggered manually from the Actions tab via
 # "Run workflow". Available inputs:
@@ -12,7 +13,7 @@ name: Daily TV Guide
 # `github-pages` environment URL shown after a successful deploy.
 on:
   schedule:
-    - cron: '30 22 * * *'
+    - cron: '0 0/6 * * *'
   workflow_dispatch:
     inputs:
       verify:
