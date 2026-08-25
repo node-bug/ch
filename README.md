@@ -43,8 +43,8 @@ ch.generate('./channels.m3u', playlist);
 
 ## Daily TV Guide (CI)
 
-A GitHub Actions workflow (`.github/workflows/daily-guide.yml`) runs every day at
-4:00 AM IST and generates:
+A GitHub Actions workflow (`.github/workflows/daily-guide.yml`) runs
+four times per day (every 6 hours, on the hour) and generates:
 
 - `channels.m3u` — a merged M3U playlist sourced from
   [iptv-org](https://github.com/iptv-org/iptv) (categories, countries, regions),

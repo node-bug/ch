@@ -406,24 +406,33 @@ function buildEpg(channels, now) {
   </channel>`)
     .join('\n');
 
-  // Snap the programme start time to the most recent half-hour boundary.
-  // IPTV players key the on-screen guide off the programme that contains
-  // "now", so we need a slot whose [start, stop) window actually covers
-  // the present moment — not a fixed [+1h, +3h) window that may already
-  // be in the past by the time the user opens the playlist.
+  // Emit programme slots covering both directions in time so the EPG
+  // is useful even if the user opens the playlist hours after the
+  // last CI run.
   //
-  // We then emit three consecutive 2-hour slots so the guide covers
-  // ~6 hours of "now" rather than a single stale 2-hour block.
+  //  - `pastSlots` of 2h slots back-fill the previous 12 hours, so the
+  //    "current" programme is always the one that began at the most
+  //    recent half-hour mark (IPTV players key the on-screen guide off
+  //    the programme that contains "now").
+  //  - `futureSlots` of 2h slots extend 12 hours into the future, so
+  //    the guide covers a useful "now → tonight" range.
+  //
+  // We then *drop* any slot whose [start, stop) window lies entirely
+  // in the past — a stale EPG entry is worse than a missing one for
+  // IPTV players.
   const slotMs = 2 * 60 * 60 * 1000;
-  const slotCount = 3;
+  const pastSlots = 6;   // 12h of back-fill (2h × 6)
+  const futureSlots = 6; // 12h of forward coverage (2h × 6)
   const anchor = new Date(now.getTime());
   anchor.setMinutes(anchor.getMinutes() - (anchor.getMinutes() % 30), 0, 0);
-  const baseStart = anchor.getTime();
+  const anchorMs = anchor.getTime();
+  const totalSlots = pastSlots + futureSlots;
+  const baseStart = anchorMs - pastSlots * slotMs;
 
   const programmeNodes = channels
     .map((ch) => {
       const slots = [];
-      for (let i = 0; i < slotCount; i++) {
+      for (let i = 0; i < totalSlots; i++) {
         const startMs = baseStart + i * slotMs;
         const stopMs = startMs + slotMs;
         // Skip slots that have already ended — a stale EPG entry is
