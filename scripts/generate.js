@@ -59,7 +59,6 @@ module.exports = { parseExtinf, findTitleCommaIdx, escapeXml, buildEpg, buildPla
 // by URL) into a single guide.
 // ---------------------------------------------------------------------------
 const IPTV_BASE = 'https://iptv-org.github.io/iptv';
-const IPTV_RAW_BASE = 'https://raw.githubusercontent.com/iptv-org/iptv/master';
 const PLAYLIST_SOURCES = [
   // News categories
   { group: 'News', url: `${IPTV_BASE}/categories/news.m3u` },
@@ -78,17 +77,6 @@ const PLAYLIST_SOURCES = [
   
   // Regional sources
   { group: 'Worldwide', url: `${IPTV_BASE}/regions/ww.m3u` },
-  
-  // India-specific sources from raw content
-  { group: 'India Streams', url: `${IPTV_RAW_BASE}/streams/in.m3u` },
-  
-  // Specialized sources
-  { group: 'Samsung (IN)', url: `${IPTV_RAW_BASE}/streams/in_samsung.m3u` },
-  
-  // Sony Entertainment Television Asia HD (1080p) — sourced from iptvcat
-  // (https://iptvcat.com/india__7/s/sony). This stream uses tvg-country="IN"
-  // rather than a tvg-id, so it bypasses the default .in / 1080p filters.
-  { group: 'Sony Asia (IN)', url: 'https://list.iptvcat.com/my_list/s/1e9b670b3031f1d7bf3b4114ef770576.m3u8', skipFilters: true },
 ];
 
 // ---------------------------------------------------------------------------
@@ -99,7 +87,7 @@ async function fetchText(url, retries = 2) {
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       const res = await fetch(url, {
-        headers: { 'User-Agent': 'm3u-ci/daily-guide (+https://github.com/nodebug/m3u)' }
+        headers: { 'User-Agent': 'm3u-ci/daily-guide (+https://github.com/node-bug/m3u)' }
       });
       if (!res.ok) {
         throw new Error(`HTTP ${res.status} for ${url}`);
@@ -298,7 +286,7 @@ function probeIcon(url, timeoutMs = 6000) {
         host: parsed.hostname,
         port: parsed.port || undefined,
         path: parsed.pathname + parsed.search,
-        headers: { 'User-Agent': 'm3u-ci/icon-check (+https://github.com/nodebug/m3u)' },
+        headers: { 'User-Agent': 'm3u-ci/icon-check (+https://github.com/node-bug/m3u)' },
         timeout: timeoutMs,
       },
       (res) => {
@@ -452,7 +440,7 @@ function buildEpg(channels, now) {
     .join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="m3u-ci" generator-info-url="https://github.com/nodebug/m3u">
+<tv generator-info-name="m3u-ci" generator-info-url="https://github.com/node-bug/m3u">
 ${channelNodes}
 ${programmeNodes}
 </tv>

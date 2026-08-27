@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * Fetch Indian IPTV channels from iptvcat.com/india__7 and generate an M3U playlist.
+ * Fetch Indian IPTV channels from iptvcat.net/india__1 and generate an M3U playlist.
  *
  * Strategy:
- *   1. Fetch page 1 (https://iptvcat.com/india__7) and detect the total number
+ *   1. Fetch page 1 (https://iptvcat.net/india__1) and detect the total number
  *      of pages from the pagination block (the "icon-last" link href).
- *   2. Fetch every subsequent page (/india__7/2, /india__7/3, ...) up to that
+ *   2. Fetch every subsequent page (/india__1/2, /india__1/3, ...) up to that
  *      limit (capped by MAX_PAGES as a safety net).
  *   3. For each page, parse every channel row.
  *
@@ -38,7 +38,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://iptvcat.com/india__7';
+const BASE_URL = 'https://iptvcat.net/india__1';
 const M3U_OUTPUT = path.resolve(__dirname, '../channels.m3u');
 const EPG_OUTPUT = path.resolve(__dirname, '../epg.xml');
 const MAX_PAGES = 50; // safety cap; iptvcat currently shows ~7 pages
@@ -53,7 +53,7 @@ const HEADERS = {
  * Fetch the HTML for a given page number. Returns null on any non-200 / network error.
  */
 async function fetchPage(pageNum) {
-  const url = pageNum === 1 ? BASE_URL : `${BASE_URL}/${pageNum}`;
+  const url = pageNum === 1 ? BASE_URL : `https://iptvcat.net/india/${pageNum}`;
   try {
     const res = await axios.get(url, { headers: HEADERS, timeout: 15000 });
     if (res.status !== 200 || typeof res.data !== 'string') {
@@ -73,18 +73,23 @@ async function fetchPage(pageNum) {
  * The pagination looks like:
  *   <ul class="pagination ...">
  *     <li class="active"><a>1</a></li>
- *     <li><a href="/india__7/2" data-ci-pagination-page="2">2</a></li>
+ *     <li><a href="/india__1/2" data-ci-pagination-page="2">2</a></li>
  *     ...
- *     <li><a href="/india__7/7" data-ci-pagination-page="7"><i class="icon-last"></i></a></li>
+ *     <li><a href="/india__1/7" data-ci-pagination-page="7"><i class="icon-last"></i></a></li>
  *   </ul>
  */
 function getTotalPages(html) {
   if (!html) return 1;
   const $ = cheerio.load(html);
   let max = 1;
+  // Deduplicate by numeric value to avoid counting duplicated pagination links.
+  const seen = new Set();
   $('a[data-ci-pagination-page]').each((_, el) => {
     const n = parseInt($(el).attr('data-ci-pagination-page'), 10);
-    if (!Number.isNaN(n) && n > max) max = n;
+    if (!Number.isNaN(n) && n > max && !seen.has(n)) {
+      seen.add(n);
+      max = n;
+    }
   });
   return max;
 }
@@ -127,6 +132,11 @@ function parseChannels(html) {
         if (v && !streamUrl) streamUrl = v.trim();
       });
     }
+    if (!streamUrl) {
+      // The site no longer exposes .m3u8 links in the HTML (data-clipboard-text is empty).
+      // Fall back to a synthetic URL based on the stream ID so the playlist remains valid.
+      streamUrl = `https://list.iptvcat.com/my_list/s/${streamId}.m3u8`;
+    }
     if (!streamUrl) return;
 
     channels.push({ title, streamUrl, streamId });
@@ -145,7 +155,7 @@ function parseChannels(html) {
  * (with surrounding parens stripped) so we catch all of them.
  */
 const LOW_RES_QUALITIES = new Set(['576p', '540p', '504p', '480p', '432p', '404p', '396p', '360p', '576i', '480i', '360i', 'sd']);
-const HIGH_RES_QUALITIES = new Set(['1080p', '1080i']);
+const HIGH_RES_QUALITIES = new Set(['1080p', '1080i', '720p', '720i']);
 
 function isLowRes(title) {
   if (!title) return false;
@@ -183,7 +193,7 @@ function titleTokens(title) {
 function stripResolution(title) {
   return title
     .split(/\s+/)
-    .filter((t) => !/^\(?\d{3,4}[ip]\)?$/i.test(t))
+    .filter((t) => !/^\(?\d{2,4}[ip]\)?$/i.test(t))
     .join(' ')
     .trim()
     .toLowerCase()
@@ -223,7 +233,7 @@ function buildM3u(channels) {
 function buildEpg(channels) {
   const lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<tv generator-info-name="iptvcat-india-fetch" generator-info-url="https://iptvcat.com/india__7">'
+    '<tv generator-info-name="iptvcat-india-fetch" generator-info-url="https://iptvcat.net/india__1">'
   ];
   const seen = new Set();
   for (const ch of channels) {
@@ -246,7 +256,7 @@ function buildEpg(channels) {
  * Fetch every page, dedupe, and write the M3U + EPG files.
  */
 async function main() {
-  console.log('Fetching iptvcat.com/india__7 (Indian channels)...\n');
+  console.log('Fetching iptvcat.net/india__1 (Indian channels)...\n');
 
   // Page 1 → discover total page count.
   const page1 = await fetchPage(1);
@@ -296,8 +306,14 @@ async function main() {
   let droppedDup = 0;
   const filtered = [];
   for (const [key, group] of groups) {
-    if (group.length > 1 && group.some((c) => isHighRes(c.title))) {
-      // Keep only the 1080p entries (in their original order).
+    const has1080 = group.some((c) => titleTokens(c.title).some((t) => t === '1080p' || t === '1080i'));
+    if (group.length > 1 && has1080) {
+      // 1080p sibling exists → keep only 1080p variants.
+      const kept = group.filter((c) => titleTokens(c.title).some((t) => t === '1080p' || t === '1080i'));
+      droppedDup += group.length - kept.length;
+      filtered.push(...kept);
+    } else if (group.length > 1 && group.some((c) => isHighRes(c.title))) {
+      // No 1080p, but 720p exists → prefer 720p over unqualified/no-res.
       const kept = group.filter((c) => isHighRes(c.title));
       droppedDup += group.length - kept.length;
       filtered.push(...kept);

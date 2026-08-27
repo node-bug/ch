@@ -62,8 +62,8 @@ jobs:
         run: |
           ARGS=""
           if [ "${{ inputs.verify }}" = "true" ]; then ARGS="$ARGS --verify"; fi
-          echo "Running: node scripts/generate.js $ARGS"
-          node scripts/generate.js $ARGS
+          echo "Running: node scripts/fetch-iptvcat-india.js $ARGS"
+          node scripts/fetch-iptvcat-india.js $ARGS
 
       - name: Stage Pages artifact
         # Copy only the two deliverables into a clean directory so we
