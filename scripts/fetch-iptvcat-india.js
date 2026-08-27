@@ -196,8 +196,7 @@ function stripResolution(title) {
     .filter((t) => !/^\(?\d{2,4}[ip]\)?$/i.test(t))
     .join(' ')
     .trim()
-    .toLowerCase()
-    .replace(/\s+/g, ' ');
+    .toLowerCase();
 }
 
 /**

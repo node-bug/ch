@@ -100,29 +100,7 @@ This script fetches channels from iptvcat.net/india__1 and generates both channe
 
 ### Verify channels actually work
 
-The `scripts/verify.js` module probes each stream URL and keeps only the ones
-that respond. It's used automatically by the daily CI job, and can be invoked
-locally in two ways:
-
-```bash
-# Generate + verify in one pass — only working channels end up in channels.m3u
-node scripts/generate.js --verify
-
-# Verify an existing playlist directly
-node scripts/verify.js channels.m3u
-```
-
-Verification uses a HEAD request (with a ranged-GET fallback for servers that
-reject HEAD) and a short timeout, so it's safe to run in CI. Tune with:
-
-| Env var | Default | Purpose |
-| --- | --- | --- |
-| `VERIFY_TIMEOUT_MS` | `6000` | Per-request timeout |
-| `VERIFY_CONCURRENCY` | `8` | Max parallel probes |
-
-> Note: reachable ≠ perfectly working. Some streams respond OK but stall at
-> playback time. For stricter validation, pipe the first ~256 KB through
-> `ffprobe` to confirm a real media container.
+> Note: `scripts/verify.js` does not currently exist. Verification is handled by the CI workflow (`.github/workflows/daily-guide.yml`).
 
 ## License
 

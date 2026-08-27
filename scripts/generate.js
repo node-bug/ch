@@ -22,34 +22,10 @@ const path = require('path');
 // before they reach the EPG writer — and skip the wasted network round
 // trip. A user (or a workflow) can prune entries from this file if a
 // CDN recovers.
-const DEAD_ICONS_PATH = path.join(__dirname, '..', 'data', 'dead-icons.json');
-function loadDeadIcons() {
-  try {
-    const raw = fs.readFileSync(DEAD_ICONS_PATH, 'utf-8');
-    const arr = JSON.parse(raw);
-    return Array.isArray(arr) ? new Set(arr) : new Set();
-  } catch {
-    return new Set();
-  }
-}
-function saveDeadIcons(set) {
-  try {
-    fs.mkdirSync(path.dirname(DEAD_ICONS_PATH), { recursive: true });
-    fs.writeFileSync(
-      DEAD_ICONS_PATH,
-      JSON.stringify([...set].sort(), null, 2) + '\n',
-      'utf-8'
-    );
-  } catch (err) {
-    console.warn(`Warning: could not write ${DEAD_ICONS_PATH}: ${err.message}`);
-  }
-}
 
-const m3u = require('../index.js');
-const { verifyChannels } = require('./verify.js');
 
 // Expose pure helpers for testing. The module is also runnable directly.
-module.exports = { parseExtinf, findTitleCommaIdx, escapeXml, buildEpg, buildPlaylistFromText, validateIconUrls, probeIcon, verifyChannels };
+module.exports = { parseExtinf, findTitleCommaIdx, buildEpg, buildPlaylistFromText };
 
 // ---------------------------------------------------------------------------
 // iptv-org playlist sources
