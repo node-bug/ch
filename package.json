@@ -2,7 +2,7 @@
   "name": "ch",
   "version": "1.0.0",
   "description": "A simple M3U playlist parser and generator for Node.js",
-  "main": "index.js",
+  "main": "scripts/generate.js",
   "scripts": {
     "generate": "node scripts/generate.js",
     "generate-iptvcat": "node scripts/fetch-iptvcat-india.js"
