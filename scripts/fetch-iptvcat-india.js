@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 /**
- * Fetch Indian IPTV channels from iptvcat.com/india__7 and generate an M3U playlist.
+ * Fetch Indian IPTV channels from iptvcat.net/india__1 and generate an M3U playlist.
  *
  * Strategy:
- *   1. Fetch page 1 (https://iptvcat.com/india__7) and detect the total number
+ *   1. Fetch page 1 (https://iptvcat.net/india__1) and detect the total number
  *      of pages from the pagination block (the "icon-last" link href).
- *   2. Fetch every subsequent page (/india__7/2, /india__7/3, ...) up to that
+ *   2. Fetch every subsequent page (/india__1/2, /india__1/3, ...) up to that
  *      limit (capped by MAX_PAGES as a safety net).
  *   3. For each page, parse every channel row.
  *
@@ -38,7 +38,7 @@ const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://iptvcat.com/india__7';
+const BASE_URL = 'https://iptvcat.net/india__1';
 const M3U_OUTPUT = path.resolve(__dirname, '../channels.m3u');
 const EPG_OUTPUT = path.resolve(__dirname, '../epg.xml');
 const MAX_PAGES = 50; // safety cap; iptvcat currently shows ~7 pages
@@ -73,9 +73,9 @@ async function fetchPage(pageNum) {
  * The pagination looks like:
  *   <ul class="pagination ...">
  *     <li class="active"><a>1</a></li>
- *     <li><a href="/india__7/2" data-ci-pagination-page="2">2</a></li>
+ *     <li><a href="/india__1/2" data-ci-pagination-page="2">2</a></li>
  *     ...
- *     <li><a href="/india__7/7" data-ci-pagination-page="7"><i class="icon-last"></i></a></li>
+ *     <li><a href="/india__1/7" data-ci-pagination-page="7"><i class="icon-last"></i></a></li>
  *   </ul>
  */
 function getTotalPages(html) {
@@ -223,7 +223,7 @@ function buildM3u(channels) {
 function buildEpg(channels) {
   const lines = [
     '<?xml version="1.0" encoding="UTF-8"?>',
-    '<tv generator-info-name="iptvcat-india-fetch" generator-info-url="https://iptvcat.com/india__7">'
+    '<tv generator-info-name="iptvcat-india-fetch" generator-info-url="https://iptvcat.net/india__1">'
   ];
   const seen = new Set();
   for (const ch of channels) {
@@ -246,7 +246,7 @@ function buildEpg(channels) {
  * Fetch every page, dedupe, and write the M3U + EPG files.
  */
 async function main() {
-  console.log('Fetching iptvcat.com/india__7 (Indian channels)...\n');
+  console.log('Fetching iptvcat.net/india__1 (Indian channels)...\n');
 
   // Page 1 → discover total page count.
   const page1 = await fetchPage(1);

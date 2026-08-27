@@ -88,6 +88,16 @@ The final list is filtered to include only channels with "1080p" in their name:
 node scripts/generate.js
 ```
 
+### Generate Indian channels only
+
+For a focused collection of Indian channels, you can run the dedicated Indian IPTV fetcher:
+
+```bash
+node scripts/fetch-iptvcat-india.js
+```
+
+This script fetches channels from iptvcat.net/india__1 and generates both channels.m3u and epg.xml with enhanced Indian channel filtering.
+
 ### Verify channels actually work
 
 The `scripts/verify.js` module probes each stream URL and keeps only the ones
