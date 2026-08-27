@@ -1,5 +1,8 @@
 # Dependencies
 node_modules/
+package-lock.json
+channels.m3u
+epg.xml
 
 # Test files and directories
 test/
