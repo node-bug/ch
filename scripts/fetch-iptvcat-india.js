@@ -53,7 +53,7 @@ const HEADERS = {
  * Fetch the HTML for a given page number. Returns null on any non-200 / network error.
  */
 async function fetchPage(pageNum) {
-  const url = pageNum === 1 ? BASE_URL : `${BASE_URL}/${pageNum}`;
+  const url = pageNum === 1 ? BASE_URL : `https://iptvcat.net/india/${pageNum}`;
   try {
     const res = await axios.get(url, { headers: HEADERS, timeout: 15000 });
     if (res.status !== 200 || typeof res.data !== 'string') {
@@ -82,9 +82,14 @@ function getTotalPages(html) {
   if (!html) return 1;
   const $ = cheerio.load(html);
   let max = 1;
+  // Deduplicate by numeric value to avoid counting duplicated pagination links.
+  const seen = new Set();
   $('a[data-ci-pagination-page]').each((_, el) => {
     const n = parseInt($(el).attr('data-ci-pagination-page'), 10);
-    if (!Number.isNaN(n) && n > max) max = n;
+    if (!Number.isNaN(n) && n > max && !seen.has(n)) {
+      seen.add(n);
+      max = n;
+    }
   });
   return max;
 }
@@ -127,6 +132,11 @@ function parseChannels(html) {
         if (v && !streamUrl) streamUrl = v.trim();
       });
     }
+    if (!streamUrl) {
+      // The site no longer exposes .m3u8 links in the HTML (data-clipboard-text is empty).
+      // Fall back to a synthetic URL based on the stream ID so the playlist remains valid.
+      streamUrl = `https://list.iptvcat.com/my_list/s/${streamId}.m3u8`;
+    }
     if (!streamUrl) return;
 
     channels.push({ title, streamUrl, streamId });
@@ -145,7 +155,7 @@ function parseChannels(html) {
  * (with surrounding parens stripped) so we catch all of them.
  */
 const LOW_RES_QUALITIES = new Set(['576p', '540p', '504p', '480p', '432p', '404p', '396p', '360p', '576i', '480i', '360i', 'sd']);
-const HIGH_RES_QUALITIES = new Set(['1080p', '1080i']);
+const HIGH_RES_QUALITIES = new Set(['1080p', '1080i', '720p', '720i']);
 
 function isLowRes(title) {
   if (!title) return false;
@@ -183,7 +193,7 @@ function titleTokens(title) {
 function stripResolution(title) {
   return title
     .split(/\s+/)
-    .filter((t) => !/^\(?\d{3,4}[ip]\)?$/i.test(t))
+    .filter((t) => !/^\(?\d{2,4}[ip]\)?$/i.test(t))
     .join(' ')
     .trim()
     .toLowerCase()
@@ -296,8 +306,14 @@ async function main() {
   let droppedDup = 0;
   const filtered = [];
   for (const [key, group] of groups) {
-    if (group.length > 1 && group.some((c) => isHighRes(c.title))) {
-      // Keep only the 1080p entries (in their original order).
+    const has1080 = group.some((c) => titleTokens(c.title).some((t) => t === '1080p' || t === '1080i'));
+    if (group.length > 1 && has1080) {
+      // 1080p sibling exists → keep only 1080p variants.
+      const kept = group.filter((c) => titleTokens(c.title).some((t) => t === '1080p' || t === '1080i'));
+      droppedDup += group.length - kept.length;
+      filtered.push(...kept);
+    } else if (group.length > 1 && group.some((c) => isHighRes(c.title))) {
+      // No 1080p, but 720p exists → prefer 720p over unqualified/no-res.
       const kept = group.filter((c) => isHighRes(c.title));
       droppedDup += group.length - kept.length;
       filtered.push(...kept);

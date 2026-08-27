@@ -87,7 +87,7 @@ async function fetchText(url, retries = 2) {
   for (let attempt = 0; attempt <= retries; attempt++) {
     try {
       const res = await fetch(url, {
-        headers: { 'User-Agent': 'm3u-ci/daily-guide (+https://github.com/nodebug/m3u)' }
+        headers: { 'User-Agent': 'm3u-ci/daily-guide (+https://github.com/node-bug/m3u)' }
       });
       if (!res.ok) {
         throw new Error(`HTTP ${res.status} for ${url}`);
@@ -286,7 +286,7 @@ function probeIcon(url, timeoutMs = 6000) {
         host: parsed.hostname,
         port: parsed.port || undefined,
         path: parsed.pathname + parsed.search,
-        headers: { 'User-Agent': 'm3u-ci/icon-check (+https://github.com/nodebug/m3u)' },
+        headers: { 'User-Agent': 'm3u-ci/icon-check (+https://github.com/node-bug/m3u)' },
         timeout: timeoutMs,
       },
       (res) => {
@@ -440,7 +440,7 @@ function buildEpg(channels, now) {
     .join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<tv generator-info-name="m3u-ci" generator-info-url="https://github.com/nodebug/m3u">
+<tv generator-info-name="m3u-ci" generator-info-url="https://github.com/node-bug/m3u">
 ${channelNodes}
 ${programmeNodes}
 </tv>

@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tv generator-info-name="iptvcat-india-fetch" generator-info-url="https://iptvcat.net/india__1">
+  <channel id="tvinternational.in">
+    <display-name lang="en">&amp;TV International (1080p)</display-name>
+  </channel>
+  <channel id="flix.in">
+    <display-name lang="en">&amp;flix (1080p)</display-name>
+  </channel>
+  <channel id="pictures.in">
+    <display-name lang="en">&amp;pictures (1080p)</display-name>
+  </channel>
+  <channel id="privehd.in">
+    <display-name lang="en">&amp;prive HD (1080p)</display-name>
+  </channel>
+  <channel id="xplorhd.in">
+    <display-name lang="en">&amp;xplor HD (1080p)</display-name>
+  </channel>
+  <channel id="10tv.in">
+    <display-name lang="en">10 TV (720p)</display-name>
+  </channel>
+  <channel id="5aabtv.in">
+    <display-name lang="en">5AAB TV</display-name>
+  </channel>
+  <channel id="6tvtelugu.in">
+    <display-name lang="en">6 TV Telugu (720p)</display-name>
+  </channel>
+  <channel id="99tv.in">
+    <display-name lang="en">99TV (720p)</display-name>
+  </channel>
+  <channel id="9xjalwa.in">
+    <display-name lang="en">9X Jalwa</display-name>
+  </channel>
+  <channel id="9xjhakaas.in">
+    <display-name lang="en">9X Jhakaas</display-name>
+  </channel>
+  <channel id="9xtashan.in">
+    <display-name lang="en">9X Tashan</display-name>
+  </channel>
+  <channel id="9xm.in">
+    <display-name lang="en">9XM</display-name>
+  </channel>
+  <channel id="abnandhrajyoti.in">
+    <display-name lang="en">ABN Andhra Jyoti (720p)</display-name>
+  </channel>
+  <channel id="ajnetnewsnot247.in">
+    <display-name lang="en">AJ Net News [Not 24/7]</display-name>
+  </channel>
+  <channel id="annnews.in">
+    <display-name lang="en">ANN News (720p)</display-name>
+  </channel>
+  <channel id="aajtak.in">
+    <display-name lang="en">Aaj Tak</display-name>
+  </channel>
+  <channel id="aakaashaath.in">
+    <display-name lang="en">Aakaash Aath (720p)</display-name>
+  </channel>
+  <channel id="aaryaatv.in">
+    <display-name lang="en">Aaryaa TV (1080p)</display-name>
+  </channel>
+  <channel id="aastha.in">
+    <display-name lang="en">Aastha (720p)</display-name>
+  </channel>
+  <channel id="aasthaprime1.in">
+    <display-name lang="en">Aastha Prime 1 (720p)</display-name>
+  </channel>
+  <channel id="abzydhakad.in">
+    <display-name lang="en">Abzy Dhakad</display-name>
+  </channel>
+  <channel id="abzymovies.in">
+    <display-name lang="en">Abzy Movies</display-name>
+  </channel>
+  <channel id="alankartv.in">
+    <display-name lang="en">Alankar TV (720p)</display-name>
+  </channel>
+  <channel id="anandabarta.in">
+    <display-name lang="en">Ananda Barta (720p)</display-name>
+  </channel>
+  <channel id="anandhamtv.in">
+    <display-name lang="en">Anandham TV (1080p)</display-name>
+  </channel>
+  <channel id="animaxgeoblocked.in">
+    <display-name lang="en">Animax [Geo-blocked]</display-name>
+  </channel>
+  <channel id="anjannot247.in">
+    <display-name lang="en">Anjan (1080p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="asianethd.in">
+    <display-name lang="en">Asianet HD (1080p)</display-name>
+  </channel>
+  <channel id="awaazindiatv.in">
+    <display-name lang="en">Awaaz India TV (720p)</display-name>
+  </channel>
+  <channel id="ayushtv.in">
+    <display-name lang="en">Ayush TV</display-name>
+  </channel>
+  <channel id="b4ubhojpuri.in">
+    <display-name lang="en">B4U Bhojpuri (1080p)</display-name>
+  </channel>
+  <channel id="b4ukadak.in">
+    <display-name lang="en">B4U Kadak</display-name>
+  </channel>
+  <channel id="b4ukadaknot247.in">
+    <display-name lang="en">B4U Kadak (1080p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="b4umovies.in">
+    <display-name lang="en">B4U Movies</display-name>
+  </channel>
+  <channel id="b4umoviesindia.in">
+    <display-name lang="en">B4U Movies India (1080p)</display-name>
+  </channel>
+  <channel id="b4umusic.in">
+    <display-name lang="en">B4U Music (1080p)</display-name>
+  </channel>
+  <channel id="bbcnewsasiapacific.in">
+    <display-name lang="en">BBC News Asia Pacific (720p)</display-name>
+  </channel>
+  <channel id="bigtv.in">
+    <display-name lang="en">BIG TV (720p)</display-name>
+  </channel>
+  <channel id="balleballe.in">
+    <display-name lang="en">Balle Balle (720p)</display-name>
+  </channel>
+  <channel id="bhakthitv.in">
+    <display-name lang="en">Bhakthi TV (720p)</display-name>
+  </channel>
+  <channel id="bharat24.in">
+    <display-name lang="en">Bharat24 (1080p)</display-name>
+  </channel>
+  <channel id="blessingtvtamil.in">
+    <display-name lang="en">Blessing TV Tamil (720p)</display-name>
+  </channel>
+  <channel id="ctvnakdplus.in">
+    <display-name lang="en">CTVN AKD Plus (1080p)</display-name>
+  </channel>
+  <channel id="cvrenglish.in">
+    <display-name lang="en">CVR English (720p)</display-name>
+  </channel>
+  <channel id="cartoonnetworkhd.in">
+    <display-name lang="en">Cartoon Network HD+ (1080p)</display-name>
+  </channel>
+  <channel id="channelwin.in">
+    <display-name lang="en">Channel WIN (720p)</display-name>
+  </channel>
+  <channel id="channely.in">
+    <display-name lang="en">Channel Y</display-name>
+  </channel>
+  <channel id="chardiklagurbaanitv.in">
+    <display-name lang="en">Chardikla Gurbaani TV (1080p)</display-name>
+  </channel>
+  <channel id="chardiklatimetv.in">
+    <display-name lang="en">Chardikla Time TV (1080p)</display-name>
+  </channel>
+  <channel id="chardiklatimetvnorthamerica.in">
+    <display-name lang="en">Chardikla Time TV North America (1080p)</display-name>
+  </channel>
+  <channel id="colors.in">
+    <display-name lang="en">Colors (1080p)</display-name>
+  </channel>
+  <channel id="colorsbangla.in">
+    <display-name lang="en">Colors Bangla (1080p)</display-name>
+  </channel>
+  <channel id="colorscineplex.in">
+    <display-name lang="en">Colors Cineplex (1080p)</display-name>
+  </channel>
+  <channel id="colorsgujarati.in">
+    <display-name lang="en">Colors Gujarati (1080p)</display-name>
+  </channel>
+  <channel id="colorsinfinity.in">
+    <display-name lang="en">Colors Infinity (1080p)</display-name>
+  </channel>
+  <channel id="colorskannada.in">
+    <display-name lang="en">Colors Kannada (1080p)</display-name>
+  </channel>
+  <channel id="colorskannadacinema.in">
+    <display-name lang="en">Colors Kannada Cinema (1080p)</display-name>
+  </channel>
+  <channel id="colorsmarathi.in">
+    <display-name lang="en">Colors Marathi (1080p)</display-name>
+  </channel>
+  <channel id="colorsrishteyasia.in">
+    <display-name lang="en">Colors Rishtey Asia (1080p)</display-name>
+  </channel>
+  <channel id="colorsrishteyasianot247.in">
+    <display-name lang="en">Colors Rishtey Asia (1080p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="colorssuper.in">
+    <display-name lang="en">Colors Super (1080p)</display-name>
+  </channel>
+  <channel id="colorstamil.in">
+    <display-name lang="en">Colors Tamil (1080p)</display-name>
+  </channel>
+  <channel id="colorstamilhd.in">
+    <display-name lang="en">Colors Tamil HD (1080p)</display-name>
+  </channel>
+  <channel id="ddarunprabha.in">
+    <display-name lang="en">DD Arun Prabha</display-name>
+  </channel>
+  <channel id="ddassam.in">
+    <display-name lang="en">DD Assam</display-name>
+  </channel>
+  <channel id="ddbangla.in">
+    <display-name lang="en">DD Bangla</display-name>
+  </channel>
+  <channel id="ddbharati.in">
+    <display-name lang="en">DD Bharati (720p)</display-name>
+  </channel>
+  <channel id="ddbihar.in">
+    <display-name lang="en">DD Bihar (720p)</display-name>
+  </channel>
+  <channel id="ddchandana.in">
+    <display-name lang="en">DD Chandana</display-name>
+  </channel>
+  <channel id="ddchhattisgarh.in">
+    <display-name lang="en">DD Chhattisgarh (720p)</display-name>
+  </channel>
+  <channel id="ddgirnar.in">
+    <display-name lang="en">DD Girnar</display-name>
+  </channel>
+  <channel id="ddjharkhand.in">
+    <display-name lang="en">DD Jharkhand</display-name>
+  </channel>
+  <channel id="ddkashir.in">
+    <display-name lang="en">DD Kashir (720p)</display-name>
+  </channel>
+  <channel id="ddkisan.in">
+    <display-name lang="en">DD Kisan (720p)</display-name>
+  </channel>
+  <channel id="ddmadhyapradesh.in">
+    <display-name lang="en">DD Madhya Pradesh (720p)</display-name>
+  </channel>
+  <channel id="ddmalayalam.in">
+    <display-name lang="en">DD Malayalam</display-name>
+  </channel>
+  <channel id="ddmeghalaya.in">
+    <display-name lang="en">DD Meghalaya</display-name>
+  </channel>
+  <channel id="ddmizoram.in">
+    <display-name lang="en">DD Mizoram</display-name>
+  </channel>
+  <channel id="ddnagaland.in">
+    <display-name lang="en">DD Nagaland</display-name>
+  </channel>
+  <channel id="ddnews.in">
+    <display-name lang="en">DD News (1080p)</display-name>
+  </channel>
+  <channel id="ddodia.in">
+    <display-name lang="en">DD Odia</display-name>
+  </channel>
+  <channel id="ddpodhigai.in">
+    <display-name lang="en">DD Podhigai</display-name>
+  </channel>
+  <channel id="ddpunjabi.in">
+    <display-name lang="en">DD Punjabi</display-name>
+  </channel>
+  <channel id="ddrajasthan.in">
+    <display-name lang="en">DD Rajasthan (720p)</display-name>
+  </channel>
+  <channel id="ddsports.in">
+    <display-name lang="en">DD Sports (720p)</display-name>
+  </channel>
+  <channel id="ddtripura.in">
+    <display-name lang="en">DD Tripura</display-name>
+  </channel>
+  <channel id="ddurdu.in">
+    <display-name lang="en">DD Urdu (720p)</display-name>
+  </channel>
+  <channel id="dduttarpradesh.in">
+    <display-name lang="en">DD Uttar Pradesh (720p)</display-name>
+  </channel>
+  <channel id="dduttarakhand.in">
+    <display-name lang="en">DD Uttarakhand (720p)</display-name>
+  </channel>
+  <channel id="dabangg.in">
+    <display-name lang="en">Dabangg (720p)</display-name>
+  </channel>
+  <channel id="darshanatv.in">
+    <display-name lang="en">Darshana TV (720p)</display-name>
+  </channel>
+  <channel id="desichannel.in">
+    <display-name lang="en">Desi Channel (720p)</display-name>
+  </channel>
+  <channel id="dharshantv.in">
+    <display-name lang="en">Dharshan TV (720p)</display-name>
+  </channel>
+  <channel id="dhoommusic.in">
+    <display-name lang="en">Dhoom Music (720p)</display-name>
+  </channel>
+  <channel id="disneychannelhd.in">
+    <display-name lang="en">Disney Channel HD (1080p)</display-name>
+  </channel>
+  <channel id="etnow.in">
+    <display-name lang="en">ET Now (720p)</display-name>
+  </channel>
+  <channel id="etnowgeoblocked.in">
+    <display-name lang="en">ET Now (720p) [Geo-blocked]</display-name>
+  </channel>
+  <channel id="faktmarathinot247.in">
+    <display-name lang="en">Fakt Marathi (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="fatehtv.in">
+    <display-name lang="en">Fateh TV</display-name>
+  </channel>
+  <channel id="gaundapunjabtv.in">
+    <display-name lang="en">Gaunda Punjab TV</display-name>
+  </channel>
+  <channel id="geminimovies.in">
+    <display-name lang="en">Gemini Movies (1080p)</display-name>
+  </channel>
+  <channel id="geminimusic.in">
+    <display-name lang="en">Gemini Music (1080p)</display-name>
+  </channel>
+  <channel id="geminitv.in">
+    <display-name lang="en">Gemini TV (1080p)</display-name>
+  </channel>
+  <channel id="globalpunjab.in">
+    <display-name lang="en">Global Punjab (1080p)</display-name>
+  </channel>
+  <channel id="goa365.in">
+    <display-name lang="en">Goa365 (1080p)</display-name>
+  </channel>
+  <channel id="gospeltvindia.in">
+    <display-name lang="en">Gospel TV India (720p)</display-name>
+  </channel>
+  <channel id="gulistannews.in">
+    <display-name lang="en">Gulistan News (720p)</display-name>
+  </channel>
+  <channel id="gyandarshan.in">
+    <display-name lang="en">Gyandarshan (720p)</display-name>
+  </channel>
+  <channel id="hmtv.in">
+    <display-name lang="en">HMTV (720p)</display-name>
+  </channel>
+  <channel id="hamdardtv.in">
+    <display-name lang="en">Hamdard TV (1080p)</display-name>
+  </channel>
+  <channel id="harvesttv.in">
+    <display-name lang="en">Harvest TV (720p)</display-name>
+  </channel>
+  <channel id="harvesttvkeralam.in">
+    <display-name lang="en">Harvest TV Keralam (720p)</display-name>
+  </channel>
+  <channel id="harvesttvusa.in">
+    <display-name lang="en">Harvest TV USA</display-name>
+  </channel>
+  <channel id="hidost.in">
+    <display-name lang="en">Hi Dost! (720p)</display-name>
+  </channel>
+  <channel id="historytv18hd.in">
+    <display-name lang="en">History TV18 HD (1080p)</display-name>
+  </channel>
+  <channel id="historytv18hdgeoblocked.in">
+    <display-name lang="en">History TV18 HD (1080p) [Geo-blocked]</display-name>
+  </channel>
+  <channel id="hydertv.in">
+    <display-name lang="en">Hyder TV (720p)</display-name>
+  </channel>
+  <channel id="ibc24.in">
+    <display-name lang="en">IBC 24 (720p)</display-name>
+  </channel>
+  <channel id="inews.in">
+    <display-name lang="en">INews (720p)</display-name>
+  </channel>
+  <channel id="indianews.in">
+    <display-name lang="en">India News (1080p)</display-name>
+  </channel>
+  <channel id="indianewsgujarati.in">
+    <display-name lang="en">India News Gujarati (1080p)</display-name>
+  </channel>
+  <channel id="indianewsharyana.in">
+    <display-name lang="en">India News Haryana (1080p)</display-name>
+  </channel>
+  <channel id="indianewspunjabhimachal.in">
+    <display-name lang="en">India News Punjab/Himachal (1080p)</display-name>
+  </channel>
+  <channel id="indianewsuttarpradesh.in">
+    <display-name lang="en">India News Uttar Pradesh (1080p)</display-name>
+  </channel>
+  <channel id="indiatv.in">
+    <display-name lang="en">India TV (720p)</display-name>
+  </channel>
+  <channel id="indiatvaapkiadalatgeoblocked.in">
+    <display-name lang="en">India TV Aap Ki Adalat (1080p) [Geo-blocked]</display-name>
+  </channel>
+  <channel id="indiatvspeednews.in">
+    <display-name lang="en">India TV Speed News (1080p)</display-name>
+  </channel>
+  <channel id="ishwarbhaktitv.in">
+    <display-name lang="en">Ishwar Bhakti TV (720p)</display-name>
+  </channel>
+  <channel id="jk24x7news.in">
+    <display-name lang="en">JK 24x7 News (720p)</display-name>
+  </channel>
+  <channel id="jantatv.in">
+    <display-name lang="en">Janta TV</display-name>
+  </channel>
+  <channel id="jattvibe.in">
+    <display-name lang="en">Jattvibe (720p)</display-name>
+  </channel>
+  <channel id="jayatv.in">
+    <display-name lang="en">Jaya TV (1080p)</display-name>
+  </channel>
+  <channel id="jinvanichannel.in">
+    <display-name lang="en">Jinvani Channel (720p)</display-name>
+  </channel>
+  <channel id="knewsindia.in">
+    <display-name lang="en">K News India (1080p)</display-name>
+  </channel>
+  <channel id="ktv.in">
+    <display-name lang="en">KTV (1080p)</display-name>
+  </channel>
+  <channel id="kairalinews.in">
+    <display-name lang="en">Kairali News (720p)</display-name>
+  </channel>
+  <channel id="kannurvision.in">
+    <display-name lang="en">Kannur Vision (1080p)</display-name>
+  </channel>
+  <channel id="kashishnews.in">
+    <display-name lang="en">Kashish News (720p)</display-name>
+  </channel>
+  <channel id="kaumudytv.in">
+    <display-name lang="en">Kaumudy TV (720p)</display-name>
+  </channel>
+  <channel id="khushboobangla.in">
+    <display-name lang="en">Khushboo Bangla (720p)</display-name>
+  </channel>
+  <channel id="loksabhatv.in">
+    <display-name lang="en">Lok Sabha TV (1080p)</display-name>
+  </channel>
+  <channel id="msignmedianot247.in">
+    <display-name lang="en">M Sign Media (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="mhonemusic.in">
+    <display-name lang="en">MH One Music (1080p)</display-name>
+  </channel>
+  <channel id="mhonenews.in">
+    <display-name lang="en">MH One News (1080p)</display-name>
+  </channel>
+  <channel id="mhoneshraddha.in">
+    <display-name lang="en">MH One Shraddha (1080p)</display-name>
+  </channel>
+  <channel id="mksixnot247.in">
+    <display-name lang="en">MK Six (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="mktvnot247.in">
+    <display-name lang="en">MK TV (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="mktunesnot247.in">
+    <display-name lang="en">MK Tunes (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="mnx.in">
+    <display-name lang="en">MNX (1080p)</display-name>
+  </channel>
+  <channel id="montvbangla.in">
+    <display-name lang="en">MON TV Bangla (720p)</display-name>
+  </channel>
+  <channel id="mtv.in">
+    <display-name lang="en">MTV (1080p)</display-name>
+  </channel>
+  <channel id="mtvhd.in">
+    <display-name lang="en">MTV HD</display-name>
+  </channel>
+  <channel id="madhatv.in">
+    <display-name lang="en">Madha TV (600p)</display-name>
+  </channel>
+  <channel id="maiboli.in">
+    <display-name lang="en">Maiboli (720p)</display-name>
+  </channel>
+  <channel id="malaimurasutvnot247.in">
+    <display-name lang="en">Malai Murasu TV (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="malartvnot247.in">
+    <display-name lang="en">Malar TV (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="manoranjangrand.in">
+    <display-name lang="en">Manoranjan Grand (720p)</display-name>
+  </channel>
+  <channel id="manoranjanmovies.in">
+    <display-name lang="en">Manoranjan Movies (720p)</display-name>
+  </channel>
+  <channel id="manoranjantv.in">
+    <display-name lang="en">Manoranjan TV (720p)</display-name>
+  </channel>
+  <channel id="mastiii.in">
+    <display-name lang="en">Mastiii (1080p)</display-name>
+  </channel>
+  <channel id="mavtv.in">
+    <display-name lang="en">Mav TV</display-name>
+  </channel>
+  <channel id="maxmiddleeast.in">
+    <display-name lang="en">Max Middle East (1080p)</display-name>
+  </channel>
+  <channel id="mayyazhinot247.in">
+    <display-name lang="en">Mayyazhi (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="mazhavilmanoramahd.in">
+    <display-name lang="en">Mazhavil Manorama HD (1080p)</display-name>
+  </channel>
+  <channel id="mediaone.in">
+    <display-name lang="en">Media One (720p)</display-name>
+  </channel>
+  <channel id="metrotv.in">
+    <display-name lang="en">Metro TV (1080p)</display-name>
+  </channel>
+  <channel id="mh1music.in">
+    <display-name lang="en">Mh 1 Music (720p)</display-name>
+  </channel>
+  <channel id="mirrornow.in">
+    <display-name lang="en">Mirror Now (720p)</display-name>
+  </channel>
+  <channel id="moviesnow.in">
+    <display-name lang="en">Movies Now (1080p)</display-name>
+  </channel>
+  <channel id="munsiftv.in">
+    <display-name lang="en">Munsif TV (720p)</display-name>
+  </channel>
+  <channel id="musicindianot247.in">
+    <display-name lang="en">Music India (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="ndtvgoodtimes.in">
+    <display-name lang="en">NDTV Good Times (1080p)</display-name>
+  </channel>
+  <channel id="ndtvprofitgeoblocked.in">
+    <display-name lang="en">NDTV Profit [Geo-blocked]</display-name>
+  </channel>
+  <channel id="nktv24x7.in">
+    <display-name lang="en">NK TV 24x7 (1080p)</display-name>
+  </channel>
+  <channel id="ntctv.in">
+    <display-name lang="en">NTC TV (720p)</display-name>
+  </channel>
+  <channel id="namdhari.in">
+    <display-name lang="en">Namdhari</display-name>
+  </channel>
+  <channel id="nandighoshatv.in">
+    <display-name lang="en">Nandighosha TV (720p)</display-name>
+  </channel>
+  <channel id="nationalgeographichd.in">
+    <display-name lang="en">National Geographic HD (1080p)</display-name>
+  </channel>
+  <channel id="nationalgeographicwildhd.in">
+    <display-name lang="en">National Geographic Wild HD (1080p)</display-name>
+  </channel>
+  <channel id="naxatranews.in">
+    <display-name lang="en">Naxatra News (720p)</display-name>
+  </channel>
+  <channel id="news24.in">
+    <display-name lang="en">News 24 (720p)</display-name>
+  </channel>
+  <channel id="newsjnot247.in">
+    <display-name lang="en">News J (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="news18keralageoblocked.in">
+    <display-name lang="en">News18 Kerala (1080p) [Geo-blocked]</display-name>
+  </channel>
+  <channel id="newsxworld.in">
+    <display-name lang="en">NewsX World (1080p)</display-name>
+  </channel>
+  <channel id="nickhd.in">
+    <display-name lang="en">Nick HD+</display-name>
+  </channel>
+  <channel id="nickjrindia.in">
+    <display-name lang="en">Nick Jr India (1080p)</display-name>
+  </channel>
+  <channel id="nickelodeonsonichindi.in">
+    <display-name lang="en">Nickelodeon Sonic Hindi (1080p)</display-name>
+  </channel>
+  <channel id="northeastlive.in">
+    <display-name lang="en">Northeast Live (720p)</display-name>
+  </channel>
+  <channel id="odishatv.in">
+    <display-name lang="en">Odisha TV (720p)</display-name>
+  </channel>
+  <channel id="orangebanglatv.in">
+    <display-name lang="en">Orange Bangla TV (720p)</display-name>
+  </channel>
+  <channel id="oscarmoviesbhojpuri.in">
+    <display-name lang="en">Oscar Movies Bhojpuri (720p)</display-name>
+  </channel>
+  <channel id="ptcchakde.in">
+    <display-name lang="en">PTC Chakde (720p)</display-name>
+  </channel>
+  <channel id="ptcdhol.in">
+    <display-name lang="en">PTC Dhol (720p)</display-name>
+  </channel>
+  <channel id="ptcmusic.in">
+    <display-name lang="en">PTC Music (720p)</display-name>
+  </channel>
+  <channel id="ptcnews.in">
+    <display-name lang="en">PTC News (720p)</display-name>
+  </channel>
+  <channel id="ptcpunjabi.in">
+    <display-name lang="en">PTC Punjabi (720p)</display-name>
+  </channel>
+  <channel id="ptcpunjabigold.in">
+    <display-name lang="en">PTC Punjabi Gold (720p)</display-name>
+  </channel>
+  <channel id="ptcsimran.in">
+    <display-name lang="en">PTC Simran (720p)</display-name>
+  </channel>
+  <channel id="punjabtv.in">
+    <display-name lang="en">PUNJAB TV</display-name>
+  </channel>
+  <channel id="peacetvbangla.in">
+    <display-name lang="en">Peace TV Bangla (1080p)</display-name>
+  </channel>
+  <channel id="peacetvurdu.in">
+    <display-name lang="en">Peace TV Urdu (1080p)</display-name>
+  </channel>
+  <channel id="pepperstv.in">
+    <display-name lang="en">Peppers TV (751p)</display-name>
+  </channel>
+  <channel id="pogo.in">
+    <display-name lang="en">Pogo</display-name>
+  </channel>
+  <channel id="polimernewsgeoblocked.in">
+    <display-name lang="en">Polimer News (720p) [Geo-blocked]</display-name>
+  </channel>
+  <channel id="polimertv.in">
+    <display-name lang="en">Polimer TV (720p)</display-name>
+  </channel>
+  <channel id="prarthanatv.in">
+    <display-name lang="en">Prarthana TV (720p)</display-name>
+  </channel>
+  <channel id="pravahpicturehd.in">
+    <display-name lang="en">Pravah Picture HD (1080p)</display-name>
+  </channel>
+  <channel id="pravasichannel.in">
+    <display-name lang="en">Pravasi Channel (1080p)</display-name>
+  </channel>
+  <channel id="prime9news.in">
+    <display-name lang="en">Prime9 News (1080p)</display-name>
+  </channel>
+  <channel id="prudentmedia.in">
+    <display-name lang="en">Prudent Media (1080p)</display-name>
+  </channel>
+  <channel id="publicmusicnot247.in">
+    <display-name lang="en">Public Music (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="publictv.in">
+    <display-name lang="en">Public TV (720p)</display-name>
+  </channel>
+  <channel id="pularitvnot247.in">
+    <display-name lang="en">Pulari TV (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="punjabihits.in">
+    <display-name lang="en">Punjabi Hits (1080p)</display-name>
+  </channel>
+  <channel id="rplus.in">
+    <display-name lang="en">R Plus (768p)</display-name>
+  </channel>
+  <channel id="rtindia.in">
+    <display-name lang="en">RT India (1080p)</display-name>
+  </channel>
+  <channel id="rajdigitalplus.in">
+    <display-name lang="en">Raj Digital Plus (1080p)</display-name>
+  </channel>
+  <channel id="rajmusixtamil.in">
+    <display-name lang="en">Raj Musix Tamil (1080p)</display-name>
+  </channel>
+  <channel id="rajmusixtelugu.in">
+    <display-name lang="en">Raj Musix Telugu (720p)</display-name>
+  </channel>
+  <channel id="rajnews.in">
+    <display-name lang="en">Raj News (1080p)</display-name>
+  </channel>
+  <channel id="rajpariwarnot247.in">
+    <display-name lang="en">Raj Pariwar (1080p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="realnewskeralanot247.in">
+    <display-name lang="en">Real News Kerala (1080p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="realtvnot247.in">
+    <display-name lang="en">Real TV (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="republictv.in">
+    <display-name lang="en">Republic TV (1080p)</display-name>
+  </channel>
+  <channel id="republictvgeoblocked.in">
+    <display-name lang="en">Republic TV [Geo-blocked]</display-name>
+  </channel>
+  <channel id="rojamovies.in">
+    <display-name lang="en">Roja Movies (1080p)</display-name>
+  </channel>
+  <channel id="rojatv.in">
+    <display-name lang="en">Roja TV (1080p)</display-name>
+  </channel>
+  <channel id="rongeentv.in">
+    <display-name lang="en">Rongeen TV (720p)</display-name>
+  </channel>
+  <channel id="rupasibangla.in">
+    <display-name lang="en">Rupasi Bangla (720p)</display-name>
+  </channel>
+  <channel id="sadatv.in">
+    <display-name lang="en">SADA TV</display-name>
+  </channel>
+  <channel id="saamtv.in">
+    <display-name lang="en">Saam TV</display-name>
+  </channel>
+  <channel id="sadhna.in">
+    <display-name lang="en">Sadhna (720p)</display-name>
+  </channel>
+  <channel id="sadhnaplusnews.in">
+    <display-name lang="en">Sadhna Plus News (720p)</display-name>
+  </channel>
+  <channel id="saitv.in">
+    <display-name lang="en">Sai TV (1080p)</display-name>
+  </channel>
+  <channel id="salvationtv.in">
+    <display-name lang="en">Salvation TV (1080p)</display-name>
+  </channel>
+  <channel id="samacharplus.in">
+    <display-name lang="en">Samachar Plus (1080p)</display-name>
+  </channel>
+  <channel id="sanaplusnot247.in">
+    <display-name lang="en">Sana Plus (1080p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="sangeetbangla.in">
+    <display-name lang="en">Sangeet Bangla (720p)</display-name>
+  </channel>
+  <channel id="sangeetmarathi.in">
+    <display-name lang="en">Sangeet Marathi (720p)</display-name>
+  </channel>
+  <channel id="sansadtvnot247.in">
+    <display-name lang="en">Sansad TV (1080p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="sansadtv2.in">
+    <display-name lang="en">Sansad TV 2 (1080p)</display-name>
+  </channel>
+  <channel id="shekinahtv.in">
+    <display-name lang="en">Shekinah TV (1080p)</display-name>
+  </channel>
+  <channel id="shemarootv.in">
+    <display-name lang="en">Shemaroo TV (720p)</display-name>
+  </channel>
+  <channel id="shubhsandesh.in">
+    <display-name lang="en">Shubhsandesh</display-name>
+  </channel>
+  <channel id="songdewtv.in">
+    <display-name lang="en">Songdew TV (720p)</display-name>
+  </channel>
+  <channel id="sonyaath.in">
+    <display-name lang="en">Sony Aath (1080p)</display-name>
+  </channel>
+  <channel id="sonybbcearth.in">
+    <display-name lang="en">Sony BBC Earth (1080p)</display-name>
+  </channel>
+  <channel id="sonybbcearthhd.in">
+    <display-name lang="en">Sony BBC Earth HD (1080p)</display-name>
+  </channel>
+  <channel id="sonybbcearthgeoblocked.in">
+    <display-name lang="en">Sony BBC Earth [Geo-blocked]</display-name>
+  </channel>
+  <channel id="sonyentertainmenttelevision.in">
+    <display-name lang="en">Sony Entertainment Television (1080p)</display-name>
+  </channel>
+  <channel id="sonyentertainmenttelevisionasiahd.in">
+    <display-name lang="en">Sony Entertainment Television Asia HD (1080p)</display-name>
+  </channel>
+  <channel id="sonymax.in">
+    <display-name lang="en">Sony MAX (1080p)</display-name>
+  </channel>
+  <channel id="sonymaxhd.in">
+    <display-name lang="en">Sony MAX HD (1080p)</display-name>
+  </channel>
+  <channel id="sonymarathi.in">
+    <display-name lang="en">Sony Marathi (1080p)</display-name>
+  </channel>
+  <channel id="sonymax2.in">
+    <display-name lang="en">Sony Max 2 (1080p)</display-name>
+  </channel>
+  <channel id="sonypal.in">
+    <display-name lang="en">Sony Pal (1080p)</display-name>
+  </channel>
+  <channel id="sonypix.in">
+    <display-name lang="en">Sony Pix (1080p)</display-name>
+  </channel>
+  <channel id="sonypixgeoblocked.in">
+    <display-name lang="en">Sony Pix [Geo-blocked]</display-name>
+  </channel>
+  <channel id="sonysab.in">
+    <display-name lang="en">Sony SAB (1080p)</display-name>
+  </channel>
+  <channel id="sonysabgeoblocked.in">
+    <display-name lang="en">Sony SAB [Geo-blocked]</display-name>
+  </channel>
+  <channel id="sonysixhd.in">
+    <display-name lang="en">Sony Six HD (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten2hd.in">
+    <display-name lang="en">Sony Sports TEN 2 HD (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten1.in">
+    <display-name lang="en">Sony Sports Ten 1 (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten2.in">
+    <display-name lang="en">Sony Sports Ten 2 (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten3.in">
+    <display-name lang="en">Sony Sports Ten 3 (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten3hd.in">
+    <display-name lang="en">Sony Sports Ten 3 HD (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten4.in">
+    <display-name lang="en">Sony Sports Ten 4 (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten4hd.in">
+    <display-name lang="en">Sony Sports Ten 4 HD (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten5.in">
+    <display-name lang="en">Sony Sports Ten 5 (1080p)</display-name>
+  </channel>
+  <channel id="sonysportsten5hd.in">
+    <display-name lang="en">Sony Sports Ten 5 HD (1080p)</display-name>
+  </channel>
+  <channel id="sonywah.in">
+    <display-name lang="en">Sony Wah (1080p)</display-name>
+  </channel>
+  <channel id="starbharathd.in">
+    <display-name lang="en">Star Bharat HD (1080p)</display-name>
+  </channel>
+  <channel id="stargold2hd.in">
+    <display-name lang="en">Star Gold 2 HD (1080p)</display-name>
+  </channel>
+  <channel id="stargoldhd.in">
+    <display-name lang="en">Star Gold HD (1080p)</display-name>
+  </channel>
+  <channel id="stargoldselecthd.in">
+    <display-name lang="en">Star Gold Select HD (1080p)</display-name>
+  </channel>
+  <channel id="starmaahd.in">
+    <display-name lang="en">Star Maa HD (1080p)</display-name>
+  </channel>
+  <channel id="starmovieshd.in">
+    <display-name lang="en">Star Movies HD (1080p)</display-name>
+  </channel>
+  <channel id="starmoviesselecthd.in">
+    <display-name lang="en">Star Movies Select HD (1080p)</display-name>
+  </channel>
+  <channel id="starpravahhd.in">
+    <display-name lang="en">Star Pravah HD (1080p)</display-name>
+  </channel>
+  <channel id="starsports1hd.in">
+    <display-name lang="en">Star Sports 1 HD (1080p)</display-name>
+  </channel>
+  <channel id="starsports1hdgeoblocked.in">
+    <display-name lang="en">Star Sports 1 HD [Geo-blocked]</display-name>
+  </channel>
+  <channel id="starsports1hindihd.in">
+    <display-name lang="en">Star Sports 1 Hindi HD (1080p)</display-name>
+  </channel>
+  <channel id="starsports1tamilhd.in">
+    <display-name lang="en">Star Sports 1 Tamil HD (1080p)</display-name>
+  </channel>
+  <channel id="starsports1teluguhd.in">
+    <display-name lang="en">Star Sports 1 Telugu HD (1080p)</display-name>
+  </channel>
+  <channel id="starsports2hd.in">
+    <display-name lang="en">Star Sports 2 HD (1080p)</display-name>
+  </channel>
+  <channel id="starsports2hindi.in">
+    <display-name lang="en">Star Sports 2 Hindi (1080p)</display-name>
+  </channel>
+  <channel id="starsportsselect1hd.in">
+    <display-name lang="en">Star Sports Select 1 HD (1080p)</display-name>
+  </channel>
+  <channel id="starsportsselect2hd.in">
+    <display-name lang="en">Star Sports Select 2 HD (1080p)</display-name>
+  </channel>
+  <channel id="starsuvarnahd.in">
+    <display-name lang="en">Star Suvarna HD (1080p)</display-name>
+  </channel>
+  <channel id="starvijayhd.in">
+    <display-name lang="en">Star Vijay HD (1080p)</display-name>
+  </channel>
+  <channel id="starplushd.in">
+    <display-name lang="en">StarPlus HD (1080p)</display-name>
+  </channel>
+  <channel id="steelbirdmusicnot247.in">
+    <display-name lang="en">Steelbird Music (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="studioone.in">
+    <display-name lang="en">Studio One + (720p)</display-name>
+  </channel>
+  <channel id="subhavaarthatv.in">
+    <display-name lang="en">Subhavaartha TV (720p)</display-name>
+  </channel>
+  <channel id="subintv.in">
+    <display-name lang="en">Subin TV (1080p)</display-name>
+  </channel>
+  <channel id="sudarshannews.in">
+    <display-name lang="en">Sudarshan News (1080p)</display-name>
+  </channel>
+  <channel id="sunmarathi.in">
+    <display-name lang="en">Sun Marathi (1080p)</display-name>
+  </channel>
+  <channel id="sunmusic.in">
+    <display-name lang="en">Sun Music (1080p)</display-name>
+  </channel>
+  <channel id="suntv.in">
+    <display-name lang="en">Sun TV (1080p)</display-name>
+  </channel>
+  <channel id="suriyatv.in">
+    <display-name lang="en">Suriya TV (1080p)</display-name>
+  </channel>
+  <channel id="suriyantv.in">
+    <display-name lang="en">Suriyan TV (1080p)</display-name>
+  </channel>
+  <channel id="suryatv.in">
+    <display-name lang="en">Surya TV (1080p)</display-name>
+  </channel>
+  <channel id="swadeshnews.in">
+    <display-name lang="en">Swadesh News (720p)</display-name>
+  </channel>
+  <channel id="swagjatt.in">
+    <display-name lang="en">SwagJatt (720p)</display-name>
+  </channel>
+  <channel id="swarajexpresssmbcnot247.in">
+    <display-name lang="en">Swaraj Express SMBC (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="tnews.in">
+    <display-name lang="en">T News (720p)</display-name>
+  </channel>
+  <channel id="tabbarhits.in">
+    <display-name lang="en">Tabbar Hits (1080p)</display-name>
+  </channel>
+  <channel id="tamiljanam.in">
+    <display-name lang="en">Tamil Janam (720p)</display-name>
+  </channel>
+  <channel id="tamilantv.in">
+    <display-name lang="en">Tamilan TV (1080p)</display-name>
+  </channel>
+  <channel id="tarangmusic.in">
+    <display-name lang="en">Tarang Music (720p)</display-name>
+  </channel>
+  <channel id="tarangtv.in">
+    <display-name lang="en">Tarang TV (720p)</display-name>
+  </channel>
+  <channel id="tehzeebtv.in">
+    <display-name lang="en">Tehzeeb TV (720p)</display-name>
+  </channel>
+  <channel id="thanthitv.in">
+    <display-name lang="en">Thanthi TV</display-name>
+  </channel>
+  <channel id="timesnowgeoblocked.in">
+    <display-name lang="en">Times Now (720p) [Geo-blocked]</display-name>
+  </channel>
+  <channel id="timesnownavbharatgeoblocked.in">
+    <display-name lang="en">Times Now Navbharat (1080p) [Geo-blocked]</display-name>
+  </channel>
+  <channel id="twentyfournews.in">
+    <display-name lang="en">Twenty Four News</display-name>
+  </channel>
+  <channel id="udayamusicnot247.in">
+    <display-name lang="en">Udaya Music (288p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="udayatv.in">
+    <display-name lang="en">Udaya TV (1080p)</display-name>
+  </channel>
+  <channel id="ultimatetv.in">
+    <display-name lang="en">Ultimate TV (1080p)</display-name>
+  </channel>
+  <channel id="vcvnot247.in">
+    <display-name lang="en">VCV (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="vaanaviltv.in">
+    <display-name lang="en">Vaanavil TV (720p)</display-name>
+  </channel>
+  <channel id="vanithatv.in">
+    <display-name lang="en">Vanitha TV (720p)</display-name>
+  </channel>
+  <channel id="vasanthtv.in">
+    <display-name lang="en">Vasanth TV (720p)</display-name>
+  </channel>
+  <channel id="vendhartvnot247.in">
+    <display-name lang="en">Vendhar TV (720p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="vijaysuperhd.in">
+    <display-name lang="en">Vijay Super HD (1080p)</display-name>
+  </channel>
+  <channel id="vissatvnot247.in">
+    <display-name lang="en">Vissa TV (1080p) [Not 24/7]</display-name>
+  </channel>
+  <channel id="wion.in">
+    <display-name lang="en">WION (1080p)</display-name>
+  </channel>
+  <channel id="wayanadvision.in">
+    <display-name lang="en">Wayanad Vision (1080p)</display-name>
+  </channel>
+  <channel id="weonekeralageoblocked.in">
+    <display-name lang="en">We One Kerala (720p) [Geo-blocked]</display-name>
+  </channel>
+  <channel id="wintv.in">
+    <display-name lang="en">Win TV (720p)</display-name>
+  </channel>
+  <channel id="zbbhakti.in">
+    <display-name lang="en">ZB Bhakti (720p)</display-name>
+  </channel>
+  <channel id="zbcartoon.in">
+    <display-name lang="en">ZB Cartoon (1080p)</display-name>
+  </channel>
+  <channel id="zbcinema.in">
+    <display-name lang="en">ZB Cinema (720p)</display-name>
+  </channel>
+  <channel id="zbmusic.in">
+    <display-name lang="en">ZB Music (720p)</display-name>
+  </channel>
+  <channel id="zee24taas.in">
+    <display-name lang="en">Zee 24 Taas (720p)</display-name>
+  </channel>
+  <channel id="zeebusiness.in">
+    <display-name lang="en">Zee Business (720p)</display-name>
+  </channel>
+  <channel id="zeecafe.in">
+    <display-name lang="en">Zee Cafe (1080p)</display-name>
+  </channel>
+  <channel id="zeecineclassic.in">
+    <display-name lang="en">Zee Cine Classic (1080p)</display-name>
+  </channel>
+  <channel id="zeecinema.in">
+    <display-name lang="en">Zee Cinema (1080p)</display-name>
+  </channel>
+  <channel id="zeecinemalu.in">
+    <display-name lang="en">Zee Cinemalu (1080p)</display-name>
+  </channel>
+  <channel id="zeecomedynation.in">
+    <display-name lang="en">Zee Comedy Nation (1080p)</display-name>
+  </channel>
+  <channel id="zeedilse.in">
+    <display-name lang="en">Zee Dil Se (1080p)</display-name>
+  </channel>
+  <channel id="zeehorrornights.in">
+    <display-name lang="en">Zee Horror Nights (1080p)</display-name>
+  </channel>
+  <channel id="zeekannada.in">
+    <display-name lang="en">Zee Kannada (1080p)</display-name>
+  </channel>
+  <channel id="zeekannadanews.in">
+    <display-name lang="en">Zee Kannada News (720p)</display-name>
+  </channel>
+  <channel id="zeekeralam.in">
+    <display-name lang="en">Zee Keralam (1080p)</display-name>
+  </channel>
+  <channel id="zeemarathi.in">
+    <display-name lang="en">Zee Marathi (1080p)</display-name>
+  </channel>
+  <channel id="zeenews.in">
+    <display-name lang="en">Zee News (1080p)</display-name>
+  </channel>
+  <channel id="zeenewsmalayalam.in">
+    <display-name lang="en">Zee News Malayalam (720p)</display-name>
+  </channel>
+  <channel id="zeesouthflix.in">
+    <display-name lang="en">Zee South Flix (1080p)</display-name>
+  </channel>
+  <channel id="zeetv.in">
+    <display-name lang="en">Zee TV (1080p)</display-name>
+  </channel>
+  <channel id="zeetamil.in">
+    <display-name lang="en">Zee Tamil (1080p)</display-name>
+  </channel>
+  <channel id="zeetelugu.in">
+    <display-name lang="en">Zee Telugu (1080p)</display-name>
+  </channel>
+  <channel id="zeethirai.in">
+    <display-name lang="en">Zee Thirai (1080p)</display-name>
+  </channel>
+  <channel id="zeeuttarpradeshuttarakhand.in">
+    <display-name lang="en">Zee Uttar Pradesh/Uttarakhand (720p)</display-name>
+  </channel>
+  <channel id="zillarbartanews.in">
+    <display-name lang="en">ZillarBarta News (720p)</display-name>
+  </channel>
+  <channel id="zoom.in">
+    <display-name lang="en">Zoom (1080p)</display-name>
+  </channel>
+  <channel id="channel.in">
+    <display-name lang="en">РТР Планета Азия</display-name>
+  </channel>
+</tv>
