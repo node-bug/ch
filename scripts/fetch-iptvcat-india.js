@@ -37,6 +37,8 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
+const https = require('https');
+const http = require('http');
 
 const BASE_URL = 'https://iptvcat.net/india__1';
 const M3U_OUTPUT = path.resolve(__dirname, '../channels.m3u');
@@ -226,6 +228,33 @@ function buildM3u(channels) {
 }
 
 /**
+ * Probe a stream URL: fetch the .m3u8, check it contains a real stream
+ * (not placeholder like lazycat-iptvcat.com.mp4), and return true if alive.
+ */
+function verifyStream(url, timeoutMs = 8000) {
+  return new Promise((resolve) => {
+    const parsed = new URL(url);
+    const lib = parsed.protocol === 'https:' ? https : http;
+    const req = lib.get(url, { headers: { 'User-Agent': HEADERS['User-Agent'] }, timeout: timeoutMs }, (res) => {
+      let data = '';
+      res.on('data', (chunk) => { data += chunk; });
+      res.on('end', () => {
+        // Drop placeholder / broken streams
+        if (data.includes('lazycat-iptvcat.com') || data.includes('lazycat')) {
+          resolve(false);
+          return;
+        }
+        // Must contain at least one .m3u8 or .ts stream line
+        const hasStream = /https?:\/\/[^\s"']+\.(m3u8|ts)([^\s"']*)/i.test(data);
+        resolve(hasStream && res.statusCode >= 200 && res.statusCode < 400);
+      });
+    });
+    req.on('error', () => resolve(false));
+    req.on('timeout', () => { req.destroy(); resolve(false); });
+  });
+}
+
+/**
  * Render the channel list as a minimal XMLTV EPG string.
  * (No program listings — just <channel> + <display-name> + <icon>.)
  */
@@ -280,16 +309,26 @@ async function main() {
   }
 
   // Dedupe by stream URL.
-  const seen = new Set();
+  const seenUrl = new Set();
   const unique = [];
   for (const ch of all) {
-    if (seen.has(ch.streamUrl)) continue;
-    seen.add(ch.streamUrl);
+    if (seenUrl.has(ch.streamUrl)) continue;
+    seenUrl.add(ch.streamUrl);
     unique.push(ch);
   }
 
+  // Also dedupe by normalized base name (same channel, different URL/resolution tag).
+  const seenName = new Set();
+  const byName = [];
+  for (const ch of unique) {
+    const base = stripResolution(ch.title);
+    if (seenName.has(base)) continue;
+    seenName.add(base);
+    byName.push(ch);
+  }
+
   // Drop low-resolution channels (576p / 480p / SD).
-  const notLowRes = unique.filter((ch) => !isLowRes(ch.title));
+  const notLowRes = byName.filter((ch) => !isLowRes(ch.title));
   const droppedLow = unique.length - notLowRes.length;
 
   // When the same channel exists at 1080p, drop the lower-resolution variants
@@ -321,16 +360,30 @@ async function main() {
     }
   }
 
-  const totalDropped = unique.length - filtered.length;
-  console.log(`\nTotal: ${all.length} (${unique.length} unique after dedupe)`);
+  // Verify streams: drop dead / placeholder .m3u8 links.
+  const verified = [];
+  let deadCount = 0;
+  for (const ch of filtered) {
+    const alive = await verifyStream(ch.streamUrl);
+    if (alive) {
+      verified.push(ch);
+    } else {
+      deadCount++;
+      console.log(`  [DEAD] dropped: ${ch.title} (${ch.streamUrl})`);
+    }
+  }
+
+  const totalDropped = unique.length - verified.length;
+  console.log(`\nTotal fetched: ${all.length} (${unique.length} unique by URL, ${byName.length} unique by name)`);
   console.log(`Dropped ${droppedLow} low-res channel(s) (360p/396p/404p/432p/480p/504p/540p/576p/SD).`);
   if (droppedDup > 0) {
     console.log(`Dropped ${droppedDup} lower-res variant(s) superseded by a 1080p sibling.`);
   }
-  console.log(`Final: ${filtered.length} channels.`);
+  console.log(`Dropped ${deadCount} dead/placeholder stream(s).`);
+  console.log(`Final: ${verified.length} working channels.`);
 
-  fs.writeFileSync(M3U_OUTPUT, buildM3u(filtered), 'utf-8');
-  fs.writeFileSync(EPG_OUTPUT, buildEpg(filtered), 'utf-8');
+  fs.writeFileSync(M3U_OUTPUT, buildM3u(verified), 'utf-8');
+  fs.writeFileSync(EPG_OUTPUT, buildEpg(verified), 'utf-8');
   console.log(`Wrote: ${M3U_OUTPUT}`);
   console.log(`Wrote: ${EPG_OUTPUT}`);
 }

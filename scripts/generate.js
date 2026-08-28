@@ -362,6 +362,24 @@ async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = 
   return { kept, dropped, ambiguous };
 }
 
+async function verifyChannels(channels, { concurrency = 8, log = () => {} } = {}) {
+  const alive = [];
+  const dead = [];
+  for (const ch of channels) {
+    try {
+      const res = await fetch(ch.url, { method: 'HEAD', timeout: 6000 });
+      if (res.ok) {
+        alive.push(ch);
+      } else {
+        dead.push(ch);
+      }
+    } catch {
+      dead.push(ch);
+    }
+  }
+  return { alive, dead };
+}
+
 function buildEpg(channels, now) {
   const channelNodes = channels
     .map((ch) => `  <channel id="${escapeXml(ch.id || ch.name)}">
