@@ -23,6 +23,8 @@ module.exports = {
   buildEpg,
   buildPlaylistFromText,
   writeM3u,
+  probeStream,
+  probeIcon,
 };
 
 // ---------------------------------------------------------------------------
@@ -224,10 +226,16 @@ function xmltvTs(d) {
 }
 
 /**
- * Probe a single icon URL with a HEAD request. Resolves to
+ * Probe a single icon URL with a tiny ranged GET request. Resolves to
  * { ok, status, reason }. 4xx/5xx responses are unambiguously bad;
  * network errors are treated as *ambiguous* (ok=false, but the caller
  * may decide to keep the logo in case the failure is just local DNS).
+ *
+ * We deliberately avoid plain `HEAD`: many CDNs (incl. CloudFront in
+ * front of HLS origins) refuse `HEAD` on streaming URLs and answer
+ * `404`, even though the same URL is perfectly playable with `GET`.
+ * A ranged GET of 0–1 bytes is universally supported and downloads
+ * at most 2 bytes of body, so it's cheap.
  */
 function probeIcon(url, timeoutMs = 6000) {
   return new Promise((resolve) => {
@@ -240,16 +248,21 @@ function probeIcon(url, timeoutMs = 6000) {
     const lib = parsed.protocol === 'https:' ? require('https') : require('http');
     const req = lib.request(
       {
-        method: 'HEAD',
+        method: 'GET',
         host: parsed.hostname,
         port: parsed.port || undefined,
         path: parsed.pathname + parsed.search,
-        headers: { 'User-Agent': 'm3u-ci/icon-check (+https://github.com/node-bug/m3u)' },
+        headers: {
+          'User-Agent': 'm3u-ci/icon-check (+https://github.com/node-bug/m3u)',
+          'Range': 'bytes=0-1',
+        },
         timeout: timeoutMs,
       },
       (res) => {
         const status = res.statusCode || 0;
         res.resume();
+        // `206 Partial Content` (from the Range) is a perfectly good
+        // 2xx — the resource exists. Accept the full 2xx/3xx range.
         resolve({
           ok: status >= 200 && status < 400,
           status,
@@ -328,6 +341,57 @@ async function validateIconUrls(channels, { concurrency = 8, timeoutMs = 6000, l
   return { kept, dropped, ambiguous };
 }
 
+/**
+ * Probe a single stream URL. Returns { ok, status, reason }.
+ *
+ * We intentionally avoid `HEAD`. CDNs in front of HLS origins
+ * (CloudFront, Akamai, etc.) often reject `HEAD` with 404 even when
+ * the URL streams fine with `GET` — see
+ * `https://d1g35elx8qnif3.cloudfront.net/.../index.m3u8` which is
+ * 200 on GET but 404 on HEAD. A ranged GET of 0–1 bytes downloads at
+ * most 2 bytes and is accepted by every CDN we care about. 206 is
+ * treated as success.
+ */
+function probeStream(url, timeoutMs = 6000) {
+  return new Promise((resolve) => {
+    let parsed;
+    try {
+      parsed = new URL(url);
+    } catch {
+      return resolve({ ok: false, status: 0, reason: 'bad-url' });
+    }
+    const lib = parsed.protocol === 'https:' ? require('https') : require('http');
+    const req = lib.request(
+      {
+        method: 'GET',
+        host: parsed.hostname,
+        port: parsed.port || undefined,
+        path: parsed.pathname + parsed.search,
+        headers: {
+          'User-Agent': 'm3u-ci/stream-check (+https://github.com/node-bug/m3u)',
+          'Range': 'bytes=0-1',
+        },
+        timeout: timeoutMs,
+      },
+      (res) => {
+        const status = res.statusCode || 0;
+        res.resume();
+        resolve({
+          ok: status >= 200 && status < 400,
+          status,
+          reason: status >= 200 && status < 400 ? undefined : `HTTP ${status}`,
+        });
+      }
+    );
+    req.on('error', (err) => resolve({ ok: false, status: 0, reason: err.code || err.message }));
+    req.on('timeout', () => {
+      req.destroy();
+      resolve({ ok: false, status: 0, reason: 'timeout' });
+    });
+    req.end();
+  });
+}
+
 async function verifyChannels(channels, { concurrency = 8, timeoutMs = 6000, log = () => {} } = {}) {
   const alive = [];
   const dead = [];
@@ -338,17 +402,12 @@ async function verifyChannels(channels, { concurrency = 8, timeoutMs = 6000, log
     while (cursor < total) {
       const i = cursor++;
       const ch = channels[i];
-      try {
-        const res = await fetch(ch.url, { method: 'HEAD', timeout: timeoutMs });
-        if (res.ok) {
-          alive.push(ch);
-        } else {
-          dead.push(ch);
-          log(`  [HTTP ${res.status}] drop: ${ch.name}`);
-        }
-      } catch (err) {
+      const r = await probeStream(ch.url, timeoutMs);
+      if (r.ok) {
+        alive.push(ch);
+      } else {
         dead.push(ch);
-        log(`  [${err.code || err.name || 'err'}] drop: ${ch.name}`);
+        log(`  [${r.reason || r.status || 'err'}] drop: ${ch.name}`);
       }
     }
   }
