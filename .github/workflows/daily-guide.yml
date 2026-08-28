@@ -51,8 +51,8 @@ jobs:
 
       - name: Generate M3U + EPG
         env:
-          # Allow tuning from the workflow inputs (or env in the Actions UI).
-          VERIFY_TIMEOUT_MS: ${{ vars.VERIFY_TIMEOUT_MS || '6000' }}
+          # Allow tuning from repo variables in the Actions UI.
+          VERIFY_TIMEOUT_MS: ${{ vars.VERIFY_TIMEOUT_MS || '8000' }}
           VERIFY_CONCURRENCY: ${{ vars.VERIFY_CONCURRENCY || '8' }}
           # BASE_URL is interpolated into the generated M3U's `url-tvg`
           # header so players know where to fetch the matching EPG from.
@@ -60,8 +60,10 @@ jobs:
           # Pages URL differs from the default.
           BASE_URL: ${{ vars.PAGES_BASE_URL || 'https://node-bug.github.io/ch/' }}
         run: |
+          # `verify` is true by default; the script's flag is the
+          # opt-out (`--no-verify`).
           ARGS=""
-          if [ "${{ inputs.verify }}" = "true" ]; then ARGS="$ARGS --verify"; fi
+          if [ "${{ inputs.verify }}" != "true" ]; then ARGS="--no-verify"; fi
           echo "Running: node scripts/fetch-iptvcat-india.js $ARGS"
           node scripts/fetch-iptvcat-india.js $ARGS
 

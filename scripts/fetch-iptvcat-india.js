@@ -216,9 +216,14 @@ function toChannelId(title) {
 
 /**
  * Render the channel list as an M3U playlist string.
+ *
+ * Pass `urlTvg` to add a `url-tvg="..."` attribute to the `#EXTM3U`
+ * header so players know where to fetch the matching EPG from.
  */
-function buildM3u(channels) {
-  const lines = ['#EXTM3U'];
+function buildM3u(channels, { urlTvg } = {}) {
+  let header = '#EXTM3U';
+  if (urlTvg) header += ` url-tvg="${urlTvg.replace(/"/g, '')}"`;
+  const lines = [header];
   for (const ch of channels) {
     const safeTitle = ch.title.replace(/"/g, "'");
     lines.push(`#EXTINF:-1 tvg-id="${toChannelId(ch.title)}" group-title="${GROUP_TITLE}",${safeTitle}`);
@@ -233,7 +238,12 @@ function buildM3u(channels) {
  */
 function verifyStream(url, timeoutMs = 8000) {
   return new Promise((resolve) => {
-    const parsed = new URL(url);
+    let parsed;
+    try {
+      parsed = new URL(url);
+    } catch {
+      return resolve(false);
+    }
     const lib = parsed.protocol === 'https:' ? https : http;
     const req = lib.get(url, { headers: { 'User-Agent': HEADERS['User-Agent'] }, timeout: timeoutMs }, (res) => {
       let data = '';
@@ -252,6 +262,48 @@ function verifyStream(url, timeoutMs = 8000) {
     req.on('error', () => resolve(false));
     req.on('timeout', () => { req.destroy(); resolve(false); });
   });
+}
+
+/**
+ * Probe many stream URLs with bounded concurrency. Returns
+ * { alive: Channel[], dead: Channel[] }.
+ *
+ * Synthetic fallback URLs (the `list.iptvcat.com/my_list/s/<id>.m3u8`
+ * placeholders) are skipped without a network round trip — they're
+ * a known-dead shape.
+ */
+async function verifyChannels(channels, { concurrency = 8, timeoutMs = 8000, log = () => {} } = {}) {
+  const alive = [];
+  const dead = [];
+  let cursor = 0;
+  const total = channels.length;
+
+  async function worker() {
+    while (cursor < total) {
+      const i = cursor++;
+      const ch = channels[i];
+      const isSynthetic = /list\.iptvcat\.com\/my_list\/s\//.test(ch.streamUrl);
+      if (isSynthetic) {
+        dead.push(ch);
+        log(`  [synthetic] drop: ${ch.title}`);
+        continue;
+      }
+      const ok = await verifyStream(ch.streamUrl, timeoutMs);
+      if (ok) {
+        alive.push(ch);
+      } else {
+        dead.push(ch);
+        log(`  [dead] drop: ${ch.title}`);
+      }
+    }
+  }
+
+  log(`Verifying ${total} stream URLs (concurrency=${concurrency})...\n`);
+  await Promise.all(
+    Array.from({ length: Math.min(concurrency, total) }, worker)
+  );
+
+  return { alive, dead };
 }
 
 /**
@@ -284,6 +336,29 @@ function buildEpg(channels) {
  * Fetch every page, dedupe, and write the M3U + EPG files.
  */
 async function main() {
+  // CLI flags:
+  //   --no-verify   Skip the per-URL HEAD probe (faster, but every
+  //                 channel — including synthetic fallbacks — is kept).
+  //   --help / -h   Print usage and exit.
+  //
+  // Env vars (used when verification is enabled):
+  //   VERIFY_TIMEOUT_MS   Per-request timeout (default 8000ms).
+  //   VERIFY_CONCURRENCY  Max parallel probes (default 8).
+  const args = new Set(process.argv.slice(2));
+  if (args.has('--help') || args.has('-h')) {
+    console.log(`Usage: node scripts/fetch-iptvcat-india.js [--no-verify]`);
+    console.log(`\nOptions:`);
+    console.log(`  --no-verify           Skip per-URL stream probe (faster)`);
+    console.log(`\nEnv:`);
+    console.log(`  VERIFY_TIMEOUT_MS     Per-request timeout (default 8000ms)`);
+    console.log(`  VERIFY_CONCURRENCY    Max parallel probes (default 8)`);
+    process.exit(0);
+  }
+  const shouldVerify = !args.has('--no-verify');
+  const verifyTimeoutMs = parseInt(process.env.VERIFY_TIMEOUT_MS, 10) || 8000;
+  const verifyConcurrency = parseInt(process.env.VERIFY_CONCURRENCY, 10) || 8;
+  const logLine = (s) => process.stdout.write(s.endsWith('\n') ? s : s + '\n');
+
   console.log('Fetching iptvcat.net/india__1 (Indian channels)...\n');
 
   // Page 1 → discover total page count.
@@ -361,16 +436,18 @@ async function main() {
   }
 
   // Verify streams: drop dead / placeholder .m3u8 links.
-  const verified = [];
+  let verified = filtered;
   let deadCount = 0;
-  for (const ch of filtered) {
-    const alive = await verifyStream(ch.streamUrl);
-    if (alive) {
-      verified.push(ch);
-    } else {
-      deadCount++;
-      console.log(`  [DEAD] dropped: ${ch.title} (${ch.streamUrl})`);
-    }
+  if (shouldVerify) {
+    const { alive, dead } = await verifyChannels(filtered, {
+      concurrency: verifyConcurrency,
+      timeoutMs: verifyTimeoutMs,
+      log: logLine,
+    });
+    verified = alive;
+    deadCount = dead.length;
+  } else {
+    console.log('\n--no-verify: skipping per-URL stream probe.');
   }
 
   const totalDropped = unique.length - verified.length;
@@ -379,10 +456,19 @@ async function main() {
   if (droppedDup > 0) {
     console.log(`Dropped ${droppedDup} lower-res variant(s) superseded by a 1080p sibling.`);
   }
-  console.log(`Dropped ${deadCount} dead/placeholder stream(s).`);
-  console.log(`Final: ${verified.length} working channels.`);
+  if (shouldVerify) {
+    console.log(`Dropped ${deadCount} dead/placeholder stream(s).`);
+  }
+  console.log(`Final: ${verified.length} ${shouldVerify ? 'working' : 'unverified'} channel(s).`);
 
-  fs.writeFileSync(M3U_OUTPUT, buildM3u(verified), 'utf-8');
+  // If BASE_URL is set, the M3U header will include a `url-tvg="..."`
+  // attribute pointing at the matching EPG on GitHub Pages. This lets
+  // IPTV players auto-discover the EPG without manual configuration.
+  const baseUrl = process.env.BASE_URL || '';
+  const urlTvg = baseUrl ? `${baseUrl.replace(/\/$/, '')}/epg.xml` : '';
+  if (urlTvg) console.log(`Using url-tvg: ${urlTvg}`);
+
+  fs.writeFileSync(M3U_OUTPUT, buildM3u(verified, { urlTvg }), 'utf-8');
   fs.writeFileSync(EPG_OUTPUT, buildEpg(verified), 'utf-8');
   console.log(`Wrote: ${M3U_OUTPUT}`);
   console.log(`Wrote: ${EPG_OUTPUT}`);
