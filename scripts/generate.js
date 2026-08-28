@@ -16,16 +16,14 @@
 const fs = require('fs');
 const path = require('path');
 
-// `data/dead-icons.json` holds the list of icon URLs we've previously
-// determined to be definitively broken (HTTP 4xx/5xx). On subsequent
-// runs we skip probing them — they're already cleared from `channels`
-// before they reach the EPG writer — and skip the wasted network round
-// trip. A user (or a workflow) can prune entries from this file if a
-// CDN recovers.
-
-
 // Expose pure helpers for testing. The module is also runnable directly.
-module.exports = { parseExtinf, findTitleCommaIdx, buildEpg, buildPlaylistFromText };
+module.exports = {
+  parseExtinf,
+  findTitleCommaIdx,
+  buildEpg,
+  buildPlaylistFromText,
+  writeM3u,
+};
 
 // ---------------------------------------------------------------------------
 // iptv-org playlist sources
@@ -228,12 +226,6 @@ function escapeXml(str) {
     .replace(/'/g, '&apos;');
 }
 
-function hoursLater(now, hour) {
-  const d = new Date(now);
-  d.setMinutes(d.getMinutes() + hour * 60);
-  return d.toISOString().replace(/\.\d{3}Z$/, 'Z');
-}
-
 /**
  * Format a Date as an XMLTV timestamp (YYYY-MM-DDTHH:MM:SSZ).
  */
@@ -297,18 +289,11 @@ function probeIcon(url, timeoutMs = 6000) {
  * a summary { kept, dropped, ambiguous }.
  */
 async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = {}) {
-  // Pre-seed from the persistent dead-icons denylist so we don't re-probe
-  // icons we already know are broken. They get cleared from `channels`
-  // up-front to keep the EPG clean.
-  const deadIconCache = loadDeadIcons();
-  let preCleared = 0;
-  for (const ch of channels) {
-    if (ch.logo && deadIconCache.has(ch.logo)) {
-      ch.logo = '';
-      preCleared++;
-    }
-  }
-  if (preCleared) log(`Skipped ${preCleared} icons from dead-icons cache.\n`);
+  // In-process denylist of icons we've already confirmed dead in this
+  // run. Earlier iterations persisted this to `data/dead-icons.json`;
+  // the current design keeps the cache in-memory only so it doesn't
+  // get stale and doesn't require a `data/` directory in the repo.
+  const deadIconCache = new Set();
 
   // Dedupe URLs but remember which channels share them.
   const urlToChannels = new Map();
@@ -316,6 +301,14 @@ async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = 
     if (ch.logo) {
       if (!urlToChannels.has(ch.logo)) urlToChannels.set(ch.logo, []);
       urlToChannels.get(ch.logo).push(ch);
+    }
+  }
+
+  // Skip URLs that are already in the in-process denylist (none on a
+  // fresh run, but the hook is here if callers seed the cache).
+  for (const ch of channels) {
+    if (ch.logo && deadIconCache.has(ch.logo)) {
+      ch.logo = '';
     }
   }
 
@@ -356,8 +349,6 @@ async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = 
     }
   }
 
-  saveDeadIcons(deadIconCache);
-
   log(`Logos: kept=${kept} (${kept - ambiguous} verified, ${ambiguous} kept-due-to-ambiguity), dropped=${dropped}`);
   return { kept, dropped, ambiguous };
 }
@@ -365,18 +356,35 @@ async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = 
 async function verifyChannels(channels, { concurrency = 8, log = () => {} } = {}) {
   const alive = [];
   const dead = [];
-  for (const ch of channels) {
-    try {
-      const res = await fetch(ch.url, { method: 'HEAD', timeout: 6000 });
-      if (res.ok) {
-        alive.push(ch);
-      } else {
+  let cursor = 0;
+  const total = channels.length;
+  let completed = 0;
+
+  async function worker() {
+    while (cursor < total) {
+      const i = cursor++;
+      const ch = channels[i];
+      try {
+        const res = await fetch(ch.url, { method: 'HEAD', timeout: 6000 });
+        if (res.ok) {
+          alive.push(ch);
+        } else {
+          dead.push(ch);
+          log(`  [HTTP ${res.status}] drop: ${ch.name}`);
+        }
+      } catch (err) {
         dead.push(ch);
+        log(`  [${err.code || err.name || 'err'}] drop: ${ch.name}`);
       }
-    } catch {
-      dead.push(ch);
+      completed++;
     }
   }
+
+  log(`Probing ${total} stream URLs (concurrency=${concurrency})...\n`);
+  await Promise.all(
+    Array.from({ length: Math.min(concurrency, total) }, worker)
+  );
+
   return { alive, dead };
 }
 
@@ -442,6 +450,50 @@ ${programmeNodes}
 }
 
 // ---------------------------------------------------------------------------
+// M3U writer
+//
+// Inlined here (was previously a separate `index.js` module) so the script
+// has no extra dependencies beyond the manifest. Pure function so it can
+// be unit-tested in isolation.
+// ---------------------------------------------------------------------------
+
+/**
+ * Build an M3U playlist string from a list of channel records.
+ * Each channel becomes a `#EXTINF` line + its `url` line.
+ */
+function buildM3u(channels) {
+  const lines = ['#EXTM3U'];
+  for (const ch of channels) {
+    const attrs = [
+      `tvg-id="${(ch.id || '').replace(/"/g, '')}"`,
+      `tvg-name="${(ch.name || '').replace(/"/g, '')}"`,
+      ch.logo ? `tvg-logo="${ch.logo.replace(/"/g, '')}"` : null,
+      `group-title="${(ch.group || 'Undefined').replace(/"/g, '')}"`,
+    ].filter(Boolean);
+    // We don't know the duration — use `-1` (live streams).
+    lines.push(`#EXTINF:-1 ${attrs.join(' ')},${ch.name || ''}`);
+    lines.push(ch.url);
+  }
+  return lines.join('\n') + '\n';
+}
+
+/**
+ * Write the M3U playlist to `filePath`. The optional `urlTvg` adds a
+ * `url-tvg="..."` attribute to the `#EXTM3U` header so players know
+ * where to fetch the EPG.
+ */
+function writeM3u(filePath, channels, { urlTvg } = {}) {
+  let header = '#EXTM3U';
+  if (urlTvg) header += ` url-tvg="${urlTvg.replace(/"/g, '')}"`;
+  const body = buildM3u(channels);
+  // Replace the default first line with the (possibly enriched) header.
+  const out = body.startsWith('#EXTM3U')
+    ? header + body.slice('#EXTM3U'.length)
+    : header + '\n' + body;
+  fs.writeFileSync(filePath, out, 'utf-8');
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 
@@ -451,21 +503,28 @@ async function main() {
 
   const args = new Set(process.argv.slice(2));
   const shouldVerify = !args.has('--no-verify');
-  const shouldVerifyIcons = true;
+  const shouldVerifyIcons = !args.has('--no-verify-icons');
+  const verifyTimeoutMs = parseInt(process.env.VERIFY_TIMEOUT_MS, 10) || 6000;
+  const verifyConcurrency = parseInt(process.env.VERIFY_CONCURRENCY, 10) || 8;
+  const logLine = (s) => process.stdout.write(s.endsWith('\n') ? s : s + '\n');
   let channels = await buildPlaylist();
   console.log(`Fetched ${channels.length} unique channels from iptv-org`);
 
   if (shouldVerify) {
     const { alive, dead } = await verifyChannels(channels, {
-      log: (s) => (typeof s === 'string' && s.includes('\n') ? process.stdout.write(s + '\n') : process.stdout.write(s)),
+      concurrency: verifyConcurrency,
+      log: logLine,
     });
     console.log(`Kept ${alive.length} working channels, dropped ${dead.length} dead ones.`);
     channels = alive;
   }
 
-  await validateIconUrls(channels, {
-      log: (s) => process.stdout.write(s + '\n'),
+  if (shouldVerifyIcons) {
+    await validateIconUrls(channels, {
+      concurrency: verifyConcurrency,
+      log: logLine,
     });
+  }
 
   // --- M3U ---
   // `urlTvg` becomes a `url-tvg="..."` attribute on the #EXTM3U header.
@@ -477,22 +536,9 @@ async function main() {
   // URL so local runs (where the env var isn't set) still produce a
   // valid `url-tvg`.
   const baseUrl = process.env.BASE_URL || 'https://node-bug.github.io/ch/';
-
-  const playlist = {
-    title: `Generated TV Guide (${stamp})`,
-    urlTvg: `${baseUrl}epg.xml`,
-    tracks: channels.map((ch) => ({
-      title: ch.name,
-      path: ch.url,
-      duration: -1,
-      tvgId: ch.id,
-      tvgName: ch.name,
-      tvgGroup: ch.group,
-    })),
-  };
-
   const m3uPath = path.join(__dirname, '..', 'channels.m3u');
-  m3u.generate(m3uPath, playlist);
+  writeM3u(m3uPath, channels, { urlTvg: `${baseUrl}epg.xml` });
+  console.log(`Wrote ${m3uPath} (${channels.length} tracks, header title="Generated TV Guide (${stamp})")`);
 
   // --- EPG ---
   const epgXml = buildEpg(channels, now);
