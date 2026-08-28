@@ -1,8 +1,8 @@
 name: Daily TV Guide
 
 # Runs four times per day at 00:00, 06:00, 12:00, and 18:00 UTC
-# (05:30, 11:30, 17:30, and 23:30 IST). The EPG window is wide enough
-# to bridge a single missed run without leaving the guide stale.
+# (05:30, 11:30, 17:30, and 23:30 IST — IST is UTC+5:30). The EPG window
+# is wide enough to bridge a single missed run without leaving the guide stale.
 #
 # The pipeline can also be triggered manually from the Actions tab via
 # "Run workflow". Available inputs:
@@ -52,7 +52,7 @@ jobs:
       - name: Generate M3U + EPG
         env:
           # Allow tuning from repo variables in the Actions UI.
-          VERIFY_TIMEOUT_MS: ${{ vars.VERIFY_TIMEOUT_MS || '8000' }}
+          VERIFY_TIMEOUT_MS: ${{ vars.VERIFY_TIMEOUT_MS || '6000' }}
           VERIFY_CONCURRENCY: ${{ vars.VERIFY_CONCURRENCY || '8' }}
           # BASE_URL is interpolated into the generated M3U's `url-tvg`
           # header so players know where to fetch the matching EPG from.
@@ -63,9 +63,9 @@ jobs:
           # `verify` is true by default; the script's flag is the
           # opt-out (`--no-verify`).
           ARGS=""
-          if [ "${{ inputs.verify }}" != "true" ]; then ARGS="--no-verify"; fi
-          echo "Running: node scripts/fetch-iptvcat-india.js $ARGS"
-          node scripts/fetch-iptvcat-india.js $ARGS
+          if [ "${{ inputs.verify }}" != "true" ]; then ARGS="$ARGS --no-verify"; fi
+          echo "Running: node scripts/generate.js $ARGS"
+          node scripts/generate.js $ARGS
 
       - name: Stage Pages artifact
         # Copy only the two deliverables into a clean directory so we

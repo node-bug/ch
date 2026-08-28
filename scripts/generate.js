@@ -31,26 +31,27 @@ module.exports = {
 // These are the public, per-category/per-country playlists published by
 // iptv-org at https://iptv-org.github.io/iptv/. They are merged (deduplicated
 // by URL) into a single guide.
+//
+// The default filter (in `buildPlaylist`) keeps only channels whose
+// `tvg-id` ends in `.in` and whose name contains "1080p", so non-India
+// country playlists would contribute nothing — only India-relevant
+// sources are listed here.
 // ---------------------------------------------------------------------------
 const IPTV_BASE = 'https://iptv-org.github.io/iptv';
 const PLAYLIST_SOURCES = [
-  // News categories
-  { group: 'News', url: `${IPTV_BASE}/categories/news.m3u` },
-  { group: 'Sports', url: `${IPTV_BASE}/categories/sports.m3u` },
-  { group: 'Movies', url: `${IPTV_BASE}/categories/movies.m3u` },
-  { group: 'Entertainment', url: `${IPTV_BASE}/categories/entertainment.m3u` },
-  { group: 'Music', url: `${IPTV_BASE}/categories/music.m3u` },
-  { group: 'Documentary', url: `${IPTV_BASE}/categories/documentary.m3u` },
-  
-  // Country-specific sources (with enhanced India focus)
-  { group: 'News (US)', url: `${IPTV_BASE}/countries/us.m3u` },
-  { group: 'News (UK)', url: `${IPTV_BASE}/countries/uk.m3u` },
-  { group: 'News (IN)', url: `${IPTV_BASE}/countries/in.m3u` },
-  { group: 'News (AU)', url: `${IPTV_BASE}/countries/au.m3u` },
-  { group: 'News (CA)', url: `${IPTV_BASE}/countries/ca.m3u` },
-  
-  // Regional sources
-  { group: 'Worldwide', url: `${IPTV_BASE}/regions/ww.m3u` },
+  // Per-category playlists (Indian channels live in every category).
+  { url: `${IPTV_BASE}/categories/news.m3u` },
+  { url: `${IPTV_BASE}/categories/sports.m3u` },
+  { url: `${IPTV_BASE}/categories/movies.m3u` },
+  { url: `${IPTV_BASE}/categories/entertainment.m3u` },
+  { url: `${IPTV_BASE}/categories/music.m3u` },
+  { url: `${IPTV_BASE}/categories/documentary.m3u` },
+
+  // India country playlist (catches anything the category playlists miss).
+  { url: `${IPTV_BASE}/countries/in.m3u` },
+
+  // Worldwide region (some Indian channels only appear here).
+  { url: `${IPTV_BASE}/regions/ww.m3u` },
 ];
 
 // ---------------------------------------------------------------------------
@@ -76,6 +77,9 @@ async function fetchText(url, retries = 2) {
       await new Promise((r) => setTimeout(r, 500 * (attempt + 1)));
     }
   }
+  // Unreachable: every iteration of the loop above either returns the
+  // fetched text or returns '' on the final attempt. Kept for
+  // type-checker satisfaction of the `async` return type.
   return '';
 }
 
@@ -170,14 +174,6 @@ function buildPlaylistFromText(text, defaults = {}) {
   return channels;
 }
 
-/**
- * Fetch one iptv-org playlist and return normalized channel records.
- */
-async function fetchPlaylist(source) {
-  const text = await fetchText(source.url);
-  return buildPlaylistFromText(text, source);
-}
-
 // ---------------------------------------------------------------------------
 // Build merged M3U playlist
 // ---------------------------------------------------------------------------
@@ -187,24 +183,18 @@ async function buildPlaylist() {
   const seenUrls = new Set();
 
   for (const source of PLAYLIST_SOURCES) {
-    const channels = await fetchPlaylist(source);
+    const text = await fetchText(source.url);
+    const channels = buildPlaylistFromText(text);
     for (const ch of channels) {
       if (!ch.url) continue;
       if (seenUrls.has(ch.url)) continue; // dedupe by URL
-      
-      // Apply filters based on source type
-      if (source.skipFilters) {
-        // Sources flagged with skipFilters bypass the default 1080p / .in filters
-      } else if (source.group === 'Samsung (IN)') {
-        // For Samsung India source: include all channels (no filters)
-      } else {
-        // For all other sources: apply both filters
-        // Only include channels that have "1080p" in the name (case-insensitive)
-        if (!ch.name.toLowerCase().includes('1080p')) continue;
-        // Only include channels from India (tvg-id contains ".in" as a country code)
-        if (!ch.id || !ch.id.match(/(^|\.|@)in($|\.|@)/)) continue;
-      }
-      
+
+      // Only include channels that have "1080p" in the name.
+      if (!ch.name.toLowerCase().includes('1080p')) continue;
+      // Only include channels from India (tvg-id ends in .in or matches
+      // `.in<separator>` patterns like `Name.in@SD` or `Name.in.<sub>`).
+      if (!ch.id || !ch.id.match(/(^|\.|@)in($|\.|@)/)) continue;
+
       seenUrls.add(ch.url);
       all.push(ch);
     }
@@ -288,27 +278,13 @@ function probeIcon(url, timeoutMs = 6000) {
  * Mutates `channels` in place (clears `logo` for dead ones) and returns
  * a summary { kept, dropped, ambiguous }.
  */
-async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = {}) {
-  // In-process denylist of icons we've already confirmed dead in this
-  // run. Earlier iterations persisted this to `data/dead-icons.json`;
-  // the current design keeps the cache in-memory only so it doesn't
-  // get stale and doesn't require a `data/` directory in the repo.
-  const deadIconCache = new Set();
-
+async function validateIconUrls(channels, { concurrency = 8, timeoutMs = 6000, log = () => {} } = {}) {
   // Dedupe URLs but remember which channels share them.
   const urlToChannels = new Map();
   for (const ch of channels) {
     if (ch.logo) {
       if (!urlToChannels.has(ch.logo)) urlToChannels.set(ch.logo, []);
       urlToChannels.get(ch.logo).push(ch);
-    }
-  }
-
-  // Skip URLs that are already in the in-process denylist (none on a
-  // fresh run, but the hook is here if callers seed the cache).
-  for (const ch of channels) {
-    if (ch.logo && deadIconCache.has(ch.logo)) {
-      ch.logo = '';
     }
   }
 
@@ -319,7 +295,7 @@ async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = 
   async function worker() {
     while (cursor < urls.length) {
       const i = cursor++;
-      results[i] = { url: urls[i], probe: await probeIcon(urls[i]) };
+      results[i] = { url: urls[i], probe: await probeIcon(urls[i], timeoutMs) };
     }
   }
 
@@ -341,7 +317,6 @@ async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = 
     if (probe.status >= 400 && probe.status < 600) {
       for (const ch of owners) ch.logo = '';
       dropped += owners.length;
-      deadIconCache.add(url);
       log(`  [HTTP ${probe.status}] drop icon: ${url}`);
     } else {
       ambiguous += owners.length;
@@ -353,19 +328,18 @@ async function validateIconUrls(channels, { concurrency = 8, log = () => {} } = 
   return { kept, dropped, ambiguous };
 }
 
-async function verifyChannels(channels, { concurrency = 8, log = () => {} } = {}) {
+async function verifyChannels(channels, { concurrency = 8, timeoutMs = 6000, log = () => {} } = {}) {
   const alive = [];
   const dead = [];
   let cursor = 0;
   const total = channels.length;
-  let completed = 0;
 
   async function worker() {
     while (cursor < total) {
       const i = cursor++;
       const ch = channels[i];
       try {
-        const res = await fetch(ch.url, { method: 'HEAD', timeout: 6000 });
+        const res = await fetch(ch.url, { method: 'HEAD', timeout: timeoutMs });
         if (res.ok) {
           alive.push(ch);
         } else {
@@ -376,7 +350,6 @@ async function verifyChannels(channels, { concurrency = 8, log = () => {} } = {}
         dead.push(ch);
         log(`  [${err.code || err.name || 'err'}] drop: ${ch.name}`);
       }
-      completed++;
     }
   }
 
@@ -413,10 +386,11 @@ function buildEpg(channels, now) {
   const slotMs = 2 * 60 * 60 * 1000;
   const pastSlots = 6;   // 12h of back-fill (2h × 6)
   const futureSlots = 6; // 12h of forward coverage (2h × 6)
-  const anchor = new Date(now.getTime());
-  anchor.setMinutes(anchor.getMinutes() - (anchor.getMinutes() % 30), 0, 0);
-  const anchorMs = anchor.getTime();
   const totalSlots = pastSlots + futureSlots;
+  // Anchor on the most recent 30-minute boundary. Slots are aligned to
+  // that boundary so IPTV players see a clean grid regardless of when
+  // the CI run happened.
+  const anchorMs = Math.floor(now.getTime() / (30 * 60 * 1000)) * (30 * 60 * 1000);
   const baseStart = anchorMs - pastSlots * slotMs;
 
   const programmeNodes = channels
@@ -485,12 +459,10 @@ function buildM3u(channels) {
 function writeM3u(filePath, channels, { urlTvg } = {}) {
   let header = '#EXTM3U';
   if (urlTvg) header += ` url-tvg="${urlTvg.replace(/"/g, '')}"`;
+  // `buildM3u` always emits the header as its first line; splice in
+  // the (possibly enriched) version and drop the original.
   const body = buildM3u(channels);
-  // Replace the default first line with the (possibly enriched) header.
-  const out = body.startsWith('#EXTM3U')
-    ? header + body.slice('#EXTM3U'.length)
-    : header + '\n' + body;
-  fs.writeFileSync(filePath, out, 'utf-8');
+  fs.writeFileSync(filePath, header + body.slice('#EXTM3U'.length), 'utf-8');
 }
 
 // ---------------------------------------------------------------------------
@@ -513,6 +485,7 @@ async function main() {
   if (shouldVerify) {
     const { alive, dead } = await verifyChannels(channels, {
       concurrency: verifyConcurrency,
+      timeoutMs: verifyTimeoutMs,
       log: logLine,
     });
     console.log(`Kept ${alive.length} working channels, dropped ${dead.length} dead ones.`);
@@ -522,6 +495,7 @@ async function main() {
   if (shouldVerifyIcons) {
     await validateIconUrls(channels, {
       concurrency: verifyConcurrency,
+      timeoutMs: verifyTimeoutMs,
       log: logLine,
     });
   }
@@ -541,12 +515,9 @@ async function main() {
   console.log(`Wrote ${m3uPath} (${channels.length} tracks, header title="Generated TV Guide (${stamp})")`);
 
   // --- EPG ---
-  const epgXml = buildEpg(channels, now);
   const epgPath = path.join(__dirname, '..', 'epg.xml');
-  fs.writeFileSync(epgPath, epgXml, 'utf-8');
-
-  console.log(`Generated ${m3uPath}`);
-  console.log(`Generated ${epgPath}`);
+  fs.writeFileSync(epgPath, buildEpg(channels, now), 'utf-8');
+  console.log(`Wrote ${epgPath}`);
 }
 
 if (require.main === module) {

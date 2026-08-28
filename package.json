@@ -4,8 +4,7 @@
   "description": "A simple M3U playlist parser and generator for Node.js",
   "main": "scripts/generate.js",
   "scripts": {
-    "generate": "node scripts/generate.js",
-    "generate-iptvcat": "node scripts/fetch-iptvcat-india.js"
+    "generate": "node scripts/generate.js"
   },
   "keywords": [
     "m3u",
@@ -19,9 +18,5 @@
     "type": "git",
     "url": "https://github.com/node-bug/ch.git"
   },
-  "dependencies": {
-    "axios": "^1.19.0",
-    "cheerio": "^1.2.0",
-    "node-fetch": "^3.3.2"
-  }
+  "dependencies": {}
 }
